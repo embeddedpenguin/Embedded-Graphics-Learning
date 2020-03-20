@@ -11,7 +11,7 @@
  - map pins
  - create bare software for pin mappings
  - fix asf4 vomit <<<emoji here>>>
-
+ - Get make based asf4 project to compile (i have toolchains wtf why no work)
 ## Info
 
 
