@@ -2,4 +2,5 @@
   (lib (name same54_dev_board-rescue)(type Legacy)(uri ${KIPRJMOD}/same54_dev_board-rescue.lib)(options "")(descr ""))
   (lib (name Conn_02x20_LCD_INTF)(type Legacy)(uri ${KIPRJMOD}/libraries/Conn_02x20_LCD_INTF.lib)(options "")(descr ""))
   (lib (name MAX7301AAX_)(type Legacy)(uri ${KIPRJMOD}/libraries/MAX7301AAX_.lib)(options "")(descr ""))
+  (lib (name TPS73733QDRBRQ1)(type Legacy)(uri ${KIPRJMOD}/libraries/TPS73733QDRBRQ1.lib)(options "")(descr ""))
 )

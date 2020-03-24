@@ -50,4 +50,6 @@ Wire Wire Line
 Connection ~ 5800 3450
 Wire Wire Line
 	5800 3450 5800 3550
+Wire Wire Line
+	5800 3800 5800 3900
 $EndSCHEMATC

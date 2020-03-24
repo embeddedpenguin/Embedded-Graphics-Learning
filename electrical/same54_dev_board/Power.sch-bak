@@ -24,4 +24,32 @@ F 3 "" H 3600 4550 50  0001 C CNN
 	5    4800 3300
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5800 2650 5800 2750
+Connection ~ 5800 2750
+Wire Wire Line
+	5800 2750 5800 2850
+Connection ~ 5800 2850
+Wire Wire Line
+	5800 2850 5800 2950
+Connection ~ 5800 2950
+Wire Wire Line
+	5800 2950 5800 3050
+Connection ~ 5800 3050
+Wire Wire Line
+	5800 3050 5800 3150
+Connection ~ 5800 3150
+Wire Wire Line
+	5800 3150 5800 3250
+Connection ~ 5800 3250
+Wire Wire Line
+	5800 3250 5800 3350
+Connection ~ 5800 3350
+Wire Wire Line
+	5800 3350 5800 3450
+Connection ~ 5800 3450
+Wire Wire Line
+	5800 3450 5800 3550
+Wire Wire Line
+	5800 3800 5800 3900
 $EndSCHEMATC

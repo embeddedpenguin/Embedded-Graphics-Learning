@@ -565,10 +565,10 @@ Wire Wire Line
 Wire Wire Line
 	10850 2500 10850 2650
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0109
 U 1 1 5EC6B772
 P 10850 2650
-F 0 "#PWR?" H 10850 2400 50  0001 C CNN
+F 0 "#PWR0109" H 10850 2400 50  0001 C CNN
 F 1 "GND" H 10855 2477 50  0000 C CNN
 F 2 "" H 10850 2650 50  0001 C CNN
 F 3 "" H 10850 2650 50  0001 C CNN
@@ -625,6 +625,24 @@ Wire Bus Line
 	9000 3650 9050 3650
 Wire Bus Line
 	8200 4050 8450 4050
+Entry Bus Bus
+	8900 3750 9000 3650
+Wire Notes Line
+	550  550  1350 550 
+Wire Notes Line
+	1350 550  1350 1200
+Wire Notes Line
+	1350 1200 550  1200
+Wire Notes Line
+	550  1200 550  550 
+Wire Notes Line
+	550  1250 550  3000
+Wire Notes Line
+	550  3000 2200 3000
+Wire Notes Line
+	2200 3000 2200 1250
+Wire Notes Line
+	2200 1250 550  1250
 Wire Bus Line
 	9050 3650 9050 4750
 Wire Bus Line
@@ -633,6 +651,6 @@ Wire Bus Line
 	6300 4050 6300 6200
 Wire Bus Line
 	10900 3650 10900 5600
-Entry Bus Bus
-	8900 3750 9000 3650
+Text Notes 650  1350 0    50   ~ 0
+LCD Interface
 $EndSCHEMATC
