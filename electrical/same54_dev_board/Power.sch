@@ -91,7 +91,7 @@ U 1 1 5E88DD8C
 P 950 1500
 F 0 "J4" H 1007 1817 50  0000 C CNN
 F 1 "Barrel_Jack_Switch" H 1007 1726 50  0000 C CNN
-F 2 "" H 1000 1460 50  0001 C CNN
+F 2 "digikey-footprints:Barrel_Jack_5.5mmODx2.1mmID_PJ-102A" H 1000 1460 50  0001 C CNN
 F 3 "~" H 1000 1460 50  0001 C CNN
 	1    950  1500
 	1    0    0    -1  

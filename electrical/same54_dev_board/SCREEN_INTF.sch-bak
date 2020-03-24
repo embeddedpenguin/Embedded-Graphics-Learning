@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 3 5
 Title ""
 Date ""
 Rev ""
@@ -459,9 +459,9 @@ Text HLabel 1350 2300 0    50   Input ~ 0
 ~TFT_RST
 Text HLabel 1350 2400 0    50   Input ~ 0
 TFT_STB
-Text HLabel 1300 3150 0    50   Input ~ 0
+Text HLabel 1350 2700 0    50   Input ~ 0
 TFT_TOUCH_SDA
-Text HLabel 1300 3700 0    50   Input ~ 0
+Text HLabel 1350 2800 0    50   Input ~ 0
 TFT_TOUCH_SCL
 Text HLabel 1350 2600 0    50   Input ~ 0
 TFT_TOUCH_INT
@@ -509,11 +509,7 @@ Text Label 1600 2400 0    50   ~ 0
 TFT_STB
 Wire Wire Line
 	1600 2400 1350 2400
-Text Label 1550 3150 0    50   ~ 0
-TFT_TOUCH_SDA
-Wire Wire Line
-	1300 3700 1450 3700
-Text Label 1550 3700 0    50   ~ 0
+Text Label 1600 2800 0    50   ~ 0
 TFT_TOUCH_SCL
 Text Label 1600 2600 0    50   ~ 0
 TFT_TOUCH_INT
@@ -641,48 +637,14 @@ Wire Notes Line
 	2200 1250 550  1250
 Text Notes 650  1350 0    50   ~ 0
 LCD Interface
-Connection ~ 1450 3150
+Text Label 1600 2700 0    50   ~ 0
+TFT_TOUCH_SDA
 Wire Wire Line
-	1450 3150 1300 3150
+	1350 2700 1600 2700
 Wire Wire Line
-	1550 3150 1450 3150
-Text Label 1450 2750 0    50   ~ 0
-3v3
-Wire Wire Line
-	1450 2800 1450 2750
-$Comp
-L Device:R_Small R4
-U 1 1 5E833EF1
-P 1450 2900
-F 0 "R4" H 1509 2946 50  0000 L CNN
-F 1 "4.7k" H 1509 2855 50  0000 L CNN
-F 2 "" H 1450 2900 50  0001 C CNN
-F 3 "~" H 1450 2900 50  0001 C CNN
-	1    1450 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1450 3150 1450 3000
-Text Label 1450 3300 0    50   ~ 0
-3v3
-Wire Wire Line
-	1450 3350 1450 3300
-$Comp
-L Device:R_Small R5
-U 1 1 5E84B2E4
-P 1450 3450
-F 0 "R5" H 1509 3496 50  0000 L CNN
-F 1 "4.7k" H 1509 3405 50  0000 L CNN
-F 2 "" H 1450 3450 50  0001 C CNN
-F 3 "~" H 1450 3450 50  0001 C CNN
-	1    1450 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1450 3700 1450 3550
-Connection ~ 1450 3700
-Wire Wire Line
-	1450 3700 1550 3700
+	1350 2800 1600 2800
+Wire Notes Line
+	2200 3000 550  3000
 Wire Bus Line
 	9050 3650 9050 4750
 Wire Bus Line

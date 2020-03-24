@@ -49,12 +49,12 @@ $EndComp
 $Comp
 L Connector:Conn_ARM_JTAG_SWD_10 J2
 U 1 1 5EA1E350
-P 3600 5300
-F 0 "J2" H 3157 5346 50  0000 R CNN
-F 1 "Conn_ARM_JTAG_SWD_10" H 3157 5255 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 3600 5300 50  0001 C CNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 3250 4050 50  0001 C CNN
-	1    3600 5300
+P 4400 5700
+F 0 "J2" H 3957 5746 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 3957 5655 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 4400 5700 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 4050 4450 50  0001 C CNN
+	1    4400 5700
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -254,10 +254,6 @@ Text HLabel 1100 2850 0    50   Input ~ 0
 ~TFT_CS
 Text HLabel 1250 3000 0    50   Input ~ 0
 ~FLASH_MEM_CS
-Text HLabel 1300 3300 0    50   Input ~ 0
-MASTER_I2C_SDA
-Text HLabel 1300 3450 0    50   Input ~ 0
-MASTER_I2C_SCL
 Wire Wire Line
 	1350 2400 1550 2400
 Wire Wire Line
@@ -268,10 +264,6 @@ Wire Wire Line
 	1100 2850 1550 2850
 Wire Wire Line
 	1250 3000 1550 3000
-Wire Wire Line
-	1300 3300 1550 3300
-Wire Wire Line
-	1300 3450 1550 3450
 Text HLabel 1350 3150 0    50   Input ~ 0
 ~IO_EXPANDER_CS
 Wire Wire Line
@@ -291,10 +283,6 @@ Wire Notes Line
 Text Notes 650  1950 0    50   ~ 0
 Brain Interface
 Wire Notes Line
-	550  1850 550  3550
-Wire Notes Line
-	2350 3550 2350 1850
-Wire Notes Line
 	2350 1850 550  1850
 Text Label 1550 2400 0    50   ~ 0
 SPI0_MOSI
@@ -308,10 +296,6 @@ Text Label 1550 3000 0    50   ~ 0
 SPI0_CS1
 Text Label 1550 3150 0    50   ~ 0
 SPI0_CS2
-Text Label 1550 3300 0    50   ~ 0
-I2C0_SDA
-Text Label 1550 3450 0    50   ~ 0
-I2C0_SCL
 Text Label 7550 1250 0    50   ~ 0
 VBAT
 Wire Wire Line
@@ -334,8 +318,6 @@ Wire Wire Line
 	1100 3700 1550 3700
 Wire Wire Line
 	1100 3800 1550 3800
-Text Label 1550 3600 0    50   ~ 0
-~TFT_WR
 Text Label 1550 3700 0    50   ~ 0
 ~TFT_RD
 Text Label 1550 3800 0    50   ~ 0
@@ -346,14 +328,6 @@ Wire Wire Line
 	1100 3900 1550 3900
 Text Label 1550 3900 0    50   ~ 0
 ~TFT_RST
-Text HLabel 1050 4000 0    50   Input ~ 0
-TFT_TE
-Text HLabel 1050 4100 0    50   Input ~ 0
-TFT_INT
-Wire Wire Line
-	1050 4100 1550 4100
-Wire Wire Line
-	1050 4000 1550 4000
 Wire Wire Line
 	4250 1850 4350 1850
 Wire Wire Line
@@ -403,7 +377,7 @@ I2C0_SDA
 Text Label 4350 2950 0    50   ~ 0
 I2C0_SCL
 Text Notes 3200 2950 0    50   ~ 0
-SERCOM2 (I2C)
+SERCOM1 (I2C)
 Wire Notes Line
 	4050 2800 3200 2800
 Wire Notes Line
@@ -413,7 +387,7 @@ Wire Notes Line
 Wire Notes Line
 	4050 3000 4050 2800
 Wire Wire Line
-	4100 5000 4200 5000
+	4900 5400 5000 5400
 Text HLabel 1000 1250 0    50   Input ~ 0
 ~SYS_RST
 Wire Notes Line
@@ -427,34 +401,162 @@ Text Label 1250 1250 0    50   ~ 0
 Wire Wire Line
 	1000 1250 1250 1250
 Wire Wire Line
-	4100 5200 4200 5200
-Text Label 4200 5200 0    50   ~ 0
+	4900 5600 5000 5600
+Text Label 5000 5600 0    50   ~ 0
 SWCLK
 Wire Wire Line
-	4100 5300 4200 5300
-Text Label 4200 5300 0    50   ~ 0
+	4900 5700 5000 5700
+Text Label 5000 5700 0    50   ~ 0
 SWDIO
-Text Label 4200 5400 0    50   ~ 0
+Text Label 5000 5800 0    50   ~ 0
 SWO
 Wire Wire Line
-	4100 5400 4200 5400
+	4900 5800 5000 5800
 Wire Wire Line
-	3500 5900 3600 5900
-NoConn ~ 4100 5500
-Text Label 4200 5000 0    50   ~ 0
+	4300 6300 4400 6300
+NoConn ~ 4900 5900
+Text Label 5000 5400 0    50   ~ 0
 ~SWRST
 Wire Wire Line
-	3600 5900 3600 5950
-Connection ~ 3600 5900
+	4400 6300 4400 6350
+Connection ~ 4400 6300
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0119
 U 1 1 5EA9AF4B
-P 3600 5950
-F 0 "#PWR?" H 3600 5700 50  0001 C CNN
-F 1 "GND" H 3605 5777 50  0000 C CNN
-F 2 "" H 3600 5950 50  0001 C CNN
-F 3 "" H 3600 5950 50  0001 C CNN
-	1    3600 5950
+P 4400 6350
+F 0 "#PWR0119" H 4400 6100 50  0001 C CNN
+F 1 "GND" H 4405 6177 50  0000 C CNN
+F 2 "" H 4400 6350 50  0001 C CNN
+F 3 "" H 4400 6350 50  0001 C CNN
+	1    4400 6350
 	1    0    0    -1  
 $EndComp
+Text Label 1550 3600 0    50   ~ 0
+~TFT_WR
+Text Label 1900 5050 0    50   ~ 0
+I2C0_SCL
+Text Label 1900 4600 0    50   ~ 0
+I2C0_SDA
+Text HLabel 1300 5050 0    50   Input ~ 0
+MASTER_I2C_SCL
+Text HLabel 1300 4600 0    50   Input ~ 0
+MASTER_I2C_SDA
+$Comp
+L Device:R_Small R4
+U 1 1 5EB11658
+P 1450 4450
+F 0 "R4" H 1509 4496 50  0000 L CNN
+F 1 "4.7k" H 1509 4405 50  0000 L CNN
+F 2 "" H 1450 4450 50  0001 C CNN
+F 3 "~" H 1450 4450 50  0001 C CNN
+	1    1450 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 4350 1450 4300
+Text Label 1450 4300 0    50   ~ 0
+3v3
+$Comp
+L Device:R_Small R5
+U 1 1 5EB38D15
+P 1450 4900
+F 0 "R5" H 1509 4946 50  0000 L CNN
+F 1 "4.7k" H 1509 4855 50  0000 L CNN
+F 2 "" H 1450 4900 50  0001 C CNN
+F 3 "~" H 1450 4900 50  0001 C CNN
+	1    1450 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 5050 1450 5050
+Wire Wire Line
+	1300 4600 1450 4600
+Wire Wire Line
+	1450 4600 1450 4550
+Connection ~ 1450 4600
+Wire Wire Line
+	1450 4600 1900 4600
+Wire Wire Line
+	1450 5050 1450 5000
+Connection ~ 1450 5050
+Wire Wire Line
+	1450 4800 1450 4750
+Text Label 1450 4750 0    50   ~ 0
+3v3
+Wire Wire Line
+	1450 5050 1900 5050
+Text Label 850  7150 2    50   ~ 0
+~SWRST
+Wire Wire Line
+	850  7150 1250 7150
+Text Label 1250 7150 0    50   ~ 0
+~BRAIN_RST
+Text Notes 600  7000 0    50   ~ 0
+Locals
+Text HLabel 1050 5200 0    50   Input ~ 0
+EXT_IRQ_0
+Text HLabel 1050 5300 0    50   Input ~ 0
+EXT_IRQ_1
+Text HLabel 1050 5400 0    50   Input ~ 0
+EXT_IRQ_2
+Text HLabel 1050 5500 0    50   Input ~ 0
+EXT_IRQ_3
+Text HLabel 1050 5600 0    50   Input ~ 0
+EXT_IRQ_4
+Text HLabel 1050 5700 0    50   Input ~ 0
+EXT_IRQ_5
+Wire Wire Line
+	1050 5200 1300 5200
+Text Label 1300 5200 0    50   ~ 0
+EXT_IRQ_0
+Wire Wire Line
+	1050 5300 1300 5300
+Text Label 1300 5300 0    50   ~ 0
+EXT_IRQ_1
+Wire Wire Line
+	1050 5400 1300 5400
+Text Label 1300 5400 0    50   ~ 0
+EXT_IRQ_2
+Wire Wire Line
+	1050 5500 1300 5500
+Text Label 1300 5500 0    50   ~ 0
+EXT_IRQ_3
+Wire Wire Line
+	1050 5600 1300 5600
+Text Label 1300 5600 0    50   ~ 0
+EXT_IRQ_4
+Wire Wire Line
+	1050 5700 1300 5700
+Text Label 1300 5700 0    50   ~ 0
+EXT_IRQ_5
+Text Label 7700 950  0    50   ~ 0
+EXT_IRQ_0
+Wire Wire Line
+	7500 950  7700 950 
+Text Label 7700 1050 0    50   ~ 0
+EXT_IRQ_1
+Wire Wire Line
+	7500 1050 7700 1050
+Text Label 7700 1150 0    50   ~ 0
+EXT_IRQ_2
+Wire Wire Line
+	7500 1150 7700 1150
+Wire Wire Line
+	7500 1450 7700 1450
+Text Label 7700 1450 0    50   ~ 0
+EXT_IRQ_4
+Wire Wire Line
+	7500 1350 7700 1350
+Text Label 7700 1350 0    50   ~ 0
+EXT_IRQ_3
+Wire Wire Line
+	7500 1550 7700 1550
+Text Label 7700 1550 0    50   ~ 0
+EXT_IRQ_5
+Wire Notes Line
+	2350 5750 550  5750
+Wire Notes Line
+	550  1850 550  5750
+Wire Notes Line
+	2350 1850 2350 5750
 $EndSCHEMATC
