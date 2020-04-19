@@ -367,7 +367,7 @@ Wire Notes Line
 Wire Notes Line
 	4050 1900 4050 1600
 Text Notes 3200 1800 0    50   ~ 0
-SERCOM2 (SPI)
+SERCOM0 (SPI)
 Wire Wire Line
 	4250 2850 4350 2850
 Wire Wire Line
