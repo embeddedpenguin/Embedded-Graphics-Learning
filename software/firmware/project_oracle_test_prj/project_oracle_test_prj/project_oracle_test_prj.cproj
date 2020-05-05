@@ -457,6 +457,12 @@
     <Compile Include="Config\hpl_tc_config.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="Config\pc_board.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Config\pc_master.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Config\peripheral_clk_config.h">
       <SubType>compile</SubType>
     </Compile>
@@ -467,6 +473,30 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Device_Startup\system_same54.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="drivers\p_gpio.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="drivers\p_gpio.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="drivers\p_i2c.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="drivers\p_i2c.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="drivers\p_tcc.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="drivers\p_tcc.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="drivers\p_usart.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="drivers\p_usart.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="driver_init.c">
@@ -856,9 +886,16 @@
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="oracle.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="oracle.h">
+      <SubType>compile</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Config\" />
+    <Folder Include="devices\display\" />
     <Folder Include="Device_Startup\" />
     <Folder Include="examples\" />
     <Folder Include="hal\" />
@@ -883,6 +920,8 @@
     <Folder Include="hpl\sercom\" />
     <Folder Include="hpl\tc\" />
     <Folder Include="hri\" />
+    <Folder Include="drivers" />
+    <Folder Include="devices" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Device_Startup\same54p20a_flash.ld">
