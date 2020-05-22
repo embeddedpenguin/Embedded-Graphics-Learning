@@ -1,6 +1,9 @@
 #ifndef _P_USART_H_
 #define _P_USART_H_
 
+#include "oracle.h"
+
+extern struct usart_async_descriptor p_usart_debug_inst;
 
 void p_usart_init(void);
 

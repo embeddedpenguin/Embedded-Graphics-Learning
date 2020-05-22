@@ -11,6 +11,30 @@
 extern "C" {
 #endif
 
+/*----------------
+ *    SSD1963
+ *--------------*/
+#ifndef USE_SSD1963
+#  define USE_SSD1963         1
+#endif
+
+#if USE_SSD1963
+#  define SSD1963_HOR_RES     LV_HOR_RES
+#  define SSD1963_VER_RES     LV_VER_RES
+#  define SSD1963_HT          525			// horizontal total period
+#  define SSD1963_HPS         40			// non-display period between the start of the hori sync (LLINE) signal
+#  define SSD1963_LPS         5				// horizontal sync pulse (LLINE) start location
+#  define SSD1963_HPW         480			// horizontal pulse width
+#  define SSD1963_VT          288			// vertical total (period)
+#  define SSD1963_VPS         8			// vertical period start ( non-display period in lines between the start of the frame and the first display data in line.)
+#  define SSD1963_FPS         8				// vertical sync pulse (LFRAME) start location in lines
+#  define SSD1963_VPW         272			// vertical sync pulse width
+#  define SSD1963_HS_NEG      0   /*Negative hsync*/
+#  define SSD1963_VS_NEG      0   /*Negative vsync*/
+#  define SSD1963_ORI         0   /*0, 90, 180, 270*/
+#  define SSD1963_COLOR_DEPTH 16
+#endif
+
 #if USE_SSD1963
 
 #ifdef LV_LVGL_H_INCLUDE_SIMPLE
@@ -18,6 +42,8 @@ extern "C" {
 #else
 #include "lvgl/lvgl.h"
 #endif
+
+#include "oracle.h"
 
 /*********************
  *      DEFINES
