@@ -30,15 +30,15 @@
     <EraseKey />
     <AsfFrameworkConfig>
       <framework-data xmlns="">
-  <options />
-  <configurations />
-  <files />
-  <documentation help="" />
-  <offline-documentation help="" />
-  <dependencies>
-    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.47.0" />
-  </dependencies>
-</framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.47.0" />
+        </dependencies>
+      </framework-data>
     </AsfFrameworkConfig>
     <atStartFilePath>.atmelstart\atmel_start_config.atstart</atStartFilePath>
     <GpdscFilePath>.atmelstart\AtmelStart.gpdsc</GpdscFilePath>
@@ -418,15 +418,6 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="atmel_start.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="atmel_start.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="atmel_start_pins.h">
-      <SubType>compile</SubType>
-    </Compile>
     <Compile Include="Config\hpl_cmcc_config.h">
       <SubType>compile</SubType>
     </Compile>
@@ -469,6 +460,12 @@
     <Compile Include="Config\RTE_Components.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="devices\display\p_ssd1963.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="devices\display\p_ssd1963.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Device_Startup\startup_same54.c">
       <SubType>compile</SubType>
     </Compile>
@@ -497,15 +494,6 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="drivers\p_usart.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="driver_init.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="driver_init.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="examples\driver_examples.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="examples\driver_examples.h">

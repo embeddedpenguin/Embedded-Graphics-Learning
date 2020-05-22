@@ -8,5 +8,15 @@
 
 void oracle_init(void)
 {
+	// init mcu
 	
+	// uart init
+	
+	// i2c init
+	
+	// gpio init
+	
+	// time init
+	
+	// devices init
 }
