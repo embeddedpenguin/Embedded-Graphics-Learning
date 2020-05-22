@@ -20,3 +20,8 @@ void oracle_init(void)
 	
 	// devices init
 }
+
+void oracle_service(void)
+{
+	
+}

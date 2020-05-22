@@ -23,5 +23,6 @@ int p_qprint(const char* str, ...);
 
 int p_lprint(const char* str, ...);
 
+void oracle_init(void);
 
 #endif

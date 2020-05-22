@@ -20,10 +20,10 @@
     <OverrideVtor>false</OverrideVtor>
     <CacheFlash>true</CacheFlash>
     <ProgFlashFromRam>true</ProgFlashFromRam>
-    <RamSnippetAddress />
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
     <UncachedRange />
     <preserveEEPROM>true</preserveEEPROM>
-    <OverrideVtorValue />
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
     <BootSegment>2</BootSegment>
     <ResetRule>0</ResetRule>
     <eraseonlaunchrule>0</eraseonlaunchrule>
@@ -324,7 +324,6 @@
       <Value>%24(PackRepoDir)\arm\CMSIS\5.4.0\CMSIS\Core\Include\</Value>
       <Value>../Config</Value>
       <Value>../</Value>
-      <Value>../examples</Value>
       <Value>../hal/include</Value>
       <Value>../hal/utils/include</Value>
       <Value>../hpl/cmcc</Value>
@@ -342,6 +341,9 @@
       <Value>../hpl/tc</Value>
       <Value>../hri</Value>
       <Value>%24(PackRepoDir)\atmel\SAME54_DFP\1.1.134\include</Value>
+      <Value>../drivers</Value>
+      <Value>../devices</Value>
+      <Value>../devices/display</Value>
     </ListValues>
   </armgcc.compiler.directories.IncludePaths>
   <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
@@ -361,6 +363,7 @@
     </ListValues>
   </armgcc.linker.libraries.LibrarySearchPaths>
   <armgcc.linker.optimization.GarbageCollectUnusedSections>True</armgcc.linker.optimization.GarbageCollectUnusedSections>
+  <armgcc.linker.memorysettings.ExternalRAM />
   <armgcc.linker.miscellaneous.LinkerFlags>-Tsame54p20a_flash.ld</armgcc.linker.miscellaneous.LinkerFlags>
   <armgcc.assembler.general.IncludePaths>
     <ListValues>
@@ -494,9 +497,6 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="drivers\p_usart.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="examples\driver_examples.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="hal\include\hal_atomic.h">
@@ -885,7 +885,6 @@
     <Folder Include="Config\" />
     <Folder Include="devices\display\" />
     <Folder Include="Device_Startup\" />
-    <Folder Include="examples\" />
     <Folder Include="hal\" />
     <Folder Include="hal\documentation\" />
     <Folder Include="hal\include\" />

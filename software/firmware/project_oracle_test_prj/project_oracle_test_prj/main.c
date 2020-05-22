@@ -1,6 +1,7 @@
-#include <atmel_start.h>
+#include "oracle.h"
+
 
 int main(void)
 {
-	proj_init();
+	oracle_init();
 }
