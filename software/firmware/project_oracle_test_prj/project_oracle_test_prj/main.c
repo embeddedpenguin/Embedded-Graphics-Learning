@@ -4,4 +4,6 @@
 int main(void)
 {
 	oracle_init();
+	
+	
 }
