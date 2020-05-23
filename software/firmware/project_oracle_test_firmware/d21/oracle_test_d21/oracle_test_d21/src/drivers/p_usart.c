@@ -50,6 +50,7 @@ void p_printf(const char* str, ...)
 		return;
 	}
 	usart_write_buffer_wait(&p_debug_inst, pprint_buffer, strsize);
+	usart_read_job(&p_debug_inst, &rx_char);
 }
 
 void p_debug_start_service(void)

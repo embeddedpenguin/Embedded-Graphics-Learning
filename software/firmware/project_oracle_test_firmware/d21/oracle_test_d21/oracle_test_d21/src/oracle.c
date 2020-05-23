@@ -32,6 +32,7 @@ void oracle_init(void)
 	disp_drv.buffer = &disp_buf;          /*Assign the buffer to the display*/
 	lv_disp_drv_register(&disp_drv);      /*Finally register the driver*/
 	
+	p_debug_start_service();
 }
 
 void oracle_service(void)

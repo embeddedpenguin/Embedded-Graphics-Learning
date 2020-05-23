@@ -1967,14 +1967,10 @@ Discarded input sections
  .bss           0x00000000        0x0 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
  .text._usart_write_buffer
                 0x00000000       0x3c src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
- .text._usart_read_buffer
-                0x00000000       0x50 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
  .text.usart_unregister_callback
                 0x00000000       0x18 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
  .text.usart_write_job
                 0x00000000       0x1c src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
- .text.usart_read_job
-                0x00000000       0x10 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
  .text.usart_write_buffer_job
                 0x00000000       0x20 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
  .text.usart_read_buffer_job
@@ -17537,8 +17533,6 @@ Discarded input sections
  .text          0x00000000        0x0 src/drivers/p_usart.o
  .data          0x00000000        0x0 src/drivers/p_usart.o
  .bss           0x00000000        0x0 src/drivers/p_usart.o
- .text.p_debug_start_service
-                0x00000000       0x18 src/drivers/p_usart.o
  .bss.cpu_irq_critical_section_counter
                 0x00000000        0x4 src/drivers/p_usart.o
  .bss.cpu_irq_prev_interrupt_state
@@ -18230,7 +18224,7 @@ LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
                 0x00002000                STACK_SIZE = DEFINED (STACK_SIZE)?STACK_SIZE:DEFINED (__stack_size__)?__stack_size__:0x2000
 
-.text           0x00000000    0x1ca80
+.text           0x00000000    0x1cb10
                 0x00000000                . = ALIGN (0x4)
                 0x00000000                _sfixed = .
  *(.vectors .vectors.*)
@@ -18245,1252 +18239,1261 @@ LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin
                 0x00000144       0x24 src/drivers/p_time.o
                 0x00000144                SysTick_Handler
  .text.oracle_init
-                0x00000168       0x8c src/oracle.o
+                0x00000168       0x94 src/oracle.o
                 0x00000168                oracle_init
  .text.oracle_service
-                0x000001f4       0x40 src/oracle.o
-                0x000001f4                oracle_service
+                0x000001fc       0x40 src/oracle.o
+                0x000001fc                oracle_service
  .text.long_division
-                0x00000234       0xba src/ASF/sam0/drivers/sercom/sercom.o
+                0x0000023c       0xba src/ASF/sam0/drivers/sercom/sercom.o
  .text._sercom_get_sync_baud_val
-                0x000002ee       0x28 src/ASF/sam0/drivers/sercom/sercom.o
-                0x000002ee                _sercom_get_sync_baud_val
- *fill*         0x00000316        0x2 
+                0x000002f6       0x28 src/ASF/sam0/drivers/sercom/sercom.o
+                0x000002f6                _sercom_get_sync_baud_val
+ *fill*         0x0000031e        0x2 
  .text._sercom_get_async_baud_val
-                0x00000318       0x94 src/ASF/sam0/drivers/sercom/sercom.o
-                0x00000318                _sercom_get_async_baud_val
+                0x00000320       0x94 src/ASF/sam0/drivers/sercom/sercom.o
+                0x00000320                _sercom_get_async_baud_val
  .text.sercom_set_gclk_generator
-                0x000003ac       0x4c src/ASF/sam0/drivers/sercom/sercom.o
-                0x000003ac                sercom_set_gclk_generator
+                0x000003b4       0x4c src/ASF/sam0/drivers/sercom/sercom.o
+                0x000003b4                sercom_set_gclk_generator
  .text._sercom_get_default_pad
-                0x000003f8      0x178 src/ASF/sam0/drivers/sercom/sercom.o
-                0x000003f8                _sercom_get_default_pad
+                0x00000400      0x178 src/ASF/sam0/drivers/sercom/sercom.o
+                0x00000400                _sercom_get_default_pad
  .text._sercom_get_sercom_inst_index
-                0x00000570       0x38 src/ASF/sam0/drivers/sercom/sercom.o
-                0x00000570                _sercom_get_sercom_inst_index
+                0x00000578       0x38 src/ASF/sam0/drivers/sercom/sercom.o
+                0x00000578                _sercom_get_sercom_inst_index
  .text.usart_init
-                0x000005a8      0x33c src/ASF/sam0/drivers/sercom/usart/usart.o
-                0x000005a8                usart_init
+                0x000005b0      0x33c src/ASF/sam0/drivers/sercom/usart/usart.o
+                0x000005b0                usart_init
  .text.usart_write_wait
-                0x000008e4       0x26 src/ASF/sam0/drivers/sercom/usart/usart.o
-                0x000008e4                usart_write_wait
- *fill*         0x0000090a        0x2 
+                0x000008ec       0x26 src/ASF/sam0/drivers/sercom/usart/usart.o
+                0x000008ec                usart_write_wait
+ *fill*         0x00000912        0x2 
  .text.usart_write_buffer_wait
-                0x0000090c       0xbc src/ASF/sam0/drivers/sercom/usart/usart.o
-                0x0000090c                usart_write_buffer_wait
+                0x00000914       0xbc src/ASF/sam0/drivers/sercom/usart/usart.o
+                0x00000914                usart_write_buffer_wait
+ .text._usart_read_buffer
+                0x000009d0       0x50 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
+                0x000009d0                _usart_read_buffer
  .text.usart_register_callback
-                0x000009c8       0x18 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
-                0x000009c8                usart_register_callback
+                0x00000a20       0x18 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
+                0x00000a20                usart_register_callback
+ .text.usart_read_job
+                0x00000a38       0x10 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
+                0x00000a38                usart_read_job
  .text._usart_interrupt_handler
-                0x000009e0      0x194 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
-                0x000009e0                _usart_interrupt_handler
+                0x00000a48      0x194 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
+                0x00000a48                _usart_interrupt_handler
  .text._sercom_default_handler
-                0x00000b74        0x2 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
- *fill*         0x00000b76        0x2 
+                0x00000bdc        0x2 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
+ *fill*         0x00000bde        0x2 
  .text._sercom_set_handler
-                0x00000b78       0x3c src/ASF/sam0/drivers/sercom/sercom_interrupt.o
-                0x00000b78                _sercom_set_handler
+                0x00000be0       0x3c src/ASF/sam0/drivers/sercom/sercom_interrupt.o
+                0x00000be0                _sercom_set_handler
  .text._sercom_get_interrupt_vector
-                0x00000bb4       0x30 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
-                0x00000bb4                _sercom_get_interrupt_vector
+                0x00000c1c       0x30 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
+                0x00000c1c                _sercom_get_interrupt_vector
  .text.SERCOM0_Handler
-                0x00000be4       0x10 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
-                0x00000be4                SERCOM0_Handler
+                0x00000c4c       0x10 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
+                0x00000c4c                SERCOM0_Handler
  .text.SERCOM1_Handler
-                0x00000bf4       0x10 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
-                0x00000bf4                SERCOM1_Handler
+                0x00000c5c       0x10 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
+                0x00000c5c                SERCOM1_Handler
  .text.SERCOM2_Handler
-                0x00000c04       0x10 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
-                0x00000c04                SERCOM2_Handler
+                0x00000c6c       0x10 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
+                0x00000c6c                SERCOM2_Handler
  .text.SERCOM3_Handler
-                0x00000c14       0x10 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
-                0x00000c14                SERCOM3_Handler
+                0x00000c7c       0x10 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
+                0x00000c7c                SERCOM3_Handler
  .text.SERCOM4_Handler
-                0x00000c24       0x10 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
-                0x00000c24                SERCOM4_Handler
+                0x00000c8c       0x10 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
+                0x00000c8c                SERCOM4_Handler
  .text.SERCOM5_Handler
-                0x00000c34       0x10 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
-                0x00000c34                SERCOM5_Handler
+                0x00000c9c       0x10 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
+                0x00000c9c                SERCOM5_Handler
  .text.cpu_irq_enter_critical
-                0x00000c44       0x40 src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
-                0x00000c44                cpu_irq_enter_critical
+                0x00000cac       0x40 src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
+                0x00000cac                cpu_irq_enter_critical
  .text.cpu_irq_leave_critical
-                0x00000c84       0x30 src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
-                0x00000c84                cpu_irq_leave_critical
+                0x00000cec       0x30 src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
+                0x00000cec                cpu_irq_leave_critical
  .text.system_board_init
-                0x00000cb4       0x38 src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
-                0x00000cb4                board_init
-                0x00000cb4                system_board_init
+                0x00000d1c       0x38 src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
+                0x00000d1c                board_init
+                0x00000d1c                system_board_init
  .text.port_pin_set_config
-                0x00000cec       0x24 src/ASF/sam0/drivers/port/port.o
-                0x00000cec                port_pin_set_config
+                0x00000d54       0x24 src/ASF/sam0/drivers/port/port.o
+                0x00000d54                port_pin_set_config
  .text.port_group_set_config
-                0x00000d10       0x24 src/ASF/sam0/drivers/port/port.o
-                0x00000d10                port_group_set_config
+                0x00000d78       0x24 src/ASF/sam0/drivers/port/port.o
+                0x00000d78                port_group_set_config
  .text.system_clock_source_get_hz
-                0x00000d34       0x94 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
-                0x00000d34                system_clock_source_get_hz
+                0x00000d9c       0x94 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
+                0x00000d9c                system_clock_source_get_hz
  .text.system_clock_source_osc8m_set_config
-                0x00000dc8       0x3c src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
-                0x00000dc8                system_clock_source_osc8m_set_config
+                0x00000e30       0x3c src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
+                0x00000e30                system_clock_source_osc8m_set_config
  .text.system_clock_source_enable
-                0x00000e04       0xa8 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
-                0x00000e04                system_clock_source_enable
+                0x00000e6c       0xa8 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
+                0x00000e6c                system_clock_source_enable
  .text.system_clock_init
-                0x00000eac       0x98 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
-                0x00000eac                system_clock_init
+                0x00000f14       0x98 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
+                0x00000f14                system_clock_init
  .text.system_gclk_init
-                0x00000f44       0x24 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
-                0x00000f44                system_gclk_init
+                0x00000fac       0x24 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
+                0x00000fac                system_gclk_init
  .text.system_gclk_gen_set_config
-                0x00000f68       0xb8 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
-                0x00000f68                system_gclk_gen_set_config
+                0x00000fd0       0xb8 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
+                0x00000fd0                system_gclk_gen_set_config
  .text.system_gclk_gen_enable
-                0x00001020       0x44 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
-                0x00001020                system_gclk_gen_enable
+                0x00001088       0x44 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
+                0x00001088                system_gclk_gen_enable
  .text.system_gclk_gen_get_hz
-                0x00001064       0x8c src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
-                0x00001064                system_gclk_gen_get_hz
+                0x000010cc       0x8c src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
+                0x000010cc                system_gclk_gen_get_hz
  .text.system_gclk_chan_enable
-                0x000010f0       0x30 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
-                0x000010f0                system_gclk_chan_enable
+                0x00001158       0x30 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
+                0x00001158                system_gclk_chan_enable
  .text.system_gclk_chan_disable
-                0x00001120       0x5c src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
-                0x00001120                system_gclk_chan_disable
+                0x00001188       0x5c src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
+                0x00001188                system_gclk_chan_disable
  .text.system_gclk_chan_set_config
-                0x0000117c       0x1c src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
-                0x0000117c                system_gclk_chan_set_config
+                0x000011e4       0x1c src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
+                0x000011e4                system_gclk_chan_set_config
  .text.system_gclk_chan_get_hz
-                0x00001198       0x34 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
-                0x00001198                system_gclk_chan_get_hz
+                0x00001200       0x34 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
+                0x00001200                system_gclk_chan_get_hz
  .text._system_pinmux_config
-                0x000011cc       0xa8 src/ASF/sam0/drivers/system/pinmux/pinmux.o
+                0x00001234       0xa8 src/ASF/sam0/drivers/system/pinmux/pinmux.o
  .text.system_pinmux_pin_set_config
-                0x00001274       0x30 src/ASF/sam0/drivers/system/pinmux/pinmux.o
-                0x00001274                system_pinmux_pin_set_config
+                0x000012dc       0x30 src/ASF/sam0/drivers/system/pinmux/pinmux.o
+                0x000012dc                system_pinmux_pin_set_config
  .text.system_pinmux_group_set_config
-                0x000012a4       0x34 src/ASF/sam0/drivers/system/pinmux/pinmux.o
-                0x000012a4                system_pinmux_group_set_config
+                0x0000130c       0x34 src/ASF/sam0/drivers/system/pinmux/pinmux.o
+                0x0000130c                system_pinmux_group_set_config
  .text._system_dummy_init
-                0x000012d8        0x2 src/ASF/sam0/drivers/system/system.o
-                0x000012d8                _system_extint_init
-                0x000012d8                _system_events_init
-                0x000012d8                _system_dummy_init
-                0x000012d8                _system_divas_init
- *fill*         0x000012da        0x2 
+                0x00001340        0x2 src/ASF/sam0/drivers/system/system.o
+                0x00001340                _system_extint_init
+                0x00001340                _system_events_init
+                0x00001340                _system_dummy_init
+                0x00001340                _system_divas_init
+ *fill*         0x00001342        0x2 
  .text.system_init
-                0x000012dc       0x2c src/ASF/sam0/drivers/system/system.o
-                0x000012dc                system_init
+                0x00001344       0x2c src/ASF/sam0/drivers/system/system.o
+                0x00001344                system_init
  .text.Dummy_Handler
-                0x00001308        0x2 src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
-                0x00001308                DMAC_Handler
-                0x00001308                HardFault_Handler
-                0x00001308                AC_Handler
-                0x00001308                PendSV_Handler
-                0x00001308                NMI_Handler
-                0x00001308                TC7_Handler
-                0x00001308                ADC_Handler
-                0x00001308                TCC1_Handler
-                0x00001308                TCC0_Handler
-                0x00001308                RTC_Handler
-                0x00001308                EIC_Handler
-                0x00001308                TC6_Handler
-                0x00001308                WDT_Handler
-                0x00001308                TC4_Handler
-                0x00001308                USB_Handler
-                0x00001308                TC3_Handler
-                0x00001308                Dummy_Handler
-                0x00001308                PM_Handler
-                0x00001308                SVC_Handler
-                0x00001308                TCC2_Handler
-                0x00001308                EVSYS_Handler
-                0x00001308                I2S_Handler
-                0x00001308                NVMCTRL_Handler
-                0x00001308                DAC_Handler
-                0x00001308                PTC_Handler
-                0x00001308                TC5_Handler
-                0x00001308                SYSCTRL_Handler
- *fill*         0x0000130a        0x2 
+                0x00001370        0x2 src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
+                0x00001370                DMAC_Handler
+                0x00001370                HardFault_Handler
+                0x00001370                AC_Handler
+                0x00001370                PendSV_Handler
+                0x00001370                NMI_Handler
+                0x00001370                TC7_Handler
+                0x00001370                ADC_Handler
+                0x00001370                TCC1_Handler
+                0x00001370                TCC0_Handler
+                0x00001370                RTC_Handler
+                0x00001370                EIC_Handler
+                0x00001370                TC6_Handler
+                0x00001370                WDT_Handler
+                0x00001370                TC4_Handler
+                0x00001370                USB_Handler
+                0x00001370                TC3_Handler
+                0x00001370                Dummy_Handler
+                0x00001370                PM_Handler
+                0x00001370                SVC_Handler
+                0x00001370                TCC2_Handler
+                0x00001370                EVSYS_Handler
+                0x00001370                I2S_Handler
+                0x00001370                NVMCTRL_Handler
+                0x00001370                DAC_Handler
+                0x00001370                PTC_Handler
+                0x00001370                TC5_Handler
+                0x00001370                SYSCTRL_Handler
+ *fill*         0x00001372        0x2 
  .text.Reset_Handler
-                0x0000130c       0xe4 src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
-                0x0000130c                Reset_Handler
- .text._sbrk    0x000013f0       0x24 src/ASF/sam0/utils/syscalls/gcc/syscalls.o
-                0x000013f0                _sbrk
+                0x00001374       0xe4 src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
+                0x00001374                Reset_Handler
+ .text._sbrk    0x00001458       0x24 src/ASF/sam0/utils/syscalls/gcc/syscalls.o
+                0x00001458                _sbrk
  .text.lv_debug_check_null
-                0x00001414        0x8 src/ASF/thirdparty/lvgl/src/lv_core/lv_debug.o
-                0x00001414                lv_debug_check_null
+                0x0000147c        0x8 src/ASF/thirdparty/lvgl/src/lv_core/lv_debug.o
+                0x0000147c                lv_debug_check_null
  .text.lv_debug_log_error
-                0x0000141c       0x28 src/ASF/thirdparty/lvgl/src/lv_core/lv_debug.o
-                0x0000141c                lv_debug_log_error
+                0x00001484       0x28 src/ASF/thirdparty/lvgl/src/lv_core/lv_debug.o
+                0x00001484                lv_debug_log_error
  .text.lv_disp_get_scr_act
-                0x00001444       0x1c src/ASF/thirdparty/lvgl/src/lv_core/lv_disp.o
-                0x00001444                lv_disp_get_scr_act
+                0x000014ac       0x1c src/ASF/thirdparty/lvgl/src/lv_core/lv_disp.o
+                0x000014ac                lv_disp_get_scr_act
  .text.lv_disp_get_layer_top
-                0x00001460       0x1c src/ASF/thirdparty/lvgl/src/lv_core/lv_disp.o
-                0x00001460                lv_disp_get_layer_top
+                0x000014c8       0x1c src/ASF/thirdparty/lvgl/src/lv_core/lv_disp.o
+                0x000014c8                lv_disp_get_layer_top
  .text.lv_disp_get_layer_sys
-                0x0000147c       0x1c src/ASF/thirdparty/lvgl/src/lv_core/lv_disp.o
-                0x0000147c                lv_disp_get_layer_sys
+                0x000014e4       0x1c src/ASF/thirdparty/lvgl/src/lv_core/lv_disp.o
+                0x000014e4                lv_disp_get_layer_sys
  .text.obj_to_foreground
-                0x00001498       0x34 src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
+                0x00001500       0x34 src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
  .text.focus_next_core
-                0x000014cc       0xfc src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
+                0x00001534       0xfc src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
  .text._lv_group_init
-                0x000015c8       0x14 src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
-                0x000015c8                _lv_group_init
+                0x00001630       0x14 src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
+                0x00001630                _lv_group_init
  .text.lv_group_focus_next
-                0x000015dc       0x18 src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
-                0x000015dc                lv_group_focus_next
+                0x00001644       0x18 src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
+                0x00001644                lv_group_focus_next
  .text.lv_group_focus_prev
-                0x000015f4       0x18 src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
-                0x000015f4                lv_group_focus_prev
+                0x0000165c       0x18 src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
+                0x0000165c                lv_group_focus_prev
  .text.lv_group_refocus
-                0x0000160c       0x34 src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
+                0x00001674       0x34 src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
  .text.lv_group_add_obj
-                0x00001640       0x9c src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
-                0x00001640                lv_group_add_obj
+                0x000016a8       0x9c src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
+                0x000016a8                lv_group_add_obj
  .text.lv_group_get_focused
-                0x000016dc       0x16 src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
-                0x000016dc                lv_group_get_focused
+                0x00001744       0x16 src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
+                0x00001744                lv_group_get_focused
  .text.lv_group_get_editing
-                0x000016f2       0x10 src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
-                0x000016f2                lv_group_get_editing
- *fill*         0x00001702        0x2 
+                0x0000175a       0x10 src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
+                0x0000175a                lv_group_get_editing
+ *fill*         0x0000176a        0x2 
  .text.lv_indev_get_act
-                0x00001704        0xc src/ASF/thirdparty/lvgl/src/lv_core/lv_indev.o
-                0x00001704                lv_indev_get_act
+                0x0000176c        0xc src/ASF/thirdparty/lvgl/src/lv_core/lv_indev.o
+                0x0000176c                lv_indev_get_act
  .text.lv_indev_reset
-                0x00001710       0x80 src/ASF/thirdparty/lvgl/src/lv_core/lv_indev.o
-                0x00001710                lv_indev_reset
+                0x00001778       0x80 src/ASF/thirdparty/lvgl/src/lv_core/lv_indev.o
+                0x00001778                lv_indev_reset
  .text._lv_indev_init
-                0x00001790       0x10 src/ASF/thirdparty/lvgl/src/lv_core/lv_indev.o
-                0x00001790                _lv_indev_init
+                0x000017f8       0x10 src/ASF/thirdparty/lvgl/src/lv_core/lv_indev.o
+                0x000017f8                _lv_indev_init
  .text.refresh_children_position
-                0x000017a0       0x58 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
- .text.lv_init  0x000017f8       0xb4 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x000017f8                lv_init
+                0x00001808       0x58 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+ .text.lv_init  0x00001860       0xb4 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001860                lv_init
  .text.lv_obj_set_click
-                0x000018ac       0x38 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x000018ac                lv_obj_set_click
+                0x00001914       0x38 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001914                lv_obj_set_click
  .text.lv_event_send_func
-                0x000018e4       0xc4 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x000018e4                lv_event_send_func
+                0x0000194c       0xc4 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x0000194c                lv_event_send_func
  .text.lv_event_send
-                0x000019a8       0x44 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x000019a8                lv_event_send
+                0x00001a10       0x44 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001a10                lv_event_send
  .text.lv_signal_send
-                0x000019ec       0x18 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x000019ec                lv_signal_send
+                0x00001a54       0x18 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001a54                lv_signal_send
  .text.lv_obj_refresh_ext_draw_pad
-                0x00001a04       0x34 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00001a04                lv_obj_refresh_ext_draw_pad
+                0x00001a6c       0x34 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001a6c                lv_obj_refresh_ext_draw_pad
  .text.lv_obj_get_parent
-                0x00001a38       0x28 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00001a38                lv_obj_get_parent
+                0x00001aa0       0x28 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001aa0                lv_obj_get_parent
  .text.lv_obj_get_screen
-                0x00001a60       0x3c src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00001a60                lv_obj_get_screen
+                0x00001ac8       0x3c src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001ac8                lv_obj_get_screen
  .text.lv_obj_get_disp
-                0x00001a9c       0x8c src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00001a9c                lv_obj_get_disp
+                0x00001b04       0x8c src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001b04                lv_obj_get_disp
  .text.lv_obj_get_child
-                0x00001b28       0x44 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00001b28                lv_obj_get_child
+                0x00001b90       0x44 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001b90                lv_obj_get_child
  .text.lv_obj_get_coords
-                0x00001b6c       0x3c src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00001b6c                lv_obj_get_coords
+                0x00001bd4       0x3c src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001bd4                lv_obj_get_coords
  .text.lv_obj_get_x
-                0x00001ba8       0x44 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00001ba8                lv_obj_get_x
+                0x00001c10       0x44 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001c10                lv_obj_get_x
  .text.lv_obj_get_y
-                0x00001bec       0x44 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00001bec                lv_obj_get_y
+                0x00001c54       0x44 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001c54                lv_obj_get_y
  .text.lv_obj_get_width
-                0x00001c30       0x30 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00001c30                lv_obj_get_width
+                0x00001c98       0x30 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001c98                lv_obj_get_width
  .text.lv_obj_get_height
-                0x00001c60       0x30 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00001c60                lv_obj_get_height
+                0x00001cc8       0x30 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001cc8                lv_obj_get_height
  .text.lv_obj_get_style_list
-                0x00001c90       0x30 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00001c90                lv_obj_get_style_list
+                0x00001cf8       0x30 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001cf8                lv_obj_get_style_list
  .text.trans_del
-                0x00001cc0       0xac src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001d28       0xac src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
  .text.lv_obj_clean_style_list
-                0x00001d6c       0x2c src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00001d6c                lv_obj_clean_style_list
+                0x00001dd4       0x2c src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001dd4                lv_obj_clean_style_list
  .text.trans_anim_ready_cb
-                0x00001d98       0x84 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001e00       0x84 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
  .text.lv_obj_get_hidden
-                0x00001e1c       0x30 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00001e1c                lv_obj_get_hidden
+                0x00001e84       0x30 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001e84                lv_obj_get_hidden
  .text.lv_obj_invalidate_area
-                0x00001e4c       0xfc src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00001e4c                lv_obj_invalidate_area
+                0x00001eb4       0xfc src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001eb4                lv_obj_invalidate_area
  .text.lv_obj_invalidate
-                0x00001f48       0x68 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00001f48                lv_obj_invalidate
+                0x00001fb0       0x68 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00001fb0                lv_obj_invalidate
  .text.lv_obj_move_foreground
-                0x00001fb0       0x6c src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00001fb0                lv_obj_move_foreground
+                0x00002018       0x6c src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00002018                lv_obj_move_foreground
  .text.lv_obj_set_pos
-                0x0000201c       0xc4 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x0000201c                lv_obj_set_pos
+                0x00002084       0xc4 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00002084                lv_obj_set_pos
  .text.lv_obj_align
-                0x000020e0       0xd0 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x000020e0                lv_obj_align
+                0x00002148       0xd0 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00002148                lv_obj_align
  .text.lv_obj_align_origo
-                0x000021b0      0x2cc src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x000021b0                lv_obj_align_origo
+                0x00002218      0x2cc src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00002218                lv_obj_align_origo
  .text.lv_obj_realign
-                0x0000247c       0x68 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x0000247c                lv_obj_realign
+                0x000024e4       0x68 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x000024e4                lv_obj_realign
  .text.refresh_children_style
-                0x000024e4       0x40 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x0000254c       0x40 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
  .text.lv_obj_refresh_style
-                0x00002524       0xec src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00002524                lv_obj_refresh_style
+                0x0000258c       0xec src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x0000258c                lv_obj_refresh_style
  .text.lv_obj_reset_style_list
-                0x00002610       0x1c src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00002610                lv_obj_reset_style_list
+                0x00002678       0x1c src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00002678                lv_obj_reset_style_list
  .text.report_style_mod_core
-                0x0000262c       0xa0 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00002694       0xa0 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
  .text.lv_obj_report_style_mod
-                0x000026cc       0x64 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x000026cc                lv_obj_report_style_mod
+                0x00002734       0x64 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00002734                lv_obj_report_style_mod
  .text.trans_anim_cb
-                0x00002730      0x124 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00002798      0x124 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
  .text.lv_obj_get_base_dir
-                0x00002854       0x28 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00002854                lv_obj_get_base_dir
+                0x000028bc       0x28 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x000028bc                lv_obj_get_base_dir
  .text.lv_obj_create
-                0x0000287c      0x448 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x0000287c                lv_obj_create
+                0x000028e4      0x448 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x000028e4                lv_obj_create
  .text.lv_obj_is_protected
-                0x00002cc4       0x34 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00002cc4                lv_obj_is_protected
+                0x00002d2c       0x34 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00002d2c                lv_obj_is_protected
  .text.lv_obj_get_state
-                0x00002cf8       0x50 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00002cf8                lv_obj_get_state
+                0x00002d60       0x50 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00002d60                lv_obj_get_state
  .text._lv_obj_get_style_int
-                0x00002d48       0xc0 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00002d48                _lv_obj_get_style_int
+                0x00002db0       0xc0 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00002db0                _lv_obj_get_style_int
  .text._lv_obj_get_style_color
-                0x00002e08       0xa4 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00002e08                _lv_obj_get_style_color
+                0x00002e70       0xa4 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00002e70                _lv_obj_get_style_color
  .text._lv_obj_get_style_opa
-                0x00002eac       0xac src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00002eac                _lv_obj_get_style_opa
+                0x00002f14       0xac src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00002f14                _lv_obj_get_style_opa
  .text._lv_obj_get_style_ptr
-                0x00002f58       0xb8 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00002f58                _lv_obj_get_style_ptr
+                0x00002fc0       0xb8 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00002fc0                _lv_obj_get_style_ptr
  .text.trans_anim_start_cb
-                0x00003010       0x74 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00003078       0x74 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
  .text.lv_obj_set_state
-                0x00003084      0x494 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00003084                lv_obj_set_state
+                0x000030ec      0x494 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x000030ec                lv_obj_set_state
  .text.lv_obj_add_state
-                0x00003518       0x40 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00003518                lv_obj_add_state
+                0x00003580       0x40 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00003580                lv_obj_add_state
  .text.lv_obj_clear_state
-                0x00003558       0x40 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00003558                lv_obj_clear_state
- .text.lv_obj_get_group
-                0x00003598       0x28 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00003598                lv_obj_get_group
- .text.lv_obj_is_focused
                 0x000035c0       0x40 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x000035c0                lv_obj_is_focused
- .text.lv_obj_handle_get_type_signal
+                0x000035c0                lv_obj_clear_state
+ .text.lv_obj_get_group
                 0x00003600       0x28 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00003600                lv_obj_handle_get_type_signal
+                0x00003600                lv_obj_get_group
+ .text.lv_obj_is_focused
+                0x00003628       0x40 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00003628                lv_obj_is_focused
+ .text.lv_obj_handle_get_type_signal
+                0x00003668       0x28 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00003668                lv_obj_handle_get_type_signal
  .text.lv_obj_init_draw_rect_dsc
-                0x00003628      0x350 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00003628                lv_obj_init_draw_rect_dsc
+                0x00003690      0x350 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00003690                lv_obj_init_draw_rect_dsc
  .text.lv_obj_design
-                0x00003978      0x254 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x000039e0      0x254 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
  .text.lv_obj_get_draw_rect_ext_pad_size
-                0x00003bcc      0x20c src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
-                0x00003bcc                lv_obj_get_draw_rect_ext_pad_size
+                0x00003c34      0x20c src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00003c34                lv_obj_get_draw_rect_ext_pad_size
  .text.lv_obj_signal
-                0x00003dd8      0x118 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x00003e40      0x118 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
  .text.lv_refr_get_top_obj
-                0x00003ef0       0x9c src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
+                0x00003f58       0x9c src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
  .text.lv_refr_obj
-                0x00003f8c       0xf4 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
+                0x00003ff4       0xf4 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
  .text.lv_refr_obj_and_children
-                0x00004080       0x90 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
+                0x000040e8       0x90 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
  .text.lv_refr_vdb_flush
-                0x00004110       0x80 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
+                0x00004178       0x80 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
  .text.lv_refr_area_part
-                0x00004190       0xa4 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
+                0x000041f8       0xa4 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
  .text._lv_refr_init
-                0x00004234        0x2 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
-                0x00004234                _lv_refr_init
- *fill*         0x00004236        0x2 
+                0x0000429c        0x2 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
+                0x0000429c                _lv_refr_init
+ *fill*         0x0000429e        0x2 
  .text._lv_inv_area
-                0x00004238      0x110 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
-                0x00004238                _lv_inv_area
+                0x000042a0      0x110 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
+                0x000042a0                _lv_inv_area
  .text._lv_refr_get_disp_refreshing
-                0x00004348        0xc src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
-                0x00004348                _lv_refr_get_disp_refreshing
+                0x000043b0        0xc src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
+                0x000043b0                _lv_refr_get_disp_refreshing
  .text._lv_disp_refr_task
-                0x00004354      0x590 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
-                0x00004354                _lv_disp_refr_task
+                0x000043bc      0x590 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
+                0x000043bc                _lv_disp_refr_task
  .text.lv_style_init
-                0x000048e4       0x10 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x000048e4                lv_style_init
+                0x0000494c       0x10 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x0000494c                lv_style_init
  .text.lv_style_list_init
-                0x000048f4       0x10 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x000048f4                lv_style_list_init
+                0x0000495c       0x10 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x0000495c                lv_style_list_init
  .text._lv_style_list_remove_style
-                0x00004904       0xb0 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x00004904                _lv_style_list_remove_style
+                0x0000496c       0xb0 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x0000496c                _lv_style_list_remove_style
  .text._lv_style_list_add_style
-                0x000049b4       0xa8 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x000049b4                _lv_style_list_add_style
+                0x00004a1c       0xa8 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x00004a1c                _lv_style_list_add_style
  .text.get_alloc_local_style
-                0x00004a5c       0x84 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x00004ac4       0x84 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
  .text.lv_style_reset
-                0x00004ae0       0x14 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x00004ae0                lv_style_reset
+                0x00004b48       0x14 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x00004b48                lv_style_reset
  .text._lv_style_get_mem_size
-                0x00004af4       0x40 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x00004af4                _lv_style_get_mem_size
+                0x00004b5c       0x40 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x00004b5c                _lv_style_get_mem_size
  .text.lv_style_copy
-                0x00004b34       0x34 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x00004b34                lv_style_copy
+                0x00004b9c       0x34 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x00004b9c                lv_style_copy
  .text.lv_style_remove_prop
-                0x00004b68      0x124 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x00004b68                lv_style_remove_prop
+                0x00004bd0      0x124 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x00004bd0                lv_style_remove_prop
  .text._lv_style_set_int
-                0x00004c8c      0x160 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x00004c8c                _lv_style_set_int
+                0x00004cf4      0x160 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x00004cf4                _lv_style_set_int
  .text._lv_style_set_color
-                0x00004dec      0x160 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x00004dec                _lv_style_set_color
+                0x00004e54      0x160 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x00004e54                _lv_style_set_color
  .text._lv_style_set_opa
-                0x00004f4c      0x154 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x00004f4c                _lv_style_set_opa
+                0x00004fb4      0x154 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x00004fb4                _lv_style_set_opa
  .text._lv_style_set_ptr
-                0x000050a0      0x17c src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x000050a0                _lv_style_set_ptr
+                0x00005108      0x17c src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x00005108                _lv_style_set_ptr
  .text._lv_style_get_int
-                0x0000521c       0xe0 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x0000521c                _lv_style_get_int
+                0x00005284       0xe0 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x00005284                _lv_style_get_int
  .text._lv_style_get_opa
-                0x000052fc       0xda src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x000052fc                _lv_style_get_opa
+                0x00005364       0xda src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x00005364                _lv_style_get_opa
  .text._lv_style_get_color
-                0x000053d6       0xe0 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x000053d6                _lv_style_get_color
+                0x0000543e       0xe0 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x0000543e                _lv_style_get_color
  .text._lv_style_get_ptr
-                0x000054b6       0xe8 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x000054b6                _lv_style_get_ptr
+                0x0000551e       0xe8 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x0000551e                _lv_style_get_ptr
  .text.lv_style_list_get_local_style
-                0x0000559e       0x1a src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x0000559e                lv_style_list_get_local_style
+                0x00005606       0x1a src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x00005606                lv_style_list_get_local_style
  .text._lv_style_list_get_transition_style
-                0x000055b8       0x10 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x000055b8                _lv_style_list_get_transition_style
+                0x00005620       0x10 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x00005620                _lv_style_list_get_transition_style
  .text._lv_style_list_reset
-                0x000055c8       0x70 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x000055c8                _lv_style_list_reset
+                0x00005630       0x70 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x00005630                _lv_style_list_reset
  .text.lv_style_list_copy
-                0x00005638       0xc8 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x00005638                lv_style_list_copy
+                0x000056a0       0xc8 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x000056a0                lv_style_list_copy
  .text._lv_style_list_add_trans_style
-                0x00005700       0x78 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x00005700                _lv_style_list_add_trans_style
+                0x00005768       0x78 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x00005768                _lv_style_list_add_trans_style
  .text._lv_style_list_get_int
-                0x00005778       0xd4 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x00005778                _lv_style_list_get_int
+                0x000057e0       0xd4 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x000057e0                _lv_style_list_get_int
  .text._lv_style_list_get_color
-                0x0000584c       0xcc src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x0000584c                _lv_style_list_get_color
+                0x000058b4       0xcc src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x000058b4                _lv_style_list_get_color
  .text._lv_style_list_get_opa
-                0x00005918       0xd4 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x00005918                _lv_style_list_get_opa
+                0x00005980       0xd4 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x00005980                _lv_style_list_get_opa
  .text._lv_style_list_get_ptr
-                0x000059ec       0xbc src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
-                0x000059ec                _lv_style_list_get_ptr
+                0x00005a54       0xbc src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x00005a54                _lv_style_list_get_ptr
  .text.color_blend_true_color_additive
-                0x00005aa8       0xa6 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_blend.o
+                0x00005b10       0xa6 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_blend.o
  .text.color_blend_true_color_subtractive
-                0x00005b4e       0xb6 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_blend.o
+                0x00005bb6       0xb6 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_blend.o
  .text._lv_blend_fill
-                0x00005c04      0xce4 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_blend.o
-                0x00005c04                _lv_blend_fill
+                0x00005c6c      0xce4 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_blend.o
+                0x00005c6c                _lv_blend_fill
  .text._lv_blend_map
-                0x000068e8      0xc64 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_blend.o
-                0x000068e8                _lv_blend_map
+                0x00006950      0xc64 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_blend.o
+                0x00006950                _lv_blend_map
  .text.lv_draw_map
-                0x0000754c      0x8a8 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
+                0x000075b4      0x8a8 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
  .text.show_error
-                0x00007df4       0x50 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
+                0x00007e5c       0x50 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
  .text.lv_draw_img_dsc_init
-                0x00007e44       0x38 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
-                0x00007e44                lv_draw_img_dsc_init
+                0x00007eac       0x38 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
+                0x00007eac                lv_draw_img_dsc_init
  .text.lv_img_cf_get_px_size
-                0x00007e7c       0x30 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
-                0x00007e7c                lv_img_cf_get_px_size
+                0x00007ee4       0x30 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
+                0x00007ee4                lv_img_cf_get_px_size
  .text.lv_img_cf_is_chroma_keyed
-                0x00007eac       0x14 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
-                0x00007eac                lv_img_cf_is_chroma_keyed
+                0x00007f14       0x14 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
+                0x00007f14                lv_img_cf_is_chroma_keyed
  .text.lv_img_cf_has_alpha
-                0x00007ec0       0x18 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
-                0x00007ec0                lv_img_cf_has_alpha
+                0x00007f28       0x18 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
+                0x00007f28                lv_img_cf_has_alpha
  .text.lv_draw_img
-                0x00007ed8      0x220 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
-                0x00007ed8                lv_draw_img
+                0x00007f40      0x220 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
+                0x00007f40                lv_draw_img
  .text.lv_img_src_get_type
-                0x000080f8       0x1a src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
-                0x000080f8                lv_img_src_get_type
- *fill*         0x00008112        0x2 
+                0x00008160       0x1a src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
+                0x00008160                lv_img_src_get_type
+ *fill*         0x0000817a        0x2 
  .text.hex_char_to_num
-                0x00008114       0x48 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
+                0x0000817c       0x48 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
  .text.lv_draw_label_dsc_init
-                0x0000815c       0x50 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
-                0x0000815c                lv_draw_label_dsc_init
+                0x000081c4       0x50 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
+                0x000081c4                lv_draw_label_dsc_init
  .text.lv_draw_label
-                0x000081ac      0xeec src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
-                0x000081ac                lv_draw_label
+                0x00008214      0xeec src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
+                0x00008214                lv_draw_label
  .text.lv_draw_line_dsc_init
-                0x00009098       0x30 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_line.o
-                0x00009098                lv_draw_line_dsc_init
+                0x00009100       0x30 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_line.o
+                0x00009100                lv_draw_line_dsc_init
  .text.lv_draw_line
-                0x000090c8      0x95c src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_line.o
-                0x000090c8                lv_draw_line
+                0x00009130      0x95c src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_line.o
+                0x00009130                lv_draw_line
  .text.lv_draw_mask_line
-                0x00009a24      0x51c src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
+                0x00009a8c      0x51c src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
  .text.lv_draw_mask_radius
-                0x00009f40      0x644 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
+                0x00009fa8      0x644 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
  .text.lv_draw_mask_add
-                0x0000a584       0x38 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
-                0x0000a584                lv_draw_mask_add
+                0x0000a5ec       0x38 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
+                0x0000a5ec                lv_draw_mask_add
  .text.lv_draw_mask_apply
-                0x0000a5bc       0x54 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
-                0x0000a5bc                lv_draw_mask_apply
+                0x0000a624       0x54 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
+                0x0000a624                lv_draw_mask_apply
  .text.lv_draw_mask_remove_id
-                0x0000a610       0x1c src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
-                0x0000a610                lv_draw_mask_remove_id
+                0x0000a678       0x1c src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
+                0x0000a678                lv_draw_mask_remove_id
  .text.lv_draw_mask_remove_custom
-                0x0000a62c       0x2c src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
-                0x0000a62c                lv_draw_mask_remove_custom
+                0x0000a694       0x2c src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
+                0x0000a694                lv_draw_mask_remove_custom
  .text.lv_draw_mask_get_cnt
-                0x0000a658       0x24 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
-                0x0000a658                lv_draw_mask_get_cnt
+                0x0000a6c0       0x24 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
+                0x0000a6c0                lv_draw_mask_get_cnt
  .text.lv_draw_mask_line_points_init
-                0x0000a67c      0x170 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
-                0x0000a67c                lv_draw_mask_line_points_init
+                0x0000a6e4      0x170 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
+                0x0000a6e4                lv_draw_mask_line_points_init
  .text.lv_draw_mask_radius_init
-                0x0000a7ec       0x68 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
-                0x0000a7ec                lv_draw_mask_radius_init
+                0x0000a854       0x68 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
+                0x0000a854                lv_draw_mask_radius_init
  .text.shadow_blur_corner
-                0x0000a854      0x264 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_rect.o
+                0x0000a8bc      0x264 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_rect.o
  .text.lv_draw_rect_dsc_init
-                0x0000aab8       0xa4 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_rect.o
-                0x0000aab8                lv_draw_rect_dsc_init
+                0x0000ab20       0xa4 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_rect.o
+                0x0000ab20                lv_draw_rect_dsc_init
  .text.lv_draw_rect
-                0x0000ab5c     0x2528 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_rect.o
-                0x0000ab5c                lv_draw_rect
+                0x0000abc4     0x2528 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_rect.o
+                0x0000abc4                lv_draw_rect
  .text.lv_img_buf_get_px_color
-                0x0000d084      0x120 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
-                0x0000d084                lv_img_buf_get_px_color
+                0x0000d0ec      0x120 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
+                0x0000d0ec                lv_img_buf_get_px_color
  .text.lv_img_buf_get_px_alpha
-                0x0000d1a4      0x104 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
-                0x0000d1a4                lv_img_buf_get_px_alpha
+                0x0000d20c      0x104 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
+                0x0000d20c                lv_img_buf_get_px_alpha
  .text._lv_img_buf_transform_init
-                0x0000d2a8      0x134 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
-                0x0000d2a8                _lv_img_buf_transform_init
+                0x0000d310      0x134 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
+                0x0000d310                _lv_img_buf_transform_init
  .text._lv_img_buf_get_transformed_area
-                0x0000d3dc      0x1d0 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
-                0x0000d3dc                _lv_img_buf_get_transformed_area
+                0x0000d444      0x1d0 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
+                0x0000d444                _lv_img_buf_get_transformed_area
  .text._lv_img_buf_transform_anti_alias
-                0x0000d5ac      0x454 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
-                0x0000d5ac                _lv_img_buf_transform_anti_alias
+                0x0000d614      0x454 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
+                0x0000d614                _lv_img_buf_transform_anti_alias
  .text._lv_img_cache_open
-                0x0000da00      0x180 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_cache.o
-                0x0000da00                _lv_img_cache_open
+                0x0000da68      0x180 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_cache.o
+                0x0000da68                _lv_img_cache_open
  .text.lv_img_cache_invalidate_src
-                0x0000db80       0x70 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_cache.o
-                0x0000db80                lv_img_cache_invalidate_src
+                0x0000dbe8       0x70 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_cache.o
+                0x0000dbe8                lv_img_cache_invalidate_src
  .text.lv_img_cache_set_size
-                0x0000dbf0       0xb0 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_cache.o
-                0x0000dbf0                lv_img_cache_set_size
+                0x0000dc58       0xb0 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_cache.o
+                0x0000dc58                lv_img_cache_set_size
  .text.lv_img_decoder_built_in_info
-                0x0000dca0       0xe0 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
-                0x0000dca0                lv_img_decoder_built_in_info
+                0x0000dd08       0xe0 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
+                0x0000dd08                lv_img_decoder_built_in_info
  .text.lv_img_decoder_built_in_close
-                0x0000dd80       0x44 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
-                0x0000dd80                lv_img_decoder_built_in_close
+                0x0000dde8       0x44 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
+                0x0000dde8                lv_img_decoder_built_in_close
  .text.lv_img_decoder_built_in_open
-                0x0000ddc4      0x304 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
-                0x0000ddc4                lv_img_decoder_built_in_open
+                0x0000de2c      0x304 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
+                0x0000de2c                lv_img_decoder_built_in_open
  .text.lv_img_decoder_built_in_read_line
-                0x0000e0c8      0x418 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
-                0x0000e0c8                lv_img_decoder_built_in_read_line
+                0x0000e130      0x418 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
+                0x0000e130                lv_img_decoder_built_in_read_line
  .text.lv_img_decoder_get_info
-                0x0000e4e0       0x54 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
-                0x0000e4e0                lv_img_decoder_get_info
+                0x0000e548       0x54 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
+                0x0000e548                lv_img_decoder_get_info
  .text.lv_img_decoder_open
-                0x0000e534       0xc4 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
-                0x0000e534                lv_img_decoder_open
+                0x0000e59c       0xc4 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
+                0x0000e59c                lv_img_decoder_open
  .text.lv_img_decoder_read_line
-                0x0000e5f8       0x24 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
-                0x0000e5f8                lv_img_decoder_read_line
+                0x0000e660       0x24 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
+                0x0000e660                lv_img_decoder_read_line
  .text.lv_img_decoder_close
-                0x0000e61c       0x2c src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
-                0x0000e61c                lv_img_decoder_close
+                0x0000e684       0x2c src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
+                0x0000e684                lv_img_decoder_close
  .text.lv_img_decoder_create
-                0x0000e648       0x48 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
-                0x0000e648                lv_img_decoder_create
+                0x0000e6b0       0x48 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
+                0x0000e6b0                lv_img_decoder_create
  .text._lv_img_decoder_init
-                0x0000e690       0x60 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
-                0x0000e690                _lv_img_decoder_init
+                0x0000e6f8       0x60 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
+                0x0000e6f8                _lv_img_decoder_init
  .text.lv_font_get_glyph_bitmap
-                0x0000e6f0        0x8 src/ASF/thirdparty/lvgl/src/lv_font/lv_font.o
-                0x0000e6f0                lv_font_get_glyph_bitmap
+                0x0000e758        0x8 src/ASF/thirdparty/lvgl/src/lv_font/lv_font.o
+                0x0000e758                lv_font_get_glyph_bitmap
  .text.lv_font_get_glyph_dsc
-                0x0000e6f8        0x8 src/ASF/thirdparty/lvgl/src/lv_font/lv_font.o
-                0x0000e6f8                lv_font_get_glyph_dsc
+                0x0000e760        0x8 src/ASF/thirdparty/lvgl/src/lv_font/lv_font.o
+                0x0000e760                lv_font_get_glyph_dsc
  .text.lv_font_get_glyph_width
-                0x0000e700       0x24 src/ASF/thirdparty/lvgl/src/lv_font/lv_font.o
-                0x0000e700                lv_font_get_glyph_width
+                0x0000e768       0x24 src/ASF/thirdparty/lvgl/src/lv_font/lv_font.o
+                0x0000e768                lv_font_get_glyph_width
  .text.kern_pair_8_compare
-                0x0000e724       0x14 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
+                0x0000e78c       0x14 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
  .text.kern_pair_16_compare
-                0x0000e738       0x14 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
+                0x0000e7a0       0x14 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
  .text.unicode_list_compare
-                0x0000e74c        0x8 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
+                0x0000e7b4        0x8 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
  .text.get_glyph_dsc_id
-                0x0000e754       0xf4 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
+                0x0000e7bc       0xf4 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
  .text.lv_font_get_bitmap_fmt_txt
-                0x0000e848      0xa0c src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
-                0x0000e848                lv_font_get_bitmap_fmt_txt
+                0x0000e8b0      0xa0c src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
+                0x0000e8b0                lv_font_get_bitmap_fmt_txt
  .text.lv_font_get_glyph_dsc_fmt_txt
-                0x0000f254      0x180 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
-                0x0000f254                lv_font_get_glyph_dsc_fmt_txt
+                0x0000f2bc      0x180 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
+                0x0000f2bc                lv_font_get_glyph_dsc_fmt_txt
  .text._lv_font_clean_up_fmt_txt
-                0x0000f3d4       0x20 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
-                0x0000f3d4                _lv_font_clean_up_fmt_txt
+                0x0000f43c       0x20 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
+                0x0000f43c                _lv_font_clean_up_fmt_txt
  .text.lv_disp_drv_init
-                0x0000f3f4       0x64 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
-                0x0000f3f4                lv_disp_drv_init
+                0x0000f45c       0x64 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
+                0x0000f45c                lv_disp_drv_init
  .text.lv_disp_buf_init
-                0x0000f458       0x20 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
-                0x0000f458                lv_disp_buf_init
+                0x0000f4c0       0x20 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
+                0x0000f4c0                lv_disp_buf_init
  .text.lv_disp_drv_register
-                0x0000f478      0x128 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
-                0x0000f478                lv_disp_drv_register
+                0x0000f4e0      0x128 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
+                0x0000f4e0                lv_disp_drv_register
  .text.lv_disp_get_default
-                0x0000f5a0        0xc src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
-                0x0000f5a0                lv_disp_get_default
+                0x0000f608        0xc src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
+                0x0000f608                lv_disp_get_default
  .text.lv_disp_get_hor_res
-                0x0000f5ac       0x28 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
-                0x0000f5ac                lv_disp_get_hor_res
+                0x0000f614       0x28 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
+                0x0000f614                lv_disp_get_hor_res
  .text.lv_disp_get_ver_res
-                0x0000f5d4       0x28 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
-                0x0000f5d4                lv_disp_get_ver_res
+                0x0000f63c       0x28 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
+                0x0000f63c                lv_disp_get_ver_res
  .text.lv_disp_get_dpi
-                0x0000f5fc       0x1c src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
-                0x0000f5fc                lv_disp_get_dpi
+                0x0000f664       0x1c src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
+                0x0000f664                lv_disp_get_dpi
  .text.lv_disp_get_size_category
-                0x0000f618       0x58 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
-                0x0000f618                lv_disp_get_size_category
+                0x0000f680       0x58 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
+                0x0000f680                lv_disp_get_size_category
  .text.lv_disp_flush_ready
-                0x0000f670        0xc src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
-                0x0000f670                lv_disp_flush_ready
+                0x0000f6d8        0xc src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
+                0x0000f6d8                lv_disp_flush_ready
  .text.lv_disp_get_next
-                0x0000f67c       0x24 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
-                0x0000f67c                lv_disp_get_next
+                0x0000f6e4       0x24 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
+                0x0000f6e4                lv_disp_get_next
  .text.lv_disp_get_buf
-                0x0000f6a0        0x4 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
-                0x0000f6a0                lv_disp_get_buf
+                0x0000f708        0x4 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
+                0x0000f708                lv_disp_get_buf
  .text.lv_disp_is_double_buf
-                0x0000f6a4       0x16 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
-                0x0000f6a4                lv_disp_is_double_buf
- *fill*         0x0000f6ba        0x2 
+                0x0000f70c       0x16 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
+                0x0000f70c                lv_disp_is_double_buf
+ *fill*         0x0000f722        0x2 
  .text.lv_disp_is_true_double_buf
-                0x0000f6bc       0x28 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
-                0x0000f6bc                lv_disp_is_true_double_buf
+                0x0000f724       0x28 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
+                0x0000f724                lv_disp_is_true_double_buf
  .text.lv_indev_get_next
-                0x0000f6e4       0x24 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_indev.o
-                0x0000f6e4                lv_indev_get_next
+                0x0000f74c       0x24 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_indev.o
+                0x0000f74c                lv_indev_get_next
  .text.lv_tick_inc
-                0x0000f708       0x1c src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_tick.o
-                0x0000f708                lv_tick_inc
+                0x0000f770       0x1c src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_tick.o
+                0x0000f770                lv_tick_inc
  .text.lv_tick_get
-                0x0000f724       0x1c src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_tick.o
-                0x0000f724                lv_tick_get
+                0x0000f78c       0x1c src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_tick.o
+                0x0000f78c                lv_tick_get
  .text.lv_tick_elaps
-                0x0000f740       0x10 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_tick.o
-                0x0000f740                lv_tick_elaps
+                0x0000f7a8       0x10 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_tick.o
+                0x0000f7a8                lv_tick_elaps
  .text.lv_anim_path_linear
-                0x0000f750       0x2c src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
-                0x0000f750                lv_anim_path_linear
+                0x0000f7b8       0x2c src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
+                0x0000f7b8                lv_anim_path_linear
  .text.anim_mark_list_change
-                0x0000f77c       0x40 src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
+                0x0000f7e4       0x40 src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
  .text.anim_task
-                0x0000f7bc      0x1d4 src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
+                0x0000f824      0x1d4 src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
  .text._lv_anim_core_init
-                0x0000f990       0x54 src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
-                0x0000f990                _lv_anim_core_init
+                0x0000f9f8       0x54 src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
+                0x0000f9f8                _lv_anim_core_init
  .text.lv_anim_init
-                0x0000f9e4       0x44 src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
-                0x0000f9e4                lv_anim_init
+                0x0000fa4c       0x44 src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
+                0x0000fa4c                lv_anim_init
  .text.lv_anim_del
-                0x0000fa28       0x7c src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
-                0x0000fa28                lv_anim_del
+                0x0000fa90       0x7c src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
+                0x0000fa90                lv_anim_del
  .text.lv_anim_start
-                0x0000faa4       0xa0 src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
-                0x0000faa4                lv_anim_start
+                0x0000fb0c       0xa0 src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
+                0x0000fb0c                lv_anim_start
  .text.lv_point_within_circle
-                0x0000fb44       0x3c src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
+                0x0000fbac       0x3c src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
  .text.lv_area_set_height
-                0x0000fb80        0xa src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
-                0x0000fb80                lv_area_set_height
+                0x0000fbe8        0xa src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
+                0x0000fbe8                lv_area_set_height
  .text.lv_area_get_size
-                0x0000fb8a       0x1c src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
-                0x0000fb8a                lv_area_get_size
+                0x0000fbf2       0x1c src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
+                0x0000fbf2                lv_area_get_size
  .text._lv_area_intersect
-                0x0000fba6       0x6e src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
-                0x0000fba6                _lv_area_intersect
+                0x0000fc0e       0x6e src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
+                0x0000fc0e                _lv_area_intersect
  .text._lv_area_join
-                0x0000fc14       0x4c src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
-                0x0000fc14                _lv_area_join
+                0x0000fc7c       0x4c src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
+                0x0000fc7c                _lv_area_join
  .text._lv_area_is_point_on
-                0x0000fc60      0x190 src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
-                0x0000fc60                _lv_area_is_point_on
+                0x0000fcc8      0x190 src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
+                0x0000fcc8                _lv_area_is_point_on
  .text._lv_area_is_on
-                0x0000fdf0       0x42 src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
-                0x0000fdf0                _lv_area_is_on
- *fill*         0x0000fe32        0x2 
+                0x0000fe58       0x42 src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
+                0x0000fe58                _lv_area_is_on
+ *fill*         0x0000fe9a        0x2 
  .text._lv_area_is_in
-                0x0000fe34       0xa4 src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
-                0x0000fe34                _lv_area_is_in
+                0x0000fe9c       0xa4 src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
+                0x0000fe9c                _lv_area_is_in
  .text._lv_area_align
-                0x0000fed8      0x2f4 src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
-                0x0000fed8                _lv_area_align
+                0x0000ff40      0x2f4 src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
+                0x0000ff40                _lv_area_align
  .text.lv_color_fill
-                0x000101cc       0x54 src/ASF/thirdparty/lvgl/src/lv_misc/lv_color.o
-                0x000101cc                lv_color_fill
+                0x00010234       0x54 src/ASF/thirdparty/lvgl/src/lv_misc/lv_color.o
+                0x00010234                lv_color_fill
  .text.lv_color_lighten
-                0x00010220       0x54 src/ASF/thirdparty/lvgl/src/lv_misc/lv_color.o
-                0x00010220                lv_color_lighten
+                0x00010288       0x54 src/ASF/thirdparty/lvgl/src/lv_misc/lv_color.o
+                0x00010288                lv_color_lighten
  .text.lv_color_darken
-                0x00010274       0x4a src/ASF/thirdparty/lvgl/src/lv_misc/lv_color.o
-                0x00010274                lv_color_darken
+                0x000102dc       0x4a src/ASF/thirdparty/lvgl/src/lv_misc/lv_color.o
+                0x000102dc                lv_color_darken
  .text.lv_fs_get_real_path
-                0x000102be       0x22 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
+                0x00010326       0x22 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
  .text._lv_fs_init
-                0x000102e0       0x14 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
-                0x000102e0                _lv_fs_init
+                0x00010348       0x14 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
+                0x00010348                _lv_fs_init
  .text.lv_fs_close
-                0x000102f4       0x30 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
-                0x000102f4                lv_fs_close
+                0x0001035c       0x30 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
+                0x0001035c                lv_fs_close
  .text.lv_fs_read
-                0x00010324       0x42 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
-                0x00010324                lv_fs_read
+                0x0001038c       0x42 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
+                0x0001038c                lv_fs_read
  .text.lv_fs_seek
-                0x00010366       0x22 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
-                0x00010366                lv_fs_seek
+                0x000103ce       0x22 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
+                0x000103ce                lv_fs_seek
  .text.lv_fs_get_drv
-                0x00010388       0x38 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
-                0x00010388                lv_fs_get_drv
+                0x000103f0       0x38 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
+                0x000103f0                lv_fs_get_drv
  .text.lv_fs_open
-                0x000103c0       0xc8 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
-                0x000103c0                lv_fs_open
+                0x00010428       0xc8 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
+                0x00010428                lv_fs_open
  .text.lv_fs_get_ext
-                0x00010488       0x54 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
-                0x00010488                lv_fs_get_ext
+                0x000104f0       0x54 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
+                0x000104f0                lv_fs_get_ext
  .text.node_set_next
-                0x000104dc       0x3c src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
+                0x00010544       0x3c src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
  .text.node_set_prev
-                0x00010518       0x38 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
+                0x00010580       0x38 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
  .text._lv_ll_init
-                0x00010550       0x14 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
-                0x00010550                _lv_ll_init
+                0x000105b8       0x14 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
+                0x000105b8                _lv_ll_init
  .text._lv_ll_ins_head
-                0x00010564       0x50 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
-                0x00010564                _lv_ll_ins_head
+                0x000105cc       0x50 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
+                0x000105cc                _lv_ll_ins_head
  .text._lv_ll_ins_tail
-                0x000105b4       0x50 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
-                0x000105b4                _lv_ll_ins_tail
+                0x0001061c       0x50 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
+                0x0001061c                _lv_ll_ins_tail
  .text._lv_ll_get_head
-                0x00010604        0xc src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
-                0x00010604                _lv_ll_get_head
+                0x0001066c        0xc src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
+                0x0001066c                _lv_ll_get_head
  .text._lv_ll_get_tail
-                0x00010610        0xc src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
-                0x00010610                _lv_ll_get_tail
+                0x00010678        0xc src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
+                0x00010678                _lv_ll_get_tail
  .text._lv_ll_get_next
-                0x0001061c       0x28 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
-                0x0001061c                _lv_ll_get_next
+                0x00010684       0x28 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
+                0x00010684                _lv_ll_get_next
  .text._lv_ll_get_prev
-                0x00010644       0x26 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
-                0x00010644                _lv_ll_get_prev
- *fill*         0x0001066a        0x2 
+                0x000106ac       0x26 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
+                0x000106ac                _lv_ll_get_prev
+ *fill*         0x000106d2        0x2 
  .text._lv_ll_ins_prev
-                0x0001066c       0x80 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
-                0x0001066c                _lv_ll_ins_prev
+                0x000106d4       0x80 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
+                0x000106d4                _lv_ll_ins_prev
  .text._lv_ll_remove
-                0x000106ec       0x90 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
-                0x000106ec                _lv_ll_remove
+                0x00010754       0x90 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
+                0x00010754                _lv_ll_remove
  .text._lv_ll_chg_list
-                0x0001077c       0x7c src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
-                0x0001077c                _lv_ll_chg_list
+                0x000107e4       0x7c src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
+                0x000107e4                _lv_ll_chg_list
  .text._lv_ll_move_before
-                0x000107f8       0xb4 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
-                0x000107f8                _lv_ll_move_before
+                0x00010860       0xb4 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
+                0x00010860                _lv_ll_move_before
  .text._lv_ll_is_empty
-                0x000108ac       0x1e src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
-                0x000108ac                _lv_ll_is_empty
- *fill*         0x000108ca        0x2 
+                0x00010914       0x1e src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
+                0x00010914                _lv_ll_is_empty
+ *fill*         0x00010932        0x2 
  .text._lv_trigo_sin
-                0x000108cc       0x74 src/ASF/thirdparty/lvgl/src/lv_misc/lv_math.o
-                0x000108cc                _lv_trigo_sin
+                0x00010934       0x74 src/ASF/thirdparty/lvgl/src/lv_misc/lv_math.o
+                0x00010934                _lv_trigo_sin
  .text._lv_sqrt
-                0x00010940       0x28 src/ASF/thirdparty/lvgl/src/lv_misc/lv_math.o
-                0x00010940                _lv_sqrt
+                0x000109a8       0x28 src/ASF/thirdparty/lvgl/src/lv_misc/lv_math.o
+                0x000109a8                _lv_sqrt
  .text.ent_get_next
-                0x00010968       0x2c src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
+                0x000109d0       0x2c src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
  .text.ent_trunc
-                0x00010994       0x4a src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
- *fill*         0x000109de        0x2 
+                0x000109fc       0x4a src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
+ *fill*         0x00010a46        0x2 
  .text._lv_mem_init
-                0x000109e0       0x28 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
-                0x000109e0                _lv_mem_init
+                0x00010a48       0x28 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
+                0x00010a48                _lv_mem_init
  .text.lv_mem_alloc
-                0x00010a08       0x64 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
-                0x00010a08                lv_mem_alloc
+                0x00010a70       0x64 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
+                0x00010a70                lv_mem_alloc
  .text.lv_mem_defrag
-                0x00010a6c       0x64 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
-                0x00010a6c                lv_mem_defrag
+                0x00010ad4       0x64 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
+                0x00010ad4                lv_mem_defrag
  .text.lv_mem_free
-                0x00010ad0       0x7c src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
-                0x00010ad0                lv_mem_free
+                0x00010b38       0x7c src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
+                0x00010b38                lv_mem_free
  .text._lv_mem_get_size
-                0x00010b4c       0x20 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
-                0x00010b4c                _lv_mem_get_size
+                0x00010bb4       0x20 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
+                0x00010bb4                _lv_mem_get_size
  .text._lv_mem_buf_release
-                0x00010b6c       0x60 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
-                0x00010b6c                _lv_mem_buf_release
+                0x00010bd4       0x60 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
+                0x00010bd4                _lv_mem_buf_release
  .text._lv_mem_buf_free_all
-                0x00010bcc       0x58 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
-                0x00010bcc                _lv_mem_buf_free_all
+                0x00010c34       0x58 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
+                0x00010c34                _lv_mem_buf_free_all
  .text._lv_memcpy
-                0x00010c24      0x1b6 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
-                0x00010c24                _lv_memcpy
- *fill*         0x00010dda        0x2 
+                0x00010c8c      0x1b6 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
+                0x00010c8c                _lv_memcpy
+ *fill*         0x00010e42        0x2 
  .text.lv_mem_realloc
-                0x00010ddc       0x7c src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
-                0x00010ddc                lv_mem_realloc
+                0x00010e44       0x7c src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
+                0x00010e44                lv_mem_realloc
  .text._lv_mem_buf_get
-                0x00010e58       0xec src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
-                0x00010e58                _lv_mem_buf_get
+                0x00010ec0       0xec src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
+                0x00010ec0                _lv_mem_buf_get
  .text._lv_memset
-                0x00010f44       0xa0 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
-                0x00010f44                _lv_memset
+                0x00010fac       0xa0 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
+                0x00010fac                _lv_memset
  .text._lv_memset_00
-                0x00010fe4       0xa4 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
-                0x00010fe4                _lv_memset_00
+                0x0001104c       0xa4 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
+                0x0001104c                _lv_memset_00
  .text._lv_memset_ff
-                0x00011088       0xa8 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
-                0x00011088                _lv_memset_ff
+                0x000110f0       0xa8 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
+                0x000110f0                _lv_memset_ff
  .text._lv_task_core_init
-                0x00011130       0x28 src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
-                0x00011130                _lv_task_core_init
+                0x00011198       0x28 src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
+                0x00011198                _lv_task_core_init
  .text.lv_task_create_basic
-                0x00011158       0xf0 src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
-                0x00011158                lv_task_create_basic
+                0x000111c0       0xf0 src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
+                0x000111c0                lv_task_create_basic
  .text.lv_task_del
-                0x00011248       0x44 src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
-                0x00011248                lv_task_del
+                0x000112b0       0x44 src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
+                0x000112b0                lv_task_del
  .text.lv_task_exec
-                0x0001128c       0x68 src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
+                0x000112f4       0x68 src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
  .text.lv_task_handler
-                0x000112f4      0x1ec src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
-                0x000112f4                lv_task_handler
+                0x0001135c      0x1ec src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
+                0x0001135c                lv_task_handler
  .text.lv_task_set_prio
-                0x000114e0       0x90 src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
-                0x000114e0                lv_task_set_prio
+                0x00011548       0x90 src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
+                0x00011548                lv_task_set_prio
  .text.lv_task_create
-                0x00011570       0x54 src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
-                0x00011570                lv_task_create
+                0x000115d8       0x54 src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
+                0x000115d8                lv_task_create
  .text.lv_task_ready
-                0x000115c4       0x18 src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
-                0x000115c4                lv_task_ready
+                0x0001162c       0x18 src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
+                0x0001162c                lv_task_ready
  .text.lv_txt_utf8_next
-                0x000115dc      0x110 src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
+                0x00011644      0x110 src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
  .text.lv_txt_utf8_get_char_id
-                0x000116ec       0x34 src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
+                0x00011754       0x34 src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
  .text._lv_txt_is_cmd
-                0x00011720       0x40 src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
-                0x00011720                _lv_txt_is_cmd
+                0x00011788       0x40 src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
+                0x00011788                _lv_txt_is_cmd
  .text._lv_txt_get_next_line
-                0x00011760      0x278 src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
-                0x00011760                _lv_txt_get_next_line
+                0x000117c8      0x278 src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
+                0x000117c8                _lv_txt_get_next_line
  .text._lv_txt_get_width
-                0x000119d8       0xa4 src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
-                0x000119d8                _lv_txt_get_width
+                0x00011a40       0xa4 src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
+                0x00011a40                _lv_txt_get_width
  .text._lv_txt_get_size
-                0x00011a7c      0x10c src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
-                0x00011a7c                _lv_txt_get_size
+                0x00011ae4      0x10c src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
+                0x00011ae4                _lv_txt_get_size
  .text._lv_utils_bsearch
-                0x00011b88       0x5e src/ASF/thirdparty/lvgl/src/lv_misc/lv_utils.o
-                0x00011b88                _lv_utils_bsearch
- *fill*         0x00011be6        0x2 
+                0x00011bf0       0x5e src/ASF/thirdparty/lvgl/src/lv_misc/lv_utils.o
+                0x00011bf0                _lv_utils_bsearch
+ *fill*         0x00011c4e        0x2 
  .text.lv_theme_set_act
-                0x00011be8        0xc src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme.o
-                0x00011be8                lv_theme_set_act
+                0x00011c50        0xc src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme.o
+                0x00011c50                lv_theme_set_act
  .text.lv_theme_get_font_normal
-                0x00011bf4        0xc src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme.o
-                0x00011bf4                lv_theme_get_font_normal
+                0x00011c5c        0xc src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme.o
+                0x00011c5c                lv_theme_get_font_normal
  .text.lv_theme_apply
-                0x00011c00       0x10 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme.o
-                0x00011c00                lv_theme_apply
+                0x00011c68       0x10 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme.o
+                0x00011c68                lv_theme_apply
  .text.theme_apply
-                0x00011c10      0x81c src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+                0x00011c78      0x81c src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
  .text.style_init_reset
-                0x0001242c       0x24 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+                0x00012494       0x24 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
  .text.basic_init
-                0x00012450     0x11cc src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+                0x000124b8     0x11cc src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
  .text.bar_init
-                0x0001361c      0x154 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+                0x00013684      0x154 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
  .text.slider_init
-                0x00013770      0x294 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+                0x000137d8      0x294 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
  .text.switch_init
-                0x00013a04      0x140 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+                0x00013a6c      0x140 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
  .text.linemeter_init
-                0x00013b44      0x224 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+                0x00013bac      0x224 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
  .text.gauge_init
-                0x00013d68      0x4a8 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+                0x00013dd0      0x4a8 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
  .text.arc_init
-                0x00014210      0x104 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+                0x00014278      0x104 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
  .text.led_init
-                0x00014314      0x114 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+                0x0001437c      0x114 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
  .text.lv_theme_material_init
-                0x00014428     0x24dc src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
-                0x00014428                lv_theme_material_init
+                0x00014490     0x24dc src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+                0x00014490                lv_theme_material_init
  .text.ssd1963_init
-                0x00016904      0xb1c src/devices/display/p_ssd1963.o
-                0x00016904                ssd1963_init
+                0x0001696c      0xb1c src/devices/display/p_ssd1963.o
+                0x0001696c                ssd1963_init
  .text.ssd1963_flush
-                0x00017420      0x31c src/devices/display/p_ssd1963.o
-                0x00017420                ssd1963_flush
+                0x00017488      0x31c src/devices/display/p_ssd1963.o
+                0x00017488                ssd1963_flush
  .text.p_gpio_init
-                0x0001773c       0x70 src/drivers/p_gpio.o
-                0x0001773c                p_gpio_init
+                0x000177a4       0x70 src/drivers/p_gpio.o
+                0x000177a4                p_gpio_init
  .text.p_gpio_parallel_wr_word
-                0x000177ac       0x18 src/drivers/p_gpio.o
-                0x000177ac                p_gpio_parallel_wr_word
+                0x00017814       0x18 src/drivers/p_gpio.o
+                0x00017814                p_gpio_parallel_wr_word
  .text.p_gpio_parallel_wr_arr
-                0x000177c4       0x2c src/drivers/p_gpio.o
-                0x000177c4                p_gpio_parallel_wr_arr
+                0x0001782c       0x2c src/drivers/p_gpio.o
+                0x0001782c                p_gpio_parallel_wr_arr
  .text.p_i2c_init
-                0x000177f0        0x2 src/drivers/p_i2c.o
-                0x000177f0                p_i2c_init
- *fill*         0x000177f2        0x2 
+                0x00017858        0x2 src/drivers/p_i2c.o
+                0x00017858                p_i2c_init
+ *fill*         0x0001785a        0x2 
  .text.p_printf
-                0x000177f4       0x5c src/drivers/p_usart.o
-                0x000177f4                p_printf
+                0x0001785c       0x6c src/drivers/p_usart.o
+                0x0001785c                p_printf
  .text.p_usart_init
-                0x00017850       0xe0 src/drivers/p_usart.o
-                0x00017850                p_usart_init
+                0x000178c8       0xe0 src/drivers/p_usart.o
+                0x000178c8                p_usart_init
  .text.p_debug_rx_cb
-                0x00017930       0x1c src/drivers/p_usart.o
- .text.main     0x0001794c       0x14 src/main.o
-                0x0001794c                main
- .text          0x00017960      0x114 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivsi3.o)
-                0x00017960                __aeabi_uidiv
-                0x00017960                __udivsi3
-                0x00017a6c                __aeabi_uidivmod
- .text          0x00017a74      0x1d4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_divsi3.o)
-                0x00017a74                __divsi3
-                0x00017a74                __aeabi_idiv
-                0x00017c40                __aeabi_idivmod
- .text          0x00017c48        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_dvmd_tls.o)
-                0x00017c48                __aeabi_idiv0
-                0x00017c48                __aeabi_ldiv0
- .text          0x00017c4c       0x40 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_aeabi_uldivmod.o)
-                0x00017c4c                __aeabi_uldivmod
- .text          0x00017c8c       0x54 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_muldi3.o)
-                0x00017c8c                __muldi3
-                0x00017c8c                __aeabi_lmul
- .text          0x00017ce0      0x180 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivmoddi4.o)
-                0x00017ce0                __udivmoddi4
- .text          0x00017e60       0x3c c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_clzsi2.o)
-                0x00017e60                __clzsi2
- .text          0x00017e9c       0x18 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_clzdi2.o)
-                0x00017e9c                __clzdi2
+                0x000179a8       0x1c src/drivers/p_usart.o
+ .text.p_debug_start_service
+                0x000179c4       0x18 src/drivers/p_usart.o
+                0x000179c4                p_debug_start_service
+ .text.main     0x000179dc       0x14 src/main.o
+                0x000179dc                main
+ .text          0x000179f0      0x114 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivsi3.o)
+                0x000179f0                __aeabi_uidiv
+                0x000179f0                __udivsi3
+                0x00017afc                __aeabi_uidivmod
+ .text          0x00017b04      0x1d4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_divsi3.o)
+                0x00017b04                __divsi3
+                0x00017b04                __aeabi_idiv
+                0x00017cd0                __aeabi_idivmod
+ .text          0x00017cd8        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_dvmd_tls.o)
+                0x00017cd8                __aeabi_idiv0
+                0x00017cd8                __aeabi_ldiv0
+ .text          0x00017cdc       0x40 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_aeabi_uldivmod.o)
+                0x00017cdc                __aeabi_uldivmod
+ .text          0x00017d1c       0x54 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_muldi3.o)
+                0x00017d1c                __muldi3
+                0x00017d1c                __aeabi_lmul
+ .text          0x00017d70      0x180 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivmoddi4.o)
+                0x00017d70                __udivmoddi4
+ .text          0x00017ef0       0x3c c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_clzsi2.o)
+                0x00017ef0                __clzsi2
+ .text          0x00017f2c       0x18 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_clzdi2.o)
+                0x00017f2c                __clzdi2
  .text.__libc_init_array
-                0x00017eb4       0x48 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-init.o)
-                0x00017eb4                __libc_init_array
- .text.memcmp   0x00017efc       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memcmp.o)
-                0x00017efc                memcmp
- .text.memcpy   0x00017f1a       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memcpy-stub.o)
-                0x00017f1a                memcpy
- .text.memset   0x00017f2c       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memset.o)
-                0x00017f2c                memset
- .text          0x00017f3c       0x14 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-strcmp.o)
-                0x00017f3c                strcmp
- .text.strcpy   0x00017f50       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-strcpy.o)
-                0x00017f50                strcpy
- .text          0x00017f60        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-strlen.o)
-                0x00017f60                strlen
- *fill*         0x00017f6e        0x2 
+                0x00017f44       0x48 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-init.o)
+                0x00017f44                __libc_init_array
+ .text.memcmp   0x00017f8c       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memcmp.o)
+                0x00017f8c                memcmp
+ .text.memcpy   0x00017faa       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memcpy-stub.o)
+                0x00017faa                memcpy
+ .text.memset   0x00017fbc       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memset.o)
+                0x00017fbc                memset
+ .text          0x00017fcc       0x14 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-strcmp.o)
+                0x00017fcc                strcmp
+ .text.strcpy   0x00017fe0       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-strcpy.o)
+                0x00017fe0                strcpy
+ .text          0x00017ff0        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-strlen.o)
+                0x00017ff0                strlen
+ *fill*         0x00017ffe        0x2 
  .text._vsprintf_r
-                0x00017f70       0x30 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-vsprintf.o)
-                0x00017f70                _vsprintf_r
-                0x00017f70                _vsiprintf_r
+                0x00018000       0x30 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-vsprintf.o)
+                0x00018000                _vsprintf_r
+                0x00018000                _vsiprintf_r
  .text.vsprintf
-                0x00017fa0       0x18 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-vsprintf.o)
-                0x00017fa0                vsiprintf
-                0x00017fa0                vsprintf
+                0x00018030       0x18 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-vsprintf.o)
+                0x00018030                vsiprintf
+                0x00018030                vsprintf
  .text.__ssputs_r
-                0x00017fb8       0xc4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-svfprintf.o)
-                0x00017fb8                __ssputs_r
+                0x00018048       0xc4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x00018048                __ssputs_r
  .text._svfprintf_r
-                0x0001807c      0x208 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-svfprintf.o)
-                0x0001807c                _svfiprintf_r
-                0x0001807c                _svfprintf_r
+                0x0001810c      0x208 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x0001810c                _svfiprintf_r
+                0x0001810c                _svfprintf_r
  .text._printf_common
-                0x00018284       0xda c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x00018284                _printf_common
- *fill*         0x0001835e        0x2 
+                0x00018314       0xda c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00018314                _printf_common
+ *fill*         0x000183ee        0x2 
  .text._printf_i
-                0x00018360      0x234 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x00018360                _printf_i
- .text.memchr   0x00018594       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memchr-stub.o)
-                0x00018594                memchr
- .text.memmove  0x000185aa       0x24 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memmove.o)
-                0x000185aa                memmove
- *fill*         0x000185ce        0x2 
- .text._free_r  0x000185d0       0x94 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-freer.o)
-                0x000185d0                _free_r
+                0x000183f0      0x234 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x000183f0                _printf_i
+ .text.memchr   0x00018624       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memchr-stub.o)
+                0x00018624                memchr
+ .text.memmove  0x0001863a       0x24 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memmove.o)
+                0x0001863a                memmove
+ *fill*         0x0001865e        0x2 
+ .text._free_r  0x00018660       0x94 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-freer.o)
+                0x00018660                _free_r
  .text._malloc_r
-                0x00018664       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-mallocr.o)
-                0x00018664                _malloc_r
+                0x000186f4       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-mallocr.o)
+                0x000186f4                _malloc_r
  .text._realloc_r
-                0x00018720       0x4c c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-reallocr.o)
-                0x00018720                _realloc_r
- .text._sbrk_r  0x0001876c       0x24 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-sbrkr.o)
-                0x0001876c                _sbrk_r
+                0x000187b0       0x4c c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-reallocr.o)
+                0x000187b0                _realloc_r
+ .text._sbrk_r  0x000187fc       0x24 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-sbrkr.o)
+                0x000187fc                _sbrk_r
  .text.__malloc_lock
-                0x00018790        0x2 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-mlock.o)
-                0x00018790                __malloc_lock
+                0x00018820        0x2 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-mlock.o)
+                0x00018820                __malloc_lock
  .text.__malloc_unlock
-                0x00018792        0x2 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-mlock.o)
-                0x00018792                __malloc_unlock
+                0x00018822        0x2 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-mlock.o)
+                0x00018822                __malloc_unlock
  .text._malloc_usable_size_r
-                0x00018794       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-msizer.o)
-                0x00018794                _malloc_usable_size_r
+                0x00018824       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-msizer.o)
+                0x00018824                _malloc_usable_size_r
  *(.glue_7t)
- .glue_7t       0x000187a4        0x0 linker stubs
+ .glue_7t       0x00018834        0x0 linker stubs
  *(.glue_7)
- .glue_7        0x000187a4        0x0 linker stubs
+ .glue_7        0x00018834        0x0 linker stubs
  *(.rodata .rodata* .gnu.linkonce.r.*)
- .rodata        0x000187a4       0x18 src/ASF/sam0/drivers/sercom/sercom.o
+ .rodata        0x00018834       0x18 src/ASF/sam0/drivers/sercom/sercom.o
  .rodata.system_clock_source_get_hz
-                0x000187bc       0x24 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
+                0x0001884c       0x24 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
  .rodata.system_clock_source_enable
-                0x000187e0       0x24 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
+                0x00018870       0x24 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
  .rodata.lv_group_create.str1.4
-                0x00018804        0xe src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
+                0x00018894        0xe src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
  .rodata.lv_init.cst2
-                0x00018812        0x2 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x000188a2        0x2 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
  .rodata.lv_obj_align_origo
-                0x00018814       0x54 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
- .rodata        0x00018868        0x2 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x000188a4       0x54 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+ .rodata        0x000188f8        0x2 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
  .rodata.lv_obj_create.str1.4
-                0x0001886a        0xe src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
- *fill*         0x0001886a        0x2 
+                0x000188fa        0xe src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+ *fill*         0x000188fa        0x2 
  .rodata.lv_obj_del_async.str1.4
-                0x0001886c        0xd src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
- *fill*         0x00018879        0x3 
+                0x000188fc        0xd src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+ *fill*         0x00018909        0x3 
  .rodata.lv_obj_signal.str1.4
-                0x0001887c        0x7 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+                0x0001890c        0x7 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
  .rodata._lv_style_list_remove_style.str1.4
-                0x00018883        0xe src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
- *fill*         0x00018883        0x1 
+                0x00018913        0xe src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+ *fill*         0x00018913        0x1 
  .rodata.lv_draw_map.cst2
-                0x00018884        0x2 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
- *fill*         0x00018886        0x2 
+                0x00018914        0x2 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
+ *fill*         0x00018916        0x2 
  .rodata.lv_img_cf_get_px_size
-                0x00018888       0x2c src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
- .rodata        0x000188b4        0x2 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
- *fill*         0x000188b6        0x2 
+                0x00018918       0x2c src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
+ .rodata        0x00018944        0x2 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
+ *fill*         0x00018946        0x2 
  .rodata.lv_draw_img.str1.4
-                0x000188b8        0x8 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
+                0x00018948        0x8 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
  .rodata.hex_char_to_num
-                0x000188c0       0x18 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
+                0x00018950       0x18 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
  .rodata.lv_draw_label.cst1
-                0x000188d8        0x1 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
- *fill*         0x000188d9        0x3 
+                0x00018968        0x1 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
+ *fill*         0x00018969        0x3 
  .rodata._lv_bpp1_opa_table
-                0x000188dc        0x2 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
-                0x000188dc                _lv_bpp1_opa_table
- *fill*         0x000188de        0x2 
+                0x0001896c        0x2 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
+                0x0001896c                _lv_bpp1_opa_table
+ *fill*         0x0001896e        0x2 
  .rodata._lv_bpp2_opa_table
-                0x000188e0        0x4 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
-                0x000188e0                _lv_bpp2_opa_table
+                0x00018970        0x4 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
+                0x00018970                _lv_bpp2_opa_table
  .rodata._lv_bpp4_opa_table
-                0x000188e4       0x10 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
-                0x000188e4                _lv_bpp4_opa_table
+                0x00018974       0x10 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
+                0x00018974                _lv_bpp4_opa_table
  .rodata._lv_bpp8_opa_table
-                0x000188f4      0x100 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
-                0x000188f4                _lv_bpp8_opa_table
+                0x00018984      0x100 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
+                0x00018984                _lv_bpp8_opa_table
  .rodata.wcorr.9232
-                0x000189f4       0x21 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_line.o
- *fill*         0x00018a15        0x3 
- .rodata        0x00018a18        0x2 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_rect.o
- *fill*         0x00018a1a        0x2 
- .rodata        0x00018a1c       0x10 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
+                0x00018a84       0x21 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_line.o
+ *fill*         0x00018aa5        0x3 
+ .rodata        0x00018aa8        0x2 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_rect.o
+ *fill*         0x00018aaa        0x2 
+ .rodata        0x00018aac       0x10 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
  .rodata.lv_img_cache_set_size.str1.4
-                0x00018a2c        0xe src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_cache.o
- .rodata        0x00018a2c       0x10 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
+                0x00018abc        0xe src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_cache.o
+ .rodata        0x00018abc       0x10 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
  .rodata.lv_img_decoder_built_in_open.str1.4
-                0x00018a3c        0x4 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
+                0x00018acc        0x4 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
                                  0x12 (size before relaxing)
  .rodata.lv_font_get_bitmap_fmt_txt
-                0x00018a40      0x160 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
+                0x00018ad0      0x160 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
  .rodata.lv_font_get_bitmap_fmt_txt.str1.4
-                0x00018ba0        0xe src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
- .rodata.cmaps  0x00018ba0       0x28 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
+                0x00018c30        0xe src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
+ .rodata.cmaps  0x00018c30       0x28 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
  .rodata.glyph_dsc
-                0x00018bc8      0x4d8 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
+                0x00018c58      0x4d8 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
  .rodata.gylph_bitmap
-                0x000190a0     0x2a38 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
+                0x00019130     0x2a38 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
  .rodata.kern_class_values
-                0x0001bad8      0xbad src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
- *fill*         0x0001c685        0x3 
+                0x0001bb68      0xbad src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
+ *fill*         0x0001c715        0x3 
  .rodata.kern_classes
-                0x0001c688       0x10 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
+                0x0001c718       0x10 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
  .rodata.kern_left_class_mapping
-                0x0001c698       0x9b src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
- *fill*         0x0001c733        0x1 
+                0x0001c728       0x9b src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
+ *fill*         0x0001c7c3        0x1 
  .rodata.kern_right_class_mapping
-                0x0001c734       0x9b src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
- *fill*         0x0001c7cf        0x1 
+                0x0001c7c4       0x9b src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
+ *fill*         0x0001c85f        0x1 
  .rodata.unicode_list_1
-                0x0001c7d0       0x76 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
+                0x0001c860       0x76 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
  .rodata.lv_disp_drv_register.str1.4
-                0x0001c846        0xe src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
- *fill*         0x0001c846        0x2 
+                0x0001c8d6        0xe src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
+ *fill*         0x0001c8d6        0x2 
  .rodata.lv_anim_path_def
-                0x0001c848        0x8 src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
-                0x0001c848                lv_anim_path_def
+                0x0001c8d8        0x8 src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
+                0x0001c8d8                lv_anim_path_def
  .rodata.lv_anim_start.str1.4
-                0x0001c850        0xe src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
+                0x0001c8e0        0xe src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
  .rodata._lv_area_align
-                0x0001c850       0x54 src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
+                0x0001c8e0       0x54 src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
  .rodata.lv_fs_drv_register.str1.4
-                0x0001c8a4        0xe src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
+                0x0001c934        0xe src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
  .rodata.lv_fs_get_ext.str1.4
-                0x0001c8a4        0x4 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
+                0x0001c934        0x4 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
                                   0x1 (size before relaxing)
  .rodata.sin0_90_table
-                0x0001c8a4       0xb6 src/ASF/thirdparty/lvgl/src/lv_misc/lv_math.o
+                0x0001c934       0xb6 src/ASF/thirdparty/lvgl/src/lv_misc/lv_math.o
  .rodata.lv_task_create_basic.str1.4
-                0x0001c95a        0xe src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
- *fill*         0x0001c95a        0x2 
+                0x0001c9ea        0xe src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
+ *fill*         0x0001c9ea        0x2 
  .rodata._lv_txt_get_next_line.str1.4
-                0x0001c95c        0x8 src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
+                0x0001c9ec        0x8 src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
  .rodata.theme_apply
-                0x0001c964       0xa4 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+                0x0001c9f4       0xa4 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
  .rodata.basic_init.cst2
-                0x0001ca08        0x2 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+                0x0001ca98        0x2 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
  .rodata.bar_init.cst2
-                0x0001ca0a        0x2 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+                0x0001ca9a        0x2 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
  .rodata.linemeter_init.cst2
-                0x0001ca0a        0x2 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+                0x0001ca9a        0x2 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
  .rodata.lv_theme_material_init.cst2
-                0x0001ca0a        0x2 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+                0x0001ca9a        0x2 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
                                   0x4 (size before relaxing)
- .rodata        0x0001ca0c        0x6 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
- *fill*         0x0001ca12        0x2 
+ .rodata        0x0001ca9c        0x6 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+ *fill*         0x0001caa2        0x2 
  .rodata.lv_theme_material_init.str1.4
-                0x0001ca14        0x4 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+                0x0001caa4        0x4 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
  .rodata.p_debug_rx_cb.str1.4
-                0x0001ca18        0x3 src/drivers/p_usart.o
- *fill*         0x0001ca1b        0x1 
+                0x0001caa8        0x3 src/drivers/p_usart.o
+ *fill*         0x0001caab        0x1 
  .rodata.p_usart_init.str1.4
-                0x0001ca1c       0x10 src/drivers/p_usart.o
+                0x0001caac       0x10 src/drivers/p_usart.o
                                   0xd (size before relaxing)
  .rodata._svfprintf_r.str1.1
-                0x0001ca2c       0x11 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x0001cabc       0x11 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-svfprintf.o)
  .rodata._printf_i.str1.1
-                0x0001ca3d       0x22 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0001cacd       0x22 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0001ca60                . = ALIGN (0x4)
- *fill*         0x0001ca5f        0x1 
+                0x0001caf0                . = ALIGN (0x4)
+ *fill*         0x0001caef        0x1 
  *(.init)
- .init          0x0001ca60        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
-                0x0001ca60                _init
- .init          0x0001ca64        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
-                0x0001ca6c                . = ALIGN (0x4)
-                0x0001ca6c                __preinit_array_start = .
+ .init          0x0001caf0        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
+                0x0001caf0                _init
+ .init          0x0001caf4        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
+                0x0001cafc                . = ALIGN (0x4)
+                0x0001cafc                __preinit_array_start = .
  *(.preinit_array)
-                0x0001ca6c                __preinit_array_end = .
-                0x0001ca6c                . = ALIGN (0x4)
-                0x0001ca6c                __init_array_start = .
+                0x0001cafc                __preinit_array_end = .
+                0x0001cafc                . = ALIGN (0x4)
+                0x0001cafc                __init_array_start = .
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x0001ca6c        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
-                0x0001ca70                __init_array_end = .
-                0x0001ca70                . = ALIGN (0x4)
+ .init_array    0x0001cafc        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+                0x0001cb00                __init_array_end = .
+                0x0001cb00                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x0001ca70                . = ALIGN (0x4)
+                0x0001cb00                . = ALIGN (0x4)
  *(.fini)
- .fini          0x0001ca70        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
-                0x0001ca70                _fini
- .fini          0x0001ca74        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
-                0x0001ca7c                . = ALIGN (0x4)
-                0x0001ca7c                __fini_array_start = .
+ .fini          0x0001cb00        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
+                0x0001cb00                _fini
+ .fini          0x0001cb04        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
+                0x0001cb0c                . = ALIGN (0x4)
+                0x0001cb0c                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x0001ca7c        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+ .fini_array    0x0001cb0c        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
  *(SORT(.fini_array.*))
-                0x0001ca80                __fini_array_end = .
+                0x0001cb10                __fini_array_end = .
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
-                0x0001ca80                . = ALIGN (0x4)
-                0x0001ca80                _efixed = .
+                0x0001cb10                . = ALIGN (0x4)
+                0x0001cb10                _efixed = .
                 [!provide]                PROVIDE (__exidx_start, .)
 
-.vfp11_veneer   0x0001ca80        0x0
- .vfp11_veneer  0x0001ca80        0x0 linker stubs
+.vfp11_veneer   0x0001cb10        0x0
+ .vfp11_veneer  0x0001cb10        0x0 linker stubs
 
-.v4_bx          0x0001ca80        0x0
- .v4_bx         0x0001ca80        0x0 linker stubs
+.v4_bx          0x0001cb10        0x0
+ .v4_bx         0x0001cb10        0x0 linker stubs
 
-.iplt           0x0001ca80        0x0
- .iplt          0x0001ca80        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.iplt           0x0001cb10        0x0
+ .iplt          0x0001cb10        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.ARM.exidx      0x0001ca80        0x8
+.ARM.exidx      0x0001cb10        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x0001ca80        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x0001cb10        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivmoddi4.o)
                 [!provide]                PROVIDE (__exidx_end, .)
 
-.eh_frame       0x0001ca88        0x0
- .eh_frame      0x0001ca88        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.eh_frame       0x0001cb18        0x0
+ .eh_frame      0x0001cb18        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.rel.dyn        0x0001ca88        0x0
- .rel.iplt      0x0001ca88        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.rel.dyn        0x0001cb18        0x0
+ .rel.iplt      0x0001cb18        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.jcr            0x0001ca88        0x0
- .jcr           0x0001ca88        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.jcr            0x0001cb18        0x0
+ .jcr           0x0001cb18        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.igot.plt       0x0001ca88        0x0
- .igot.plt      0x0001ca88        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
-                0x0001ca88                . = ALIGN (0x4)
-                0x0001ca88                _etext = .
+.igot.plt       0x0001cb18        0x0
+ .igot.plt      0x0001cb18        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+                0x0001cb18                . = ALIGN (0x4)
+                0x0001cb18                _etext = .
 
-.relocate       0x20000000       0xc4 load address 0x0001ca88
+.relocate       0x20000000       0xc4 load address 0x0001cb18
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _srelocate = .
  *(.ramfunc .ramfunc.*)
@@ -19525,7 +19528,7 @@ LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin
                 0x200000c4                . = ALIGN (0x4)
                 0x200000c4                _erelocate = .
 
-.bss            0x200000c8     0x4d70 load address 0x0001cb50
+.bss            0x200000c8     0x4d70 load address 0x0001cbe0
                 0x200000c8                . = ALIGN (0x4)
                 0x200000c8                _sbss = .
                 0x200000c8                _szero = .
@@ -19678,7 +19681,7 @@ LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin
                 0x20004e38                _ebss = .
                 0x20004e38                _ezero = .
 
-.stack          0x20004e38     0x2000 load address 0x000218c0
+.stack          0x20004e38     0x2000 load address 0x00021950
                 0x20004e38                . = ALIGN (0x8)
                 0x20004e38                _sstack = .
                 0x20006e38                . = (. + STACK_SIZE)
@@ -19925,121 +19928,121 @@ OUTPUT(oracle_test_d21.elf elf32-littlearm)
  .comment       0x00000059       0x5a src/drivers/p_usart.o
  .comment       0x00000059       0x5a src/main.o
 
-.debug_info     0x00000000    0x8aa76
+.debug_info     0x00000000    0x8aaaa
  .debug_info    0x00000000      0xa64 src/ASF/common2/services/delay/sam0/cycle_counter.o
  .debug_info    0x00000a64     0x1550 src/drivers/p_time.o
- .debug_info    0x00001fb4     0x17ed src/oracle.o
- .debug_info    0x000037a1     0x2ddf src/ASF/sam0/drivers/sercom/sercom.o
- .debug_info    0x00006580     0x499e src/ASF/sam0/drivers/sercom/usart/usart.o
- .debug_info    0x0000af1e     0x3048 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
- .debug_info    0x0000df66     0x2be7 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
- .debug_info    0x00010b4d      0xb05 src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
- .debug_info    0x00011652     0x12ad src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
- .debug_info    0x000128ff     0x12b6 src/ASF/sam0/drivers/port/port.o
- .debug_info    0x00013bb5     0x37aa src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
- .debug_info    0x0001735f     0x1ec7 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
- .debug_info    0x00019226     0x13f3 src/ASF/sam0/drivers/system/pinmux/pinmux.o
- .debug_info    0x0001a619      0xa73 src/ASF/sam0/drivers/system/system.o
- .debug_info    0x0001b08c     0x3a3f src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
- .debug_info    0x0001eacb      0xd98 src/ASF/sam0/utils/syscalls/gcc/syscalls.o
- .debug_info    0x0001f863     0x1c8e src/ASF/thirdparty/lvgl/src/lv_core/lv_debug.o
- .debug_info    0x000214f1     0x1a42 src/ASF/thirdparty/lvgl/src/lv_core/lv_disp.o
- .debug_info    0x00022f33     0x2636 src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
- .debug_info    0x00025569     0x40b8 src/ASF/thirdparty/lvgl/src/lv_core/lv_indev.o
- .debug_info    0x00029621     0xcf42 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
- .debug_info    0x00036563     0x2b13 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
- .debug_info    0x00039076     0x2fbc src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
- .debug_info    0x0003c032     0x313e src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_blend.o
- .debug_info    0x0003f170     0x366d src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
- .debug_info    0x000427dd     0x31bb src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
- .debug_info    0x00045998     0x2cee src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_line.o
- .debug_info    0x00048686     0x32d1 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
- .debug_info    0x0004b957     0x58e9 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_rect.o
- .debug_info    0x00051240     0x22e5 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
- .debug_info    0x00053525     0x1748 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_cache.o
- .debug_info    0x00054c6d     0x2c5a src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
- .debug_info    0x000578c7      0xcf2 src/ASF/thirdparty/lvgl/src/lv_font/lv_font.o
- .debug_info    0x000585b9     0x21ba src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
- .debug_info    0x0005a773     0x13df src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
- .debug_info    0x0005bb52     0x2809 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
- .debug_info    0x0005e35b     0x2282 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_indev.o
- .debug_info    0x000605dd      0x161 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_tick.o
- .debug_info    0x0006073e     0x1ede src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
- .debug_info    0x0006261c     0x156a src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
- .debug_info    0x00063b86      0x6b0 src/ASF/thirdparty/lvgl/src/lv_misc/lv_color.o
- .debug_info    0x00064236     0x2293 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
- .debug_info    0x000664c9     0x153e src/ASF/thirdparty/lvgl/src/lv_misc/lv_gc.o
- .debug_info    0x00067a07     0x16ab src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
- .debug_info    0x000690b2      0xcd4 src/ASF/thirdparty/lvgl/src/lv_misc/lv_math.o
- .debug_info    0x00069d86     0x1c4a src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
- .debug_info    0x0006b9d0     0x1bf8 src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
- .debug_info    0x0006d5c8     0x192d src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
- .debug_info    0x0006eef5      0xddf src/ASF/thirdparty/lvgl/src/lv_misc/lv_utils.o
- .debug_info    0x0006fcd4     0x1670 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme.o
- .debug_info    0x00071344     0xc718 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
- .debug_info    0x0007da5c     0x6feb src/devices/display/p_ssd1963.o
- .debug_info    0x00084a47     0x161d src/drivers/p_gpio.o
- .debug_info    0x00086064      0xa5c src/drivers/p_i2c.o
- .debug_info    0x00086ac0     0x3524 src/drivers/p_usart.o
- .debug_info    0x00089fe4      0xa92 src/main.o
+ .debug_info    0x00001fb4     0x1807 src/oracle.o
+ .debug_info    0x000037bb     0x2ddf src/ASF/sam0/drivers/sercom/sercom.o
+ .debug_info    0x0000659a     0x499e src/ASF/sam0/drivers/sercom/usart/usart.o
+ .debug_info    0x0000af38     0x3048 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
+ .debug_info    0x0000df80     0x2be7 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
+ .debug_info    0x00010b67      0xb05 src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
+ .debug_info    0x0001166c     0x12ad src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
+ .debug_info    0x00012919     0x12b6 src/ASF/sam0/drivers/port/port.o
+ .debug_info    0x00013bcf     0x37aa src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
+ .debug_info    0x00017379     0x1ec7 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
+ .debug_info    0x00019240     0x13f3 src/ASF/sam0/drivers/system/pinmux/pinmux.o
+ .debug_info    0x0001a633      0xa73 src/ASF/sam0/drivers/system/system.o
+ .debug_info    0x0001b0a6     0x3a3f src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
+ .debug_info    0x0001eae5      0xd98 src/ASF/sam0/utils/syscalls/gcc/syscalls.o
+ .debug_info    0x0001f87d     0x1c8e src/ASF/thirdparty/lvgl/src/lv_core/lv_debug.o
+ .debug_info    0x0002150b     0x1a42 src/ASF/thirdparty/lvgl/src/lv_core/lv_disp.o
+ .debug_info    0x00022f4d     0x2636 src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
+ .debug_info    0x00025583     0x40b8 src/ASF/thirdparty/lvgl/src/lv_core/lv_indev.o
+ .debug_info    0x0002963b     0xcf42 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+ .debug_info    0x0003657d     0x2b13 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
+ .debug_info    0x00039090     0x2fbc src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+ .debug_info    0x0003c04c     0x313e src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_blend.o
+ .debug_info    0x0003f18a     0x366d src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
+ .debug_info    0x000427f7     0x31bb src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
+ .debug_info    0x000459b2     0x2cee src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_line.o
+ .debug_info    0x000486a0     0x32d1 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
+ .debug_info    0x0004b971     0x58e9 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_rect.o
+ .debug_info    0x0005125a     0x22e5 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
+ .debug_info    0x0005353f     0x1748 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_cache.o
+ .debug_info    0x00054c87     0x2c5a src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
+ .debug_info    0x000578e1      0xcf2 src/ASF/thirdparty/lvgl/src/lv_font/lv_font.o
+ .debug_info    0x000585d3     0x21ba src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
+ .debug_info    0x0005a78d     0x13df src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
+ .debug_info    0x0005bb6c     0x2809 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
+ .debug_info    0x0005e375     0x2282 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_indev.o
+ .debug_info    0x000605f7      0x161 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_tick.o
+ .debug_info    0x00060758     0x1ede src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
+ .debug_info    0x00062636     0x156a src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
+ .debug_info    0x00063ba0      0x6b0 src/ASF/thirdparty/lvgl/src/lv_misc/lv_color.o
+ .debug_info    0x00064250     0x2293 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
+ .debug_info    0x000664e3     0x153e src/ASF/thirdparty/lvgl/src/lv_misc/lv_gc.o
+ .debug_info    0x00067a21     0x16ab src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
+ .debug_info    0x000690cc      0xcd4 src/ASF/thirdparty/lvgl/src/lv_misc/lv_math.o
+ .debug_info    0x00069da0     0x1c4a src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
+ .debug_info    0x0006b9ea     0x1bf8 src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
+ .debug_info    0x0006d5e2     0x192d src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
+ .debug_info    0x0006ef0f      0xddf src/ASF/thirdparty/lvgl/src/lv_misc/lv_utils.o
+ .debug_info    0x0006fcee     0x1670 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme.o
+ .debug_info    0x0007135e     0xc718 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+ .debug_info    0x0007da76     0x6feb src/devices/display/p_ssd1963.o
+ .debug_info    0x00084a61     0x161d src/drivers/p_gpio.o
+ .debug_info    0x0008607e      0xa5c src/drivers/p_i2c.o
+ .debug_info    0x00086ada     0x353e src/drivers/p_usart.o
+ .debug_info    0x0008a018      0xa92 src/main.o
 
-.debug_abbrev   0x00000000     0xbbde
+.debug_abbrev   0x00000000     0xbbd3
  .debug_abbrev  0x00000000      0x1e7 src/ASF/common2/services/delay/sam0/cycle_counter.o
  .debug_abbrev  0x000001e7      0x27e src/drivers/p_time.o
- .debug_abbrev  0x00000465      0x2da src/oracle.o
- .debug_abbrev  0x0000073f      0x378 src/ASF/sam0/drivers/sercom/sercom.o
- .debug_abbrev  0x00000ab7      0x467 src/ASF/sam0/drivers/sercom/usart/usart.o
- .debug_abbrev  0x00000f1e      0x416 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
- .debug_abbrev  0x00001334      0x2d8 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
- .debug_abbrev  0x0000160c      0x23b src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
- .debug_abbrev  0x00001847      0x2dc src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
- .debug_abbrev  0x00001b23      0x298 src/ASF/sam0/drivers/port/port.o
- .debug_abbrev  0x00001dbb      0x465 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
- .debug_abbrev  0x00002220      0x40d src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
- .debug_abbrev  0x0000262d      0x361 src/ASF/sam0/drivers/system/pinmux/pinmux.o
- .debug_abbrev  0x0000298e      0x1e1 src/ASF/sam0/drivers/system/system.o
- .debug_abbrev  0x00002b6f      0x234 src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
- .debug_abbrev  0x00002da3      0x257 src/ASF/sam0/utils/syscalls/gcc/syscalls.o
- .debug_abbrev  0x00002ffa      0x34a src/ASF/thirdparty/lvgl/src/lv_core/lv_debug.o
- .debug_abbrev  0x00003344      0x29f src/ASF/thirdparty/lvgl/src/lv_core/lv_disp.o
- .debug_abbrev  0x000035e3      0x39a src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
- .debug_abbrev  0x0000397d      0x4d4 src/ASF/thirdparty/lvgl/src/lv_core/lv_indev.o
- .debug_abbrev  0x00003e51      0x533 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
- .debug_abbrev  0x00004384      0x4e7 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
- .debug_abbrev  0x0000486b      0x44d src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
- .debug_abbrev  0x00004cb8      0x490 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_blend.o
- .debug_abbrev  0x00005148      0x467 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
- .debug_abbrev  0x000055af      0x441 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
- .debug_abbrev  0x000059f0      0x3c1 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_line.o
- .debug_abbrev  0x00005db1      0x4a9 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
- .debug_abbrev  0x0000625a      0x484 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_rect.o
- .debug_abbrev  0x000066de      0x44f src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
- .debug_abbrev  0x00006b2d      0x2b8 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_cache.o
- .debug_abbrev  0x00006de5      0x4ad src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
- .debug_abbrev  0x00007292      0x21a src/ASF/thirdparty/lvgl/src/lv_font/lv_font.o
- .debug_abbrev  0x000074ac      0x41e src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
- .debug_abbrev  0x000078ca      0x1f0 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
- .debug_abbrev  0x00007aba      0x3f8 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
- .debug_abbrev  0x00007eb2      0x282 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_indev.o
- .debug_abbrev  0x00008134       0xcb src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_tick.o
- .debug_abbrev  0x000081ff      0x44a src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
- .debug_abbrev  0x00008649      0x3f8 src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
- .debug_abbrev  0x00008a41      0x262 src/ASF/thirdparty/lvgl/src/lv_misc/lv_color.o
- .debug_abbrev  0x00008ca3      0x3c3 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
- .debug_abbrev  0x00009066      0x20f src/ASF/thirdparty/lvgl/src/lv_misc/lv_gc.o
- .debug_abbrev  0x00009275      0x3f6 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
- .debug_abbrev  0x0000966b      0x245 src/ASF/thirdparty/lvgl/src/lv_misc/lv_math.o
- .debug_abbrev  0x000098b0      0x3ee src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
- .debug_abbrev  0x00009c9e      0x420 src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
- .debug_abbrev  0x0000a0be      0x47e src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
- .debug_abbrev  0x0000a53c      0x238 src/ASF/thirdparty/lvgl/src/lv_misc/lv_utils.o
- .debug_abbrev  0x0000a774      0x270 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme.o
- .debug_abbrev  0x0000a9e4      0x385 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
- .debug_abbrev  0x0000ad69      0x3ab src/devices/display/p_ssd1963.o
- .debug_abbrev  0x0000b114      0x341 src/drivers/p_gpio.o
- .debug_abbrev  0x0000b455      0x1be src/drivers/p_i2c.o
- .debug_abbrev  0x0000b613      0x3ec src/drivers/p_usart.o
- .debug_abbrev  0x0000b9ff      0x1df src/main.o
+ .debug_abbrev  0x00000465      0x2cf src/oracle.o
+ .debug_abbrev  0x00000734      0x378 src/ASF/sam0/drivers/sercom/sercom.o
+ .debug_abbrev  0x00000aac      0x467 src/ASF/sam0/drivers/sercom/usart/usart.o
+ .debug_abbrev  0x00000f13      0x416 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
+ .debug_abbrev  0x00001329      0x2d8 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
+ .debug_abbrev  0x00001601      0x23b src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
+ .debug_abbrev  0x0000183c      0x2dc src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
+ .debug_abbrev  0x00001b18      0x298 src/ASF/sam0/drivers/port/port.o
+ .debug_abbrev  0x00001db0      0x465 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
+ .debug_abbrev  0x00002215      0x40d src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
+ .debug_abbrev  0x00002622      0x361 src/ASF/sam0/drivers/system/pinmux/pinmux.o
+ .debug_abbrev  0x00002983      0x1e1 src/ASF/sam0/drivers/system/system.o
+ .debug_abbrev  0x00002b64      0x234 src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
+ .debug_abbrev  0x00002d98      0x257 src/ASF/sam0/utils/syscalls/gcc/syscalls.o
+ .debug_abbrev  0x00002fef      0x34a src/ASF/thirdparty/lvgl/src/lv_core/lv_debug.o
+ .debug_abbrev  0x00003339      0x29f src/ASF/thirdparty/lvgl/src/lv_core/lv_disp.o
+ .debug_abbrev  0x000035d8      0x39a src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
+ .debug_abbrev  0x00003972      0x4d4 src/ASF/thirdparty/lvgl/src/lv_core/lv_indev.o
+ .debug_abbrev  0x00003e46      0x533 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+ .debug_abbrev  0x00004379      0x4e7 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
+ .debug_abbrev  0x00004860      0x44d src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+ .debug_abbrev  0x00004cad      0x490 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_blend.o
+ .debug_abbrev  0x0000513d      0x467 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
+ .debug_abbrev  0x000055a4      0x441 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
+ .debug_abbrev  0x000059e5      0x3c1 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_line.o
+ .debug_abbrev  0x00005da6      0x4a9 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
+ .debug_abbrev  0x0000624f      0x484 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_rect.o
+ .debug_abbrev  0x000066d3      0x44f src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
+ .debug_abbrev  0x00006b22      0x2b8 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_cache.o
+ .debug_abbrev  0x00006dda      0x4ad src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
+ .debug_abbrev  0x00007287      0x21a src/ASF/thirdparty/lvgl/src/lv_font/lv_font.o
+ .debug_abbrev  0x000074a1      0x41e src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
+ .debug_abbrev  0x000078bf      0x1f0 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
+ .debug_abbrev  0x00007aaf      0x3f8 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
+ .debug_abbrev  0x00007ea7      0x282 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_indev.o
+ .debug_abbrev  0x00008129       0xcb src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_tick.o
+ .debug_abbrev  0x000081f4      0x44a src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
+ .debug_abbrev  0x0000863e      0x3f8 src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
+ .debug_abbrev  0x00008a36      0x262 src/ASF/thirdparty/lvgl/src/lv_misc/lv_color.o
+ .debug_abbrev  0x00008c98      0x3c3 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
+ .debug_abbrev  0x0000905b      0x20f src/ASF/thirdparty/lvgl/src/lv_misc/lv_gc.o
+ .debug_abbrev  0x0000926a      0x3f6 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
+ .debug_abbrev  0x00009660      0x245 src/ASF/thirdparty/lvgl/src/lv_misc/lv_math.o
+ .debug_abbrev  0x000098a5      0x3ee src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
+ .debug_abbrev  0x00009c93      0x420 src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
+ .debug_abbrev  0x0000a0b3      0x47e src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
+ .debug_abbrev  0x0000a531      0x238 src/ASF/thirdparty/lvgl/src/lv_misc/lv_utils.o
+ .debug_abbrev  0x0000a769      0x270 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme.o
+ .debug_abbrev  0x0000a9d9      0x385 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+ .debug_abbrev  0x0000ad5e      0x3ab src/devices/display/p_ssd1963.o
+ .debug_abbrev  0x0000b109      0x341 src/drivers/p_gpio.o
+ .debug_abbrev  0x0000b44a      0x1be src/drivers/p_i2c.o
+ .debug_abbrev  0x0000b608      0x3ec src/drivers/p_usart.o
+ .debug_abbrev  0x0000b9f4      0x1df src/main.o
 
 .debug_aranges  0x00000000     0x17e0
  .debug_aranges
@@ -20459,174 +20462,174 @@ OUTPUT(oracle_test_d21.elf elf32-littlearm)
  .debug_macro   0x0002596b      0x45d src/drivers/p_usart.o
  .debug_macro   0x00025dc8      0x663 src/main.o
 
-.debug_line     0x00000000    0x310b3
+.debug_line     0x00000000    0x310b5
  .debug_line    0x00000000      0x99c src/ASF/common2/services/delay/sam0/cycle_counter.o
  .debug_line    0x0000099c     0x1cfd src/drivers/p_time.o
- .debug_line    0x00002699     0x1d4e src/oracle.o
- .debug_line    0x000043e7      0xbf0 src/ASF/sam0/drivers/sercom/sercom.o
- .debug_line    0x00004fd7      0xd27 src/ASF/sam0/drivers/sercom/usart/usart.o
- .debug_line    0x00005cfe      0xcea src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
- .debug_line    0x000069e8      0xb94 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
- .debug_line    0x0000757c      0x8e5 src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
- .debug_line    0x00007e61      0x9a3 src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
- .debug_line    0x00008804      0x917 src/ASF/sam0/drivers/port/port.o
- .debug_line    0x0000911b      0xc6d src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
- .debug_line    0x00009d88      0xc93 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
- .debug_line    0x0000aa1b      0x964 src/ASF/sam0/drivers/system/pinmux/pinmux.o
- .debug_line    0x0000b37f      0xa0e src/ASF/sam0/drivers/system/system.o
- .debug_line    0x0000bd8d      0x669 src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
- .debug_line    0x0000c3f6      0x409 src/ASF/sam0/utils/syscalls/gcc/syscalls.o
- .debug_line    0x0000c7ff      0xae9 src/ASF/thirdparty/lvgl/src/lv_core/lv_debug.o
- .debug_line    0x0000d2e8      0xa7b src/ASF/thirdparty/lvgl/src/lv_core/lv_disp.o
- .debug_line    0x0000dd63      0xecd src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
- .debug_line    0x0000ec30     0x1020 src/ASF/thirdparty/lvgl/src/lv_core/lv_indev.o
- .debug_line    0x0000fc50     0x261c src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
- .debug_line    0x0001226c      0xdc7 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
- .debug_line    0x00013033     0x1157 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
- .debug_line    0x0001418a     0x1070 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_blend.o
- .debug_line    0x000151fa      0xf83 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
- .debug_line    0x0001617d      0xe6a src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
- .debug_line    0x00016fe7      0xd2c src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_line.o
- .debug_line    0x00017d13     0x139a src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
- .debug_line    0x000190ad     0x12ff src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_rect.o
- .debug_line    0x0001a3ac      0xa60 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
- .debug_line    0x0001ae0c      0xcea src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_cache.o
- .debug_line    0x0001baf6      0xf79 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
- .debug_line    0x0001ca6f      0x467 src/ASF/thirdparty/lvgl/src/lv_font/lv_font.o
- .debug_line    0x0001ced6     0x1077 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
- .debug_line    0x0001df4d     0x159a src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
- .debug_line    0x0001f4e7     0x10c4 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
- .debug_line    0x000205ab      0xcd7 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_indev.o
- .debug_line    0x00021282      0x317 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_tick.o
- .debug_line    0x00021599      0xe65 src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
- .debug_line    0x000223fe      0x70b src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
- .debug_line    0x00022b09      0x407 src/ASF/thirdparty/lvgl/src/lv_misc/lv_color.o
- .debug_line    0x00022f10      0xeef src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
- .debug_line    0x00023dff      0x885 src/ASF/thirdparty/lvgl/src/lv_misc/lv_gc.o
- .debug_line    0x00024684      0x58f src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
- .debug_line    0x00024c13      0x45e src/ASF/thirdparty/lvgl/src/lv_misc/lv_math.o
- .debug_line    0x00025071      0xbb2 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
- .debug_line    0x00025c23      0xd98 src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
- .debug_line    0x000269bb      0x75e src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
- .debug_line    0x00027119      0x4f9 src/ASF/thirdparty/lvgl/src/lv_misc/lv_utils.o
- .debug_line    0x00027612      0xc28 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme.o
- .debug_line    0x0002823a     0x333c src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
- .debug_line    0x0002b576     0x267b src/devices/display/p_ssd1963.o
- .debug_line    0x0002dbf1      0xd51 src/drivers/p_gpio.o
- .debug_line    0x0002e942      0xce5 src/drivers/p_i2c.o
- .debug_line    0x0002f627      0xdb9 src/drivers/p_usart.o
- .debug_line    0x000303e0      0xcd3 src/main.o
+ .debug_line    0x00002699     0x1d4f src/oracle.o
+ .debug_line    0x000043e8      0xbf0 src/ASF/sam0/drivers/sercom/sercom.o
+ .debug_line    0x00004fd8      0xd27 src/ASF/sam0/drivers/sercom/usart/usart.o
+ .debug_line    0x00005cff      0xcea src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
+ .debug_line    0x000069e9      0xb94 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
+ .debug_line    0x0000757d      0x8e5 src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
+ .debug_line    0x00007e62      0x9a3 src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
+ .debug_line    0x00008805      0x917 src/ASF/sam0/drivers/port/port.o
+ .debug_line    0x0000911c      0xc6d src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
+ .debug_line    0x00009d89      0xc93 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
+ .debug_line    0x0000aa1c      0x964 src/ASF/sam0/drivers/system/pinmux/pinmux.o
+ .debug_line    0x0000b380      0xa0e src/ASF/sam0/drivers/system/system.o
+ .debug_line    0x0000bd8e      0x669 src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
+ .debug_line    0x0000c3f7      0x409 src/ASF/sam0/utils/syscalls/gcc/syscalls.o
+ .debug_line    0x0000c800      0xae9 src/ASF/thirdparty/lvgl/src/lv_core/lv_debug.o
+ .debug_line    0x0000d2e9      0xa7b src/ASF/thirdparty/lvgl/src/lv_core/lv_disp.o
+ .debug_line    0x0000dd64      0xecd src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
+ .debug_line    0x0000ec31     0x1020 src/ASF/thirdparty/lvgl/src/lv_core/lv_indev.o
+ .debug_line    0x0000fc51     0x261c src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+ .debug_line    0x0001226d      0xdc7 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
+ .debug_line    0x00013034     0x1157 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+ .debug_line    0x0001418b     0x1070 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_blend.o
+ .debug_line    0x000151fb      0xf83 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
+ .debug_line    0x0001617e      0xe6a src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
+ .debug_line    0x00016fe8      0xd2c src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_line.o
+ .debug_line    0x00017d14     0x139a src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
+ .debug_line    0x000190ae     0x12ff src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_rect.o
+ .debug_line    0x0001a3ad      0xa60 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
+ .debug_line    0x0001ae0d      0xcea src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_cache.o
+ .debug_line    0x0001baf7      0xf79 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
+ .debug_line    0x0001ca70      0x467 src/ASF/thirdparty/lvgl/src/lv_font/lv_font.o
+ .debug_line    0x0001ced7     0x1077 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
+ .debug_line    0x0001df4e     0x159a src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
+ .debug_line    0x0001f4e8     0x10c4 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
+ .debug_line    0x000205ac      0xcd7 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_indev.o
+ .debug_line    0x00021283      0x317 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_tick.o
+ .debug_line    0x0002159a      0xe65 src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
+ .debug_line    0x000223ff      0x70b src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
+ .debug_line    0x00022b0a      0x407 src/ASF/thirdparty/lvgl/src/lv_misc/lv_color.o
+ .debug_line    0x00022f11      0xeef src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
+ .debug_line    0x00023e00      0x885 src/ASF/thirdparty/lvgl/src/lv_misc/lv_gc.o
+ .debug_line    0x00024685      0x58f src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
+ .debug_line    0x00024c14      0x45e src/ASF/thirdparty/lvgl/src/lv_misc/lv_math.o
+ .debug_line    0x00025072      0xbb2 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
+ .debug_line    0x00025c24      0xd98 src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
+ .debug_line    0x000269bc      0x75e src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
+ .debug_line    0x0002711a      0x4f9 src/ASF/thirdparty/lvgl/src/lv_misc/lv_utils.o
+ .debug_line    0x00027613      0xc28 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme.o
+ .debug_line    0x0002823b     0x333c src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+ .debug_line    0x0002b577     0x267b src/devices/display/p_ssd1963.o
+ .debug_line    0x0002dbf2      0xd51 src/drivers/p_gpio.o
+ .debug_line    0x0002e943      0xce5 src/drivers/p_i2c.o
+ .debug_line    0x0002f628      0xdba src/drivers/p_usart.o
+ .debug_line    0x000303e2      0xcd3 src/main.o
 
 .debug_str      0x00000000    0x9fce7
  .debug_str     0x00000000    0x8373e src/ASF/common2/services/delay/sam0/cycle_counter.o
                               0x84042 (size before relaxing)
  .debug_str     0x0008373e     0x9749 src/drivers/p_time.o
                               0x8d87c (size before relaxing)
- .debug_str     0x0008ce87      0xcf8 src/oracle.o
-                              0x8e4c5 (size before relaxing)
- .debug_str     0x0008db7f      0xd68 src/ASF/sam0/drivers/sercom/sercom.o
+ .debug_str     0x0008ce87      0xd0e src/oracle.o
+                              0x8e4db (size before relaxing)
+ .debug_str     0x0008db95      0xd68 src/ASF/sam0/drivers/sercom/sercom.o
                               0x85466 (size before relaxing)
- .debug_str     0x0008e8e7      0xd92 src/ASF/sam0/drivers/sercom/usart/usart.o
+ .debug_str     0x0008e8fd      0xd92 src/ASF/sam0/drivers/sercom/usart/usart.o
                               0x8621f (size before relaxing)
- .debug_str     0x0008f679      0x216 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
+ .debug_str     0x0008f68f      0x216 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
                               0x85465 (size before relaxing)
- .debug_str     0x0008f88f      0x548 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
+ .debug_str     0x0008f8a5      0x548 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
                               0x85301 (size before relaxing)
- .debug_str     0x0008fdd7       0x53 src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
+ .debug_str     0x0008fded       0x53 src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
                               0x83d73 (size before relaxing)
- .debug_str     0x0008fe2a      0x2ce src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
+ .debug_str     0x0008fe40      0x2ce src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
                               0x87db0 (size before relaxing)
- .debug_str     0x000900f8       0x5e src/ASF/sam0/drivers/port/port.o
+ .debug_str     0x0009010e       0x5e src/ASF/sam0/drivers/port/port.o
                               0x8419f (size before relaxing)
- .debug_str     0x00090156     0x278d src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
+ .debug_str     0x0009016c     0x278d src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
                               0x86f0c (size before relaxing)
- .debug_str     0x000928e3      0x1e3 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
+ .debug_str     0x000928f9      0x1e3 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
                               0x84a36 (size before relaxing)
- .debug_str     0x00092ac6      0x179 src/ASF/sam0/drivers/system/pinmux/pinmux.o
+ .debug_str     0x00092adc      0x179 src/ASF/sam0/drivers/system/pinmux/pinmux.o
                               0x84215 (size before relaxing)
- .debug_str     0x00092c3f       0x3b src/ASF/sam0/drivers/system/system.o
+ .debug_str     0x00092c55       0x3b src/ASF/sam0/drivers/system/system.o
                               0x83e50 (size before relaxing)
- .debug_str     0x00092c7a      0xeea src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
+ .debug_str     0x00092c90      0xeea src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
                               0x6ee77 (size before relaxing)
- .debug_str     0x00093b64      0x689 src/ASF/sam0/utils/syscalls/gcc/syscalls.o
+ .debug_str     0x00093b7a      0x689 src/ASF/sam0/utils/syscalls/gcc/syscalls.o
                                0x742e (size before relaxing)
- .debug_str     0x000941ed      0x7be src/ASF/thirdparty/lvgl/src/lv_core/lv_debug.o
+ .debug_str     0x00094203      0x7be src/ASF/thirdparty/lvgl/src/lv_core/lv_debug.o
                                0xab70 (size before relaxing)
- .debug_str     0x000949ab      0x15a src/ASF/thirdparty/lvgl/src/lv_core/lv_disp.o
+ .debug_str     0x000949c1      0x15a src/ASF/thirdparty/lvgl/src/lv_core/lv_disp.o
                                0xa76c (size before relaxing)
- .debug_str     0x00094b05      0xca6 src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
+ .debug_str     0x00094b1b      0xca6 src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
                                0xb5ff (size before relaxing)
- .debug_str     0x000957ab      0xa23 src/ASF/thirdparty/lvgl/src/lv_core/lv_indev.o
+ .debug_str     0x000957c1      0xa23 src/ASF/thirdparty/lvgl/src/lv_core/lv_indev.o
                                0xb6fb (size before relaxing)
- .debug_str     0x000961ce     0x2f29 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+ .debug_str     0x000961e4     0x2f29 src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
                                0xef98 (size before relaxing)
- .debug_str     0x000990f7      0x337 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
+ .debug_str     0x0009910d      0x337 src/ASF/thirdparty/lvgl/src/lv_core/lv_refr.o
                                0xb1f8 (size before relaxing)
- .debug_str     0x0009942e      0x322 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+ .debug_str     0x00099444      0x322 src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
                                0xac50 (size before relaxing)
- .debug_str     0x00099750      0x7aa src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_blend.o
+ .debug_str     0x00099766      0x7aa src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_blend.o
                                0xaefe (size before relaxing)
- .debug_str     0x00099efa      0x66c src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
+ .debug_str     0x00099f10      0x66c src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
                                0xb486 (size before relaxing)
- .debug_str     0x0009a566      0x3a0 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
+ .debug_str     0x0009a57c      0x3a0 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
                                0xb446 (size before relaxing)
- .debug_str     0x0009a906      0x24b src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_line.o
+ .debug_str     0x0009a91c      0x24b src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_line.o
                                0xbf71 (size before relaxing)
- .debug_str     0x0009ab51      0x331 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
+ .debug_str     0x0009ab67      0x331 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_mask.o
                                0xb1dc (size before relaxing)
- .debug_str     0x0009ae82      0x309 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_rect.o
+ .debug_str     0x0009ae98      0x309 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_rect.o
                                0xb62d (size before relaxing)
- .debug_str     0x0009b18b      0x110 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
+ .debug_str     0x0009b1a1      0x110 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
                                0x9c76 (size before relaxing)
- .debug_str     0x0009b29b       0xe7 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_cache.o
+ .debug_str     0x0009b2b1       0xe7 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_cache.o
                                0xad56 (size before relaxing)
- .debug_str     0x0009b382      0x4a2 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
+ .debug_str     0x0009b398      0x4a2 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
                                0xb56a (size before relaxing)
- .debug_str     0x0009b824       0x45 src/ASF/thirdparty/lvgl/src/lv_font/lv_font.o
+ .debug_str     0x0009b83a       0x45 src/ASF/thirdparty/lvgl/src/lv_font/lv_font.o
                                0x7feb (size before relaxing)
- .debug_str     0x0009b869      0x524 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
+ .debug_str     0x0009b87f      0x524 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
                                0xab60 (size before relaxing)
- .debug_str     0x0009bd8d       0xf1 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
+ .debug_str     0x0009bda3       0xf1 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_16.o
                                0xb503 (size before relaxing)
- .debug_str     0x0009be7e      0x174 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
+ .debug_str     0x0009be94      0x174 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
                                0xb65a (size before relaxing)
- .debug_str     0x0009bff2       0x76 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_indev.o
+ .debug_str     0x0009c008       0x76 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_indev.o
                                0xb3e8 (size before relaxing)
- .debug_str     0x0009c068       0x58 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_tick.o
+ .debug_str     0x0009c07e       0x58 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_tick.o
                                0x4842 (size before relaxing)
- .debug_str     0x0009c0c0      0x1df src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
+ .debug_str     0x0009c0d6      0x1df src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
                                0xaf01 (size before relaxing)
- .debug_str     0x0009c29f       0xcb src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
+ .debug_str     0x0009c2b5       0xcb src/ASF/thirdparty/lvgl/src/lv_misc/lv_area.o
                                0x7dd3 (size before relaxing)
- .debug_str     0x0009c36a       0xd5 src/ASF/thirdparty/lvgl/src/lv_misc/lv_color.o
+ .debug_str     0x0009c380       0xd5 src/ASF/thirdparty/lvgl/src/lv_misc/lv_color.o
                                0x5483 (size before relaxing)
- .debug_str     0x0009c43f      0x1ac src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
+ .debug_str     0x0009c455      0x1ac src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
                                0xafaa (size before relaxing)
- .debug_str     0x0009c5eb       0x98 src/ASF/thirdparty/lvgl/src/lv_misc/lv_gc.o
+ .debug_str     0x0009c601       0x98 src/ASF/thirdparty/lvgl/src/lv_misc/lv_gc.o
                                0x9d4c (size before relaxing)
- .debug_str     0x0009c683      0x192 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
+ .debug_str     0x0009c699      0x192 src/ASF/thirdparty/lvgl/src/lv_misc/lv_ll.o
                                0x7986 (size before relaxing)
- .debug_str     0x0009c815       0x92 src/ASF/thirdparty/lvgl/src/lv_misc/lv_math.o
+ .debug_str     0x0009c82b       0x92 src/ASF/thirdparty/lvgl/src/lv_misc/lv_math.o
                                0x79d2 (size before relaxing)
- .debug_str     0x0009c8a7      0x297 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
+ .debug_str     0x0009c8bd      0x297 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
                                0xa064 (size before relaxing)
- .debug_str     0x0009cb3e      0x1eb src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
+ .debug_str     0x0009cb54      0x1eb src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
                                0xaed0 (size before relaxing)
- .debug_str     0x0009cd29      0x298 src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
+ .debug_str     0x0009cd3f      0x298 src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
                                0x87e1 (size before relaxing)
- .debug_str     0x0009cfc1       0x5f src/ASF/thirdparty/lvgl/src/lv_misc/lv_utils.o
+ .debug_str     0x0009cfd7       0x5f src/ASF/thirdparty/lvgl/src/lv_misc/lv_utils.o
                                0x8583 (size before relaxing)
- .debug_str     0x0009d020       0xc8 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme.o
+ .debug_str     0x0009d036       0xc8 src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme.o
                                0xa83f (size before relaxing)
- .debug_str     0x0009d0e8     0x195b src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+ .debug_str     0x0009d0fe     0x195b src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
                                0xe367 (size before relaxing)
- .debug_str     0x0009ea43       0xf4 src/devices/display/p_ssd1963.o
+ .debug_str     0x0009ea59       0xf4 src/devices/display/p_ssd1963.o
                               0x8e72e (size before relaxing)
- .debug_str     0x0009eb37       0x67 src/drivers/p_gpio.o
+ .debug_str     0x0009eb4d       0x67 src/drivers/p_gpio.o
                               0x88c74 (size before relaxing)
- .debug_str     0x0009eb9e       0x17 src/drivers/p_i2c.o
+ .debug_str     0x0009ebb4       0x17 src/drivers/p_i2c.o
                               0x886d5 (size before relaxing)
- .debug_str     0x0009ebb5     0x1124 src/drivers/p_usart.o
+ .debug_str     0x0009ebcb     0x110e src/drivers/p_usart.o
                               0x8b299 (size before relaxing)
  .debug_str     0x0009fcd9        0xe src/main.o
                               0x886d6 (size before relaxing)
@@ -23893,6 +23896,7 @@ oracle_init                                       src/oracle.o
 oracle_service                                    src/oracle.o
                                                   src/main.o
 p_debug_start_service                             src/drivers/p_usart.o
+                                                  src/oracle.o
 p_gpio_init                                       src/drivers/p_gpio.o
                                                   src/oracle.o
 p_gpio_parallel_wr_arr                            src/drivers/p_gpio.o
