@@ -31,11 +31,15 @@
 /*
  * Support and FAQ: visit <a href="https://www.microchip.com/support/">Microchip Support</a>
  */
-#include <asf.h>
-
+#include "oracle.h"
 int main (void)
 {
-	system_init();
+	oracle_init();
+	
+	for(;;)
+	{
+		oracle_service();
+	}
 	
 	
 }

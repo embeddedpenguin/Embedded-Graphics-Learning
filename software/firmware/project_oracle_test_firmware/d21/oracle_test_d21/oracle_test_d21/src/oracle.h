@@ -5,5 +5,6 @@
 
 void oracle_init(void);
 
+void oracle_service(void);
 
 #endif
