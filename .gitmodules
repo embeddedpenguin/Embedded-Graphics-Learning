@@ -1,3 +1,6 @@
 [submodule "software/firmware/project_oracle_test_prj/project_oracle_test_prj/thirdparty/lvgl"]
 	path = software/firmware/project_oracle_test_prj/project_oracle_test_prj/thirdparty/lvgl
 	url = https://github.com/lvgl/lvgl.git
+[submodule "software/thirdparty/lvgl"]
+	path = software/thirdparty/lvgl
+	url = https://github.com/lvgl/lvgl.git
