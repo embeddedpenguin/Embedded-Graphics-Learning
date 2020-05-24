@@ -25,10 +25,10 @@ extern "C" {
 #  define SSD1963_HPS         480			// non-display period between the start of the hori sync (LLINE) signal
 #  define SSD1963_LPS         40				// horizontal sync pulse (LLINE) start location
 #  define SSD1963_HPW         5			// horizontal pulse width
-#  define SSD1963_VT          288			// vertical total (period)
+#  define SSD1963_VT          272			// vertical total (period)
 #  define SSD1963_VPS         272			// vertical period start ( non-display period in lines between the start of the frame and the first display data in line.)
-#  define SSD1963_FPS         8				// vertical sync pulse (LFRAME) start location in lines
-#  define SSD1963_VPW         8			// vertical sync pulse width
+#  define SSD1963_FPS         2				// vertical sync pulse (LFRAME) start location in lines
+#  define SSD1963_VPW         10			// vertical sync pulse width
 #  define SSD1963_HS_NEG      0   /*Negative hsync*/
 #  define SSD1963_VS_NEG      0   /*Negative vsync*/
 #  define SSD1963_ORI         0   /*0, 90, 180, 270*/

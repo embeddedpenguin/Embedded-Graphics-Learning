@@ -31,7 +31,9 @@ void p_gpio_parallel_wr_word(PortGroup* group, uint32_t mask, uint32_t data)
 {
 	port_group_set_output_level(group, mask, data);
 	port_pin_set_output_level(SSD1963_TFT_WR, 0);
+	delay_us(1);
 	port_pin_set_output_level(SSD1963_TFT_WR, 1);
+	delay_us(1);
 }
 
 void p_gpio_parallel_wr_arr(PortGroup* group, uint32_t mask, uint32_t* data, uint32_t len)
