@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Conn_02x20_LCD_INTF)(type Legacy)(uri ${KIPRJMOD}/libraries/Conn_02x20_LCD_INTF.lib)(options "")(descr ""))
+)
