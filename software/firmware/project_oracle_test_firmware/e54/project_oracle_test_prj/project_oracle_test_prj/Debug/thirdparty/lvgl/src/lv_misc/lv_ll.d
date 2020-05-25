@@ -23,8 +23,7 @@ thirdparty/lvgl/src/lv_misc/lv_ll.d thirdparty/lvgl/src/lv_misc/lv_ll.o: \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\sys\string.h \
  ../thirdparty/lvgl/src/lv_misc/lv_ll.h \
  ../thirdparty/lvgl/src/lv_misc/lv_mem.h \
- ../thirdparty/lvgl/src/lv_misc/../lv_conf_internal.h \
- ../thirdparty/lvgl/src/lv_misc/../../../lv_conf.h \
+ ../thirdparty/lvgl/src//lv_conf_internal.h ../Config/lv_conf.h \
  ../thirdparty/lvgl/src/lv_misc/lv_log.h \
  ../thirdparty/lvgl/src/lv_misc/lv_types.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\lib\gcc\arm-none-eabi\6.3.1\include\stdbool.h
@@ -75,9 +74,9 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 
 ../thirdparty/lvgl/src/lv_misc/lv_mem.h:
 
-../thirdparty/lvgl/src/lv_misc/../lv_conf_internal.h:
+../thirdparty/lvgl/src//lv_conf_internal.h:
 
-../thirdparty/lvgl/src/lv_misc/../../../lv_conf.h:
+../Config/lv_conf.h:
 
 ../thirdparty/lvgl/src/lv_misc/lv_log.h:
 

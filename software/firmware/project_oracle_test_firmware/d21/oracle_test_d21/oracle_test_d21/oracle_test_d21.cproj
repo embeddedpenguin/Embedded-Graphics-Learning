@@ -466,6 +466,7 @@
       <Value>../src/ASF/sam0/drivers/sercom/i2c/i2c_sam0</Value>
       <Value>../src/ASF/common2/services/delay</Value>
       <Value>../src/ASF/common2/services/delay/sam0</Value>
+      <Value>../src/images</Value>
     </ListValues>
   </armgcc.compiler.directories.IncludePaths>
   <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
@@ -649,6 +650,7 @@
     <Folder Include="src\devices\" />
     <Folder Include="src\devices\display\" />
     <Folder Include="src\drivers\" />
+    <Folder Include="src\images\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\ASF\common2\services\delay\delay.h">
@@ -667,6 +669,9 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="src\drivers\p_time.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\images\hornet.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="src\oracle.c">
@@ -1417,9 +1422,6 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="src\ASF\thirdparty\lvgl\lvgl.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="src\ASF\thirdparty\lvgl\lv_conf_template.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="src\ASF\thirdparty\lvgl\porting\lv_port_disp_template.c">

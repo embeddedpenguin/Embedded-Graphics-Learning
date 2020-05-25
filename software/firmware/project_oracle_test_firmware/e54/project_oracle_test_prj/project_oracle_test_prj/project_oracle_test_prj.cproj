@@ -317,7 +317,7 @@
   <armgcc.compiler.symbols.DefSymbols>
     <ListValues>
       <Value>DEBUG</Value>
-      <Value>LV_LVGL_H_INCLUDE_SIMPLE</Value>
+      <Value>LV_CONF_INCLUDE_SIMPLE</Value>
     </ListValues>
   </armgcc.compiler.symbols.DefSymbols>
   <armgcc.compiler.directories.IncludePaths>
@@ -346,7 +346,6 @@
       <Value>../devices</Value>
       <Value>../devices/display</Value>
       <Value>../thirdparty</Value>
-      <Value>../thirdparty/lvgl</Value>
     </ListValues>
   </armgcc.compiler.directories.IncludePaths>
   <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
@@ -452,6 +451,9 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Config\hpl_tc_config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Config\lv_conf.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Config\pc_board.h">
@@ -1511,9 +1513,6 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="thirdparty\lvgl\tests\lv_test_objx\lv_test_cont.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="thirdparty\lv_conf.h">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>

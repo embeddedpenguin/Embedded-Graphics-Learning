@@ -1,5 +1,5 @@
 #include "p_tcc.h"
-#include "lvgl.h"
+#include "lvgl/lvgl.h"
 static struct timer_task TIMER_0_task1, TIMER_0_task2;
 struct timer_descriptor p_tcc_inst;
 

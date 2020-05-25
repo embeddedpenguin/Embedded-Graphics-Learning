@@ -9,7 +9,7 @@
 #include "p_gpio.h"
 #include "p_i2c.h"
 #include "p_tcc.h"
-#include "lvgl.h"
+#include "lvgl/lvgl.h"
 #include "p_ssd1963.h"
 
 static lv_disp_buf_t disp_buf;

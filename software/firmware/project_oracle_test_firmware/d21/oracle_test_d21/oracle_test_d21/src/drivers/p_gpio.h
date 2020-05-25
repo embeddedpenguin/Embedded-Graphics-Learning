@@ -5,9 +5,9 @@
 
 void p_gpio_init(void);
 
-void p_gpio_parallel_wr_word(PortGroup* group, uint32_t mask, uint32_t data);
+void p_gpio_parallel_wr_word(PortGroup* group, uint32_t mask, uint16_t data);
 
-void p_gpio_parallel_wr_arr(PortGroup* group, uint32_t mask, uint32_t* data, uint32_t len);
+void p_gpio_parallel_wr_arr(PortGroup* group, uint32_t mask, uint16_t* data, uint16_t len);
 
 #define LV_DRV_DELAY_MS(x)			delay_ms(x)
 #define LV_DRV_DISP_CMD_DATA(x)		port_pin_set_output_level(SSD1963_TFT_RSDC, x)

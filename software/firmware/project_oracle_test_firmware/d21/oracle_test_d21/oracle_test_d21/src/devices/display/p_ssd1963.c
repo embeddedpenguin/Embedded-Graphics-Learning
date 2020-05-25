@@ -28,13 +28,19 @@
  **********************/
 static inline void ssd1963_cmd_mode(void);
 static inline void ssd1963_data_mode(void);
-static inline void ssd1963_cmd(uint8_t cmd);
-static inline void ssd1963_data(uint8_t data);
+static inline void ssd1963_cmd(uint16_t cmd);
+static inline void ssd1963_data(uint16_t data);
 static void ssd1963_io_init(void);
 static void ssd1963_reset(void);
 static void ssd1963_set_clk(void);
 static void ssd1963_set_tft_spec(void);
 static void ssd1963_init_bl(void);
+static void ssd1963_set_bl(uint8_t val);
+#define MASTER_CLK_HZ 100000000
+#define PIXEL_CLOCK_DIVIDER  6.6667
+#define BACKLIGHT_PWM_FREQ_HZ 200
+#define BACKLIGHT_PWMF_PARM (MASTER_CLK_HZ / (BACKLIGHT_PWM_FREQ_HZ * 256 * 256) - 1)
+#define BACKLIGHT_PWM_BRIGHTNESS_PCT 200
 
 /**********************
  *  STATIC VARIABLES
@@ -51,124 +57,86 @@ static bool cmd_mode = true;
 
 void ssd1963_init(void)
 {
-	asm volatile("nop");
-	p_gpio_parallel_wr_word(SSD1963_TFT_DATA_PORT, SSD1963_TFT_DATA_MASK, 0xAAAA);
-	asm volatile("nop");
-	delay_ms(100);
-	LV_DRV_DISP_RST(1);
-	delay_ms(100);
-	delay_ms(100);
-	ssd1963_cmd(0x0001);    // software reset
-	ssd1963_cmd(0x0001);    // software reset
-	ssd1963_cmd(0x0001);    // software reset
-
-    ssd1963_cmd(0x00E2);    //PLL multiplier, set PLL clock to 120M
-    ssd1963_data(0x0023);   //N=0x36 for 6.5M, 0x23 for 10M crystal
-    ssd1963_data(0x0002);
-    ssd1963_data(0x0054);
-    ssd1963_cmd(0x00E0);    // PLL enable
-    ssd1963_data(0x0001);
+	ssd1963_reset();
+	
+	LV_DRV_DISP_PAR_CS(0);
+    ssd1963_cmd(0xE2);    //PLL multiplier, set PLL clock to 120M
+    ssd1963_data(0x23);   //N=0x36 for 6.5M, 0x23 for 10M crystal
+    ssd1963_data(0x02);
+    ssd1963_data(0x54);
+	
+    ssd1963_cmd(0xE0);    // PLL enable
+    ssd1963_data(0x01);
 	delay_us(100);
-    ssd1963_cmd(0x00E0);
-    ssd1963_data(0x0003);   // now, use PLL output as system clock
+    ssd1963_cmd(0xE0);
+    ssd1963_data(0x03);   // now, use PLL output as system clock
+	delay_ms(1);
+	ssd1963_cmd(0x01);
+	delay_ms(1);
 
-    ssd1963_cmd(0x00B0);    //LCD SPECIFICATION
-    ssd1963_data(0x0028);
-    ssd1963_data(0x0020);
-    ssd1963_data(((SSD1963_HOR_RES - 1) >> 8) & 0X00FF); //Set HDP
-    ssd1963_data((SSD1963_HOR_RES - 1) & 0X00FF);
-    ssd1963_data(((SSD1963_VER_RES - 1) >> 8) & 0X00FF); //Set VDP
-    ssd1963_data((SSD1963_VER_RES - 1) & 0X00FF);
-    ssd1963_data(0x0000);
-	
-	
-	ssd1963_cmd(0x00F0);    //Pixel Data Interface Format
-	ssd1963_data(0x0003);   //16-bit(565 format) data
-	
-	
-	ssd1963_cmd(0x003A);    //Set the current pixel format for RGB image data
-	ssd1963_data(0x0050);   //16-bit/pixel
-	
-	ssd1963_cmd(0x00E6);    //PLL setting for PCLK, depends on resolution
+	ssd1963_cmd(0xE6);    //PLL setting for PCLK, depends on resolution
 	ssd1963_data(0x04);
 	ssd1963_data(0x3A);
 	ssd1963_data(0xB6);
 
- 
+    ssd1963_cmd(0xB0);
+    ssd1963_data(0x28);                // set 18-bit for 7" panel TY700TFT800480
+    ssd1963_data(0x80);                // set TTL mode
+    ssd1963_data((SSD1963_HOR_RES-1)>>8); //Set panel size
+    ssd1963_data(SSD1963_HOR_RES-1);
+    ssd1963_data((SSD1963_VER_RES-1)>>8);
+    ssd1963_data(SSD1963_VER_RES-1);
+    ssd1963_data(0x00);
+	
+	ssd1963_cmd(0xF0);    //Pixel Data Interface Format
+	ssd1963_data(0x03);   //16-bit(565 format) data
+	
+	
+	ssd1963_cmd(0x3A);    //Set the current pixel format for RGB image data
+	ssd1963_data(0x55);   //16-bit/pixel
 
-	ssd1963_cmd(0xb4);          //SET HBP,
-	ssd1963_data(0x04);      //SET HSYNC Tatol 525
-	ssd1963_data(0x20);
-	ssd1963_data(0x00);      //SET HBP 43
-	ssd1963_data(0x30);
-	ssd1963_data(0x30);      //SET VBP 41=40+1
-	ssd1963_data(0x00);      //SET Hsync pulse start position
+    ssd1963_cmd(0xb4);          //SET HBP,
+    ssd1963_data(0x02);      //SET HSYNC Tatol 525
+    ssd1963_data(0x0d);
+    ssd1963_data(0x00);      //SET HBP 43
+    ssd1963_data(0x2b);
+    ssd1963_data(0x28);      //SET VBP 41=40+1
+    ssd1963_data(0x00);      //SET Hsync pulse start position
+    ssd1963_data(0x00);
+    ssd1963_data(0x00);      //SET Hsync pulse subpixel start position
+
+    ssd1963_cmd(0xb6);          //SET VBP,
+    ssd1963_data(0x01);      //SET Vsync total 286=285+1
+    ssd1963_data(0x1d);
+    ssd1963_data(0x00);      //SET VBP=12
+    ssd1963_data(0x0c);
+    ssd1963_data(0x09);      //SET Vsync pulse 10=9+1
+    ssd1963_data(0x00);      //SET Vsync pulse start position
+    ssd1963_data(0x00);
+	
+	
+	ssd1963_cmd(0x2a);		//SET column address
+	ssd1963_data(0x00);			//SET start column address=0
 	ssd1963_data(0x00);
-	ssd1963_data(0x00);      //SET Hsync pulse subpixel start position
-    //ssd1963_cmd(0x00B4);            //HSYNC
-    //ssd1963_data((SSD1963_HT >> 8) & 0X00FF); //Set HT
-    //ssd1963_data(SSD1963_HT & 0X00FF);
-    //ssd1963_data((SSD1963_HPS >> 8) & 0X00FF); //Set HPS
-    //ssd1963_data(SSD1963_HPS & 0X00FF);
-    //ssd1963_data(SSD1963_HPW);              //Set HPW
-    //ssd1963_data((SSD1963_LPS >> 8) & 0X00FF); //SetLPS
-    //ssd1963_data(SSD1963_LPS & 0X00FF);
-    //ssd1963_data(0x0000);
+	ssd1963_data(0x01);			//SET end column address=479
+	ssd1963_data(0xDF);
 
-	ssd1963_cmd(0xb6);          //SET VBP,
-	ssd1963_data(0x02);      //SET Vsync total 286=285+1
-	ssd1963_data(0x0D);
-	ssd1963_data(0x00);      //SET VBP=12
-	ssd1963_data(0x16);
-	ssd1963_data(0x04);      //SET Vsync pulse 10=9+1
-	ssd1963_data(0x00);      //SET Vsync pulse start position
+	ssd1963_cmd(0x2b);		//SET page address
+	ssd1963_data(0x00);			//SET start page address=0
 	ssd1963_data(0x00);
-    //ssd1963_cmd(0x00B6);            //VSYNC
-    //ssd1963_data((SSD1963_VT >> 8) & 0X00FF); //Set VT
-    //ssd1963_data(SSD1963_VT & 0X00FF);
-    //ssd1963_data((SSD1963_VPS >> 8) & 0X00FF); //Set VPS
-    //ssd1963_data(SSD1963_VPS & 0X00FF);
-    //ssd1963_data(SSD1963_VPW);              //Set VPW
-    //ssd1963_data((SSD1963_FPS >> 8) & 0X00FF); //Set FPS
-    //ssd1963_data(SSD1963_FPS & 0X00FF);
+	ssd1963_data(0x01);			//SET end page address=271
+	ssd1963_data(0x0F);
 
-    //ssd1963_cmd(0x00B8);
-    //ssd1963_data(0x000f);    //GPIO is controlled by host GPIO[3:0]=output   GPIO[0]=1  LCD ON  GPIO[0]=1  LCD OFF
-    //ssd1963_data(0x0001);    //GPIO0 normal
-//
-    //ssd1963_cmd(0x00BA);
-    //ssd1963_data(0x0001);    //GPIO[0] out 1 --- LCD display on/off control PIN
-//
-    //ssd1963_cmd(0x0036);    //rotation
-    //ssd1963_data(0x0008);   //RGB=BGR
-//
-//
-//
-//
-    //ssd1963_cmd(0x00BC);
-    //ssd1963_data(0x0040);   //contrast value
-    //ssd1963_data(0x0080);   //brightness value
-    //ssd1963_data(0x0040);   //saturation value
-    //ssd1963_data(0x0001);   //Post Processor Enable
-//
-    //LV_DRV_DELAY_MS(1);
+    ssd1963_cmd(0x29); //display on
+	ssd1963_cmd(0xBE);
+	ssd1963_data(0x06);
+	ssd1963_data(0xFF);
+	ssd1963_data(0x01);
+	ssd1963_data(0xFF);
+	ssd1963_data(0x00);
+	ssd1963_data(0x01);
 
-    ssd1963_cmd(0x0029); //display on
-
-    ssd1963_cmd(0x00BE); //set PWM for B/L
-    ssd1963_data(0x0006);
-    ssd1963_data(0x0080);
-    ssd1963_data(0x0001);
-    ssd1963_data(0x00f0);
-    ssd1963_data(0x0000);
-    ssd1963_data(0x0000);
-
-    //ssd1963_cmd(0x00d0);
-    //ssd1963_data(0x000d);
-
-    //DisplayBacklightOn();
-
-    LV_DRV_DELAY_MS(30);
+	LV_DRV_DISP_PAR_CS(1);
 }
 
 void ssd1963_flush(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_color_t * color_p)
@@ -289,28 +257,36 @@ static inline void ssd1963_data_mode(void)
  * Write command
  * @param cmd the command
  */
-static inline void ssd1963_cmd(uint8_t cmd)
+static inline void ssd1963_cmd(uint16_t cmd)
 {
-
-    LV_DRV_DISP_PAR_CS(0);
+	LV_DRV_DISP_PAR_CS(0);
     ssd1963_cmd_mode();
     LV_DRV_DISP_PAR_WR_WORD(cmd);
-    LV_DRV_DISP_PAR_CS(1);
-
+	LV_DRV_DISP_PAR_CS(1);
 }
 
 /**
  * Write data
  * @param data the data
  */
-static inline void ssd1963_data(uint8_t data)
+static inline void ssd1963_data(uint16_t data)
 {
-
-    LV_DRV_DISP_PAR_CS(0);
+	LV_DRV_DISP_PAR_CS(0);
     ssd1963_data_mode();
     LV_DRV_DISP_PAR_WR_WORD(data);
-    LV_DRV_DISP_PAR_CS(1);
-
+	LV_DRV_DISP_PAR_CS(1);
 }
 
+
+void ssd1963_set_bl(uint8_t val)
+{
+	ssd1963_cmd(0x00BE); //set PWM for B/L
+	ssd1963_data(BACKLIGHT_PWMF_PARM);
+	ssd1963_data(1/BACKLIGHT_PWM_FREQ_HZ);
+	ssd1963_data(0x0009);
+	ssd1963_data(val & 0xFF);
+	ssd1963_data(0x0000);
+	ssd1963_data(0x0000);
+
+}
 #endif

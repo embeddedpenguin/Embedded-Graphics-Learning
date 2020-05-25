@@ -294,7 +294,7 @@ src/oracle.d src/oracle.o: ../src/oracle.c ../src/oracle.h ../src/asf.h \
  ../src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.h \
  ../src/ASF/thirdparty/lvgl/src/lv_api_map.h \
  ../src/ASF/thirdparty/lvgl/src/../lvgl.h \
- ../src/devices/display/p_ssd1963.h
+ ../src/devices/display/p_ssd1963.h ../src/images/hornet.h
 
 ../src/oracle.h:
 
@@ -905,3 +905,5 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 ../src/ASF/thirdparty/lvgl/src/../lvgl.h:
 
 ../src/devices/display/p_ssd1963.h:
+
+../src/images/hornet.h:

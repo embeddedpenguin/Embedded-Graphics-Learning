@@ -31,6 +31,7 @@
 #include <string.h>
 #include <stdbool.h>
 
+#define LV_CONF_INCLUDE_SIMPLE  (1)
 typedef enum p_err
 {
 	PE_GOOD = 0x0,		//

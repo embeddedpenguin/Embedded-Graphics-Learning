@@ -4,5 +4,6 @@
 #include "oracle.h"
 
 void p_time_init(void);
-
+const char* p_get_time_str(void);
+uint64_t p_sys_time(void);
 #endif

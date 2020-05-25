@@ -33,6 +33,19 @@ extern "C" {
 #  define SSD1963_VS_NEG      0   /*Negative vsync*/
 #  define SSD1963_ORI         0   /*0, 90, 180, 270*/
 #  define SSD1963_COLOR_DEPTH 16
+
+#define DISP_HOR_RESOLUTION			SSD1963_HOR_RES
+#define DISP_VER_RESOLUTION			SSD1963_VER_RES
+#define DISP_HOR_PULSE_WIDTH        525
+#define DISP_HOR_BACK_PORCH         43
+#define DISP_HOR_FRONT_PORCH        0
+/*********************************************************************
+* Overview: Vertical synchronization timing in lines
+*                  (from the glass datasheet).
+*********************************************************************/
+#define DISP_VER_PULSE_WIDTH        285
+#define DISP_VER_BACK_PORCH         12
+#define DISP_VER_FRONT_PORCH        10
 #endif
 
 #if USE_SSD1963

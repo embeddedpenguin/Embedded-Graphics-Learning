@@ -1,4 +1,8 @@
 #include "p_usart.h"
+#include "p_time.h"
+
+#include "lvgl.h"
+
 #include <stdarg.h>
 #include <string.h>
 #include <stdio.h>
@@ -7,6 +11,20 @@
 static struct usart_module p_debug_inst;
 
 volatile uint16_t rx_char;
+
+static const char level_strings[5][16] =
+{
+	{"TRACE"},
+	{"INFO"},
+	{"WARN"},
+	{"ERROR"},
+	{"NONE"},
+};
+
+static void p_debug_intf_cb(lv_log_level_t level, const char* file_name, uint32_t line_num, const char* description)
+{
+	p_printf("[%s][LVGL][%s][%s][%lu][%s]\n", p_get_time_str(), level_strings[level], file_name, line_num, description);
+}
 
 static void p_debug_rx_cb(struct usart_module* const mod)
 {
@@ -32,7 +50,8 @@ void p_usart_init(void)
 	usart_register_callback(&p_debug_inst, p_debug_rx_cb, USART_CALLBACK_BUFFER_RECEIVED);
 	usart_enable_callback(&p_debug_inst, USART_CALLBACK_BUFFER_RECEIVED);
 	
-	p_printf("Hello WOrld\n");
+	p_printf("USART INIT\n");
+	lv_log_register_print_cb(p_debug_intf_cb);
 }
 
 void p_printf(const char* str, ...)
