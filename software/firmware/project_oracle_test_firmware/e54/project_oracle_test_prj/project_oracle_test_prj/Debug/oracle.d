@@ -180,150 +180,159 @@ oracle.d oracle.o: .././oracle.c .././oracle.h ../Config/pc_board.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\xlocale.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\sys\string.h \
  ../drivers/p_usart.h ../oracle.h ../drivers/p_gpio.h ../drivers/p_i2c.h \
- ../drivers/p_tcc.h ../thirdparty/lvgl/lvgl.h \
- ../thirdparty/lvgl/src/lv_misc/lv_log.h \
- ../thirdparty/lvgl/src//lv_conf_internal.h ../Config/lv_conf.h \
- ../thirdparty/lvgl/src/lv_misc/lv_task.h \
- ../thirdparty/lvgl/src/lv_misc/lv_mem.h \
- ../thirdparty/lvgl/src/lv_misc/lv_log.h \
- ../thirdparty/lvgl/src/lv_misc/lv_types.h \
- ../thirdparty/lvgl/src/lv_misc/lv_ll.h \
- ../thirdparty/lvgl/src/lv_misc/lv_math.h \
- ../thirdparty/lvgl/src/lv_misc/lv_async.h \
- ../thirdparty/lvgl/src/lv_misc/lv_task.h \
- ../thirdparty/lvgl/src/lv_hal/lv_hal.h \
- ../thirdparty/lvgl/src/lv_hal/lv_hal_disp.h \
- ../thirdparty/lvgl/src/lv_hal/lv_hal.h \
- ../thirdparty/lvgl/src/lv_hal/../lv_misc/lv_color.h \
- ../thirdparty/lvgl/src/lv_hal/../lv_misc/lv_math.h \
- ../thirdparty/lvgl/src/lv_hal/../lv_misc/lv_area.h \
- ../thirdparty/lvgl/src/lv_conf_internal.h \
- ../thirdparty/lvgl/src/lv_hal/../lv_misc/lv_mem.h \
- ../thirdparty/lvgl/src/lv_hal/../lv_misc/lv_ll.h \
- ../thirdparty/lvgl/src/lv_hal/../lv_misc/lv_task.h \
- ../thirdparty/lvgl/src/lv_hal/lv_hal_indev.h \
- ../thirdparty/lvgl/src/lv_hal/lv_hal_tick.h \
- ../thirdparty/lvgl/src/lv_core/lv_obj.h \
- ../thirdparty/lvgl/src/lv_core/lv_style.h \
- ../thirdparty/lvgl/src/lv_core/../lv_font/lv_font.h \
- ../thirdparty/lvgl/src/lv_core/../lv_font/lv_symbol_def.h \
- ../thirdparty/lvgl/src/lv_core/../lv_font/../lv_misc/lv_area.h \
- ../thirdparty/lvgl/src/lv_core/../lv_misc/lv_color.h \
- ../thirdparty/lvgl/src/lv_core/../lv_misc/lv_area.h \
- ../thirdparty/lvgl/src/lv_core/../lv_misc/lv_anim.h \
- ../thirdparty/lvgl/src/lv_core/../lv_misc/lv_mem.h \
- ../thirdparty/lvgl/src/lv_core/../lv_misc/lv_types.h \
- ../thirdparty/lvgl/src/lv_core/../lv_draw/lv_draw_blend.h \
- ../thirdparty/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_color.h \
- ../thirdparty/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_area.h \
- ../thirdparty/lvgl/src/lv_core/../lv_draw/lv_draw_mask.h \
- ../thirdparty/lvgl/src/lv_core/../lv_hal/lv_hal.h \
- ../thirdparty/lvgl/src/lv_core/../lv_draw/lv_draw_rect.h \
- ../thirdparty/lvgl/src/lv_core/../lv_draw/../lv_core/lv_style.h \
- ../thirdparty/lvgl/src/lv_core/../lv_draw/lv_draw_label.h \
- ../thirdparty/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_bidi.h \
- ../thirdparty/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_txt.h \
- ../thirdparty/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_area.h \
- ../thirdparty/lvgl/src/lv_core/../lv_draw/../lv_misc/../lv_font/lv_font.h \
- ../thirdparty/lvgl/src/lv_core/../lv_draw/lv_draw_line.h \
- ../thirdparty/lvgl/src/lv_core/../lv_draw/lv_draw_img.h \
- ../thirdparty/lvgl/src/lv_core/../lv_draw/lv_img_decoder.h \
- ../thirdparty/lvgl/src/lv_core/../lv_draw/lv_img_buf.h \
- ../thirdparty/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_fs.h \
- ../thirdparty/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_mem.h \
- ../thirdparty/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_types.h \
- ../thirdparty/lvgl/src/lv_core/lv_obj_style_dec.h \
- ../thirdparty/lvgl/src/lv_core/lv_group.h \
- ../thirdparty/lvgl/src/lv_core/lv_obj.h \
- ../thirdparty/lvgl/src/lv_core/lv_indev.h \
- ../thirdparty/lvgl/src/lv_core/../lv_hal/lv_hal_indev.h \
- ../thirdparty/lvgl/src/lv_core/../lv_core/lv_group.h \
- ../thirdparty/lvgl/src/lv_core/lv_refr.h \
- ../thirdparty/lvgl/src/lv_core/lv_disp.h \
- ../thirdparty/lvgl/src/lv_themes/lv_theme.h \
- ../thirdparty/lvgl/src/lv_themes/../lv_core/lv_style.h \
- ../thirdparty/lvgl/src/lv_themes/../lv_core/lv_obj.h \
- ../thirdparty/lvgl/src/lv_themes/lv_theme_empty.h \
- ../thirdparty/lvgl/src/lv_themes/lv_theme_template.h \
- ../thirdparty/lvgl/src/lv_themes/lv_theme_material.h \
- ../thirdparty/lvgl/src/lv_themes/lv_theme_mono.h \
- ../thirdparty/lvgl/src/lv_font/lv_font.h \
- ../thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.h \
- ../thirdparty/lvgl/src/lv_font/lv_font.h \
- ../thirdparty/lvgl/src/lv_misc/lv_printf.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_btn.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_cont.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_core/lv_obj.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_core/lv_indev.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_imgbtn.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_btn.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_draw_img.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_img.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_misc/lv_fs.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_label.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_font/lv_font.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_font/lv_symbol_def.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_misc/lv_txt.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_draw.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_draw/../lv_core/lv_style.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_draw/../lv_misc/lv_txt.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_img_decoder.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_draw_rect.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_draw_label.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_draw_img.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_draw_line.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_draw_triangle.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_draw_arc.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_draw_blend.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_draw_mask.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_label.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_line.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_page.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_misc/lv_anim.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_cont.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_list.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_page.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_img.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_chart.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_line.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_table.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_checkbox.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_cpicker.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_bar.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_slider.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_bar.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_led.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_btnmatrix.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_keyboard.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_btnmatrix.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_dropdown.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_widgets/lv_page.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_widgets/lv_label.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_roller.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_textarea.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_canvas.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_widgets/lv_img.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_win.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_tabview.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_widgets/lv_win.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_tileview.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_msgbox.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_objmask.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_widgets/lv_cont.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_gauge.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_linemeter.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_linemeter.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_switch.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_arc.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_spinner.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_arc.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_calendar.h \
- ../thirdparty/lvgl/src/lv_widgets/lv_spinbox.h \
- ../thirdparty/lvgl/src/lv_widgets/../lv_widgets/lv_textarea.h \
- ../thirdparty/lvgl/src/lv_draw/lv_img_cache.h \
- ../thirdparty/lvgl/src/lv_draw/lv_img_decoder.h \
- ../thirdparty/lvgl/src/lv_api_map.h ../thirdparty/lvgl/src/../lvgl.h \
- ../devices/display/p_ssd1963.h
+ ../drivers/p_tcc.h ../thirdparty/bighelp/lvgl/lvgl.h \
+ ../thirdparty/bighelp/lvgl/src/lv_misc/lv_log.h \
+ ../thirdparty/bighelp/lvgl/src/lv_misc/../lv_conf_internal.h \
+ ../Config/lv_conf.h ../thirdparty/bighelp/lvgl/src/lv_misc/lv_task.h \
+ ../thirdparty/bighelp/lvgl/src/lv_misc/lv_mem.h \
+ ../thirdparty/bighelp/lvgl/src/lv_misc/lv_log.h \
+ ../thirdparty/bighelp/lvgl/src/lv_misc/lv_types.h \
+ ../thirdparty/bighelp/lvgl/src/lv_misc/lv_ll.h \
+ ../thirdparty/bighelp/lvgl/src/lv_misc/lv_math.h \
+ ../thirdparty/bighelp/lvgl/src/lv_misc/lv_async.h \
+ ../thirdparty/bighelp/lvgl/src/lv_misc/lv_task.h \
+ ../thirdparty/bighelp/lvgl/src/lv_hal/lv_hal.h \
+ ../thirdparty/bighelp/lvgl/src/lv_hal/lv_hal_disp.h \
+ ../thirdparty/bighelp/lvgl/src/lv_hal/lv_hal.h \
+ ../thirdparty/bighelp/lvgl/src/lv_hal/../lv_misc/lv_color.h \
+ ../thirdparty/bighelp/lvgl/src/lv_hal/../lv_misc/../lv_conf_internal.h \
+ ../thirdparty/bighelp/lvgl/src/lv_hal/../lv_misc/lv_math.h \
+ ../thirdparty/bighelp/lvgl/src/lv_hal/../lv_misc/lv_area.h \
+ ../thirdparty/bighelp/lvgl/src/lv_hal/../lv_misc/lv_mem.h \
+ ../thirdparty/bighelp/lvgl/src/lv_hal/../lv_misc/lv_ll.h \
+ ../thirdparty/bighelp/lvgl/src/lv_hal/../lv_misc/lv_task.h \
+ ../thirdparty/bighelp/lvgl/src/lv_hal/lv_hal_indev.h \
+ ../thirdparty/bighelp/lvgl/src/lv_hal/../lv_conf_internal.h \
+ ../thirdparty/bighelp/lvgl/src/lv_hal/lv_hal_tick.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/lv_obj.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_conf_internal.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/lv_style.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_font/lv_font.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_font/../lv_conf_internal.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_font/lv_symbol_def.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_font/../lv_misc/lv_area.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_misc/lv_color.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_misc/lv_area.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_misc/lv_anim.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_misc/../lv_conf_internal.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_misc/lv_mem.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_misc/lv_types.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/lv_draw_blend.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_color.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_area.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/lv_draw_mask.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_hal/lv_hal.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/lv_draw_rect.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_core/lv_style.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/lv_draw_label.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_bidi.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_misc/../lv_conf_internal.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_txt.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_area.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_misc/../lv_font/lv_font.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/lv_draw_line.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/lv_draw_img.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/lv_img_decoder.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_conf_internal.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/lv_img_buf.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_fs.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_mem.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_types.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/lv_obj_style_dec.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/lv_group.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/lv_obj.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/lv_indev.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_hal/lv_hal_indev.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/../lv_core/lv_group.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/lv_refr.h \
+ ../thirdparty/bighelp/lvgl/src/lv_core/lv_disp.h \
+ ../thirdparty/bighelp/lvgl/src/lv_themes/lv_theme.h \
+ ../thirdparty/bighelp/lvgl/src/lv_themes/../lv_conf_internal.h \
+ ../thirdparty/bighelp/lvgl/src/lv_themes/../lv_core/lv_style.h \
+ ../thirdparty/bighelp/lvgl/src/lv_themes/../lv_core/lv_obj.h \
+ ../thirdparty/bighelp/lvgl/src/lv_themes/lv_theme_empty.h \
+ ../thirdparty/bighelp/lvgl/src/lv_themes/lv_theme_template.h \
+ ../thirdparty/bighelp/lvgl/src/lv_themes/lv_theme_material.h \
+ ../thirdparty/bighelp/lvgl/src/lv_themes/lv_theme_mono.h \
+ ../thirdparty/bighelp/lvgl/src/lv_font/lv_font.h \
+ ../thirdparty/bighelp/lvgl/src/lv_font/lv_font_fmt_txt.h \
+ ../thirdparty/bighelp/lvgl/src/lv_font/lv_font.h \
+ ../thirdparty/bighelp/lvgl/src/lv_misc/lv_printf.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_btn.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_conf_internal.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_cont.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_core/lv_obj.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_core/lv_indev.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_imgbtn.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_btn.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_draw_img.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_img.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_misc/lv_fs.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_label.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_font/lv_font.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_font/lv_symbol_def.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_misc/lv_txt.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_draw.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/../lv_conf_internal.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/../lv_core/lv_style.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/../lv_misc/lv_txt.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_img_decoder.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_draw_rect.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_draw_label.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_draw_img.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_draw_line.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_draw_triangle.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_draw_arc.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_draw_blend.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_draw_mask.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_label.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_line.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_page.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_misc/lv_anim.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_cont.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_list.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_page.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_img.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_chart.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_line.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_table.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_checkbox.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_cpicker.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_bar.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_slider.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_bar.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_led.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_btnmatrix.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_keyboard.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_btnmatrix.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_dropdown.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_widgets/lv_page.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_widgets/lv_label.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_roller.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_textarea.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_canvas.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_widgets/lv_img.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_win.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_tabview.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_widgets/lv_win.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_tileview.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_msgbox.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_objmask.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_widgets/lv_cont.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_gauge.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_linemeter.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_linemeter.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_switch.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_arc.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_spinner.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_arc.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_calendar.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/lv_spinbox.h \
+ ../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_widgets/lv_textarea.h \
+ ../thirdparty/bighelp/lvgl/src/lv_draw/lv_img_cache.h \
+ ../thirdparty/bighelp/lvgl/src/lv_draw/lv_img_decoder.h \
+ ../thirdparty/bighelp/lvgl/src/lv_api_map.h \
+ ../thirdparty/bighelp/lvgl/src/../lvgl.h ../devices/display/p_ssd1963.h
 
 .././oracle.h:
 
@@ -783,294 +792,312 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 
 ../drivers/p_tcc.h:
 
-../thirdparty/lvgl/lvgl.h:
+../thirdparty/bighelp/lvgl/lvgl.h:
 
-../thirdparty/lvgl/src/lv_misc/lv_log.h:
+../thirdparty/bighelp/lvgl/src/lv_misc/lv_log.h:
 
-../thirdparty/lvgl/src//lv_conf_internal.h:
+../thirdparty/bighelp/lvgl/src/lv_misc/../lv_conf_internal.h:
 
 ../Config/lv_conf.h:
 
-../thirdparty/lvgl/src/lv_misc/lv_task.h:
+../thirdparty/bighelp/lvgl/src/lv_misc/lv_task.h:
 
-../thirdparty/lvgl/src/lv_misc/lv_mem.h:
+../thirdparty/bighelp/lvgl/src/lv_misc/lv_mem.h:
 
-../thirdparty/lvgl/src/lv_misc/lv_log.h:
+../thirdparty/bighelp/lvgl/src/lv_misc/lv_log.h:
 
-../thirdparty/lvgl/src/lv_misc/lv_types.h:
+../thirdparty/bighelp/lvgl/src/lv_misc/lv_types.h:
 
-../thirdparty/lvgl/src/lv_misc/lv_ll.h:
+../thirdparty/bighelp/lvgl/src/lv_misc/lv_ll.h:
 
-../thirdparty/lvgl/src/lv_misc/lv_math.h:
+../thirdparty/bighelp/lvgl/src/lv_misc/lv_math.h:
 
-../thirdparty/lvgl/src/lv_misc/lv_async.h:
+../thirdparty/bighelp/lvgl/src/lv_misc/lv_async.h:
 
-../thirdparty/lvgl/src/lv_misc/lv_task.h:
+../thirdparty/bighelp/lvgl/src/lv_misc/lv_task.h:
 
-../thirdparty/lvgl/src/lv_hal/lv_hal.h:
+../thirdparty/bighelp/lvgl/src/lv_hal/lv_hal.h:
 
-../thirdparty/lvgl/src/lv_hal/lv_hal_disp.h:
+../thirdparty/bighelp/lvgl/src/lv_hal/lv_hal_disp.h:
 
-../thirdparty/lvgl/src/lv_hal/lv_hal.h:
+../thirdparty/bighelp/lvgl/src/lv_hal/lv_hal.h:
 
-../thirdparty/lvgl/src/lv_hal/../lv_misc/lv_color.h:
+../thirdparty/bighelp/lvgl/src/lv_hal/../lv_misc/lv_color.h:
 
-../thirdparty/lvgl/src/lv_hal/../lv_misc/lv_math.h:
+../thirdparty/bighelp/lvgl/src/lv_hal/../lv_misc/../lv_conf_internal.h:
 
-../thirdparty/lvgl/src/lv_hal/../lv_misc/lv_area.h:
+../thirdparty/bighelp/lvgl/src/lv_hal/../lv_misc/lv_math.h:
 
-../thirdparty/lvgl/src/lv_conf_internal.h:
+../thirdparty/bighelp/lvgl/src/lv_hal/../lv_misc/lv_area.h:
 
-../thirdparty/lvgl/src/lv_hal/../lv_misc/lv_mem.h:
+../thirdparty/bighelp/lvgl/src/lv_hal/../lv_misc/lv_mem.h:
 
-../thirdparty/lvgl/src/lv_hal/../lv_misc/lv_ll.h:
+../thirdparty/bighelp/lvgl/src/lv_hal/../lv_misc/lv_ll.h:
 
-../thirdparty/lvgl/src/lv_hal/../lv_misc/lv_task.h:
+../thirdparty/bighelp/lvgl/src/lv_hal/../lv_misc/lv_task.h:
 
-../thirdparty/lvgl/src/lv_hal/lv_hal_indev.h:
+../thirdparty/bighelp/lvgl/src/lv_hal/lv_hal_indev.h:
 
-../thirdparty/lvgl/src/lv_hal/lv_hal_tick.h:
+../thirdparty/bighelp/lvgl/src/lv_hal/../lv_conf_internal.h:
 
-../thirdparty/lvgl/src/lv_core/lv_obj.h:
+../thirdparty/bighelp/lvgl/src/lv_hal/lv_hal_tick.h:
 
-../thirdparty/lvgl/src/lv_core/lv_style.h:
+../thirdparty/bighelp/lvgl/src/lv_core/lv_obj.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_font/lv_font.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_conf_internal.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_font/lv_symbol_def.h:
+../thirdparty/bighelp/lvgl/src/lv_core/lv_style.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_font/../lv_misc/lv_area.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_font/lv_font.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_misc/lv_color.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_font/../lv_conf_internal.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_misc/lv_area.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_font/lv_symbol_def.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_misc/lv_anim.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_font/../lv_misc/lv_area.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_misc/lv_mem.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_misc/lv_color.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_misc/lv_types.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_misc/lv_area.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_draw/lv_draw_blend.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_misc/lv_anim.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_color.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_misc/../lv_conf_internal.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_area.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_misc/lv_mem.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_draw/lv_draw_mask.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_misc/lv_types.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_hal/lv_hal.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/lv_draw_blend.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_draw/lv_draw_rect.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_color.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_draw/../lv_core/lv_style.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_area.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_draw/lv_draw_label.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/lv_draw_mask.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_bidi.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_hal/lv_hal.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_txt.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/lv_draw_rect.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_area.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_core/lv_style.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_draw/../lv_misc/../lv_font/lv_font.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/lv_draw_label.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_draw/lv_draw_line.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_bidi.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_draw/lv_draw_img.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_misc/../lv_conf_internal.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_draw/lv_img_decoder.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_txt.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_draw/lv_img_buf.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_area.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_fs.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_misc/../lv_font/lv_font.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_mem.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/lv_draw_line.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_types.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/lv_draw_img.h:
 
-../thirdparty/lvgl/src/lv_core/lv_obj_style_dec.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/lv_img_decoder.h:
 
-../thirdparty/lvgl/src/lv_core/lv_group.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_conf_internal.h:
 
-../thirdparty/lvgl/src/lv_core/lv_obj.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/lv_img_buf.h:
 
-../thirdparty/lvgl/src/lv_core/lv_indev.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_fs.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_hal/lv_hal_indev.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_mem.h:
 
-../thirdparty/lvgl/src/lv_core/../lv_core/lv_group.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_draw/../lv_misc/lv_types.h:
 
-../thirdparty/lvgl/src/lv_core/lv_refr.h:
+../thirdparty/bighelp/lvgl/src/lv_core/lv_obj_style_dec.h:
 
-../thirdparty/lvgl/src/lv_core/lv_disp.h:
+../thirdparty/bighelp/lvgl/src/lv_core/lv_group.h:
 
-../thirdparty/lvgl/src/lv_themes/lv_theme.h:
+../thirdparty/bighelp/lvgl/src/lv_core/lv_obj.h:
 
-../thirdparty/lvgl/src/lv_themes/../lv_core/lv_style.h:
+../thirdparty/bighelp/lvgl/src/lv_core/lv_indev.h:
 
-../thirdparty/lvgl/src/lv_themes/../lv_core/lv_obj.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_hal/lv_hal_indev.h:
 
-../thirdparty/lvgl/src/lv_themes/lv_theme_empty.h:
+../thirdparty/bighelp/lvgl/src/lv_core/../lv_core/lv_group.h:
 
-../thirdparty/lvgl/src/lv_themes/lv_theme_template.h:
+../thirdparty/bighelp/lvgl/src/lv_core/lv_refr.h:
 
-../thirdparty/lvgl/src/lv_themes/lv_theme_material.h:
+../thirdparty/bighelp/lvgl/src/lv_core/lv_disp.h:
 
-../thirdparty/lvgl/src/lv_themes/lv_theme_mono.h:
+../thirdparty/bighelp/lvgl/src/lv_themes/lv_theme.h:
 
-../thirdparty/lvgl/src/lv_font/lv_font.h:
+../thirdparty/bighelp/lvgl/src/lv_themes/../lv_conf_internal.h:
 
-../thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.h:
+../thirdparty/bighelp/lvgl/src/lv_themes/../lv_core/lv_style.h:
 
-../thirdparty/lvgl/src/lv_font/lv_font.h:
+../thirdparty/bighelp/lvgl/src/lv_themes/../lv_core/lv_obj.h:
 
-../thirdparty/lvgl/src/lv_misc/lv_printf.h:
+../thirdparty/bighelp/lvgl/src/lv_themes/lv_theme_empty.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_btn.h:
+../thirdparty/bighelp/lvgl/src/lv_themes/lv_theme_template.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_cont.h:
+../thirdparty/bighelp/lvgl/src/lv_themes/lv_theme_material.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_core/lv_obj.h:
+../thirdparty/bighelp/lvgl/src/lv_themes/lv_theme_mono.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_core/lv_indev.h:
+../thirdparty/bighelp/lvgl/src/lv_font/lv_font.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_imgbtn.h:
+../thirdparty/bighelp/lvgl/src/lv_font/lv_font_fmt_txt.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_btn.h:
+../thirdparty/bighelp/lvgl/src/lv_font/lv_font.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_draw_img.h:
+../thirdparty/bighelp/lvgl/src/lv_misc/lv_printf.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_img.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_btn.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_misc/lv_fs.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_conf_internal.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_label.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_cont.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_font/lv_font.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_core/lv_obj.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_font/lv_symbol_def.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_core/lv_indev.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_misc/lv_txt.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_imgbtn.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_draw.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_btn.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_draw/../lv_core/lv_style.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_draw_img.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_draw/../lv_misc/lv_txt.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_img.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_img_decoder.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_misc/lv_fs.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_draw_rect.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_label.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_draw_label.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_font/lv_font.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_draw_img.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_font/lv_symbol_def.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_draw_line.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_misc/lv_txt.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_draw_triangle.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_draw.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_draw_arc.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/../lv_conf_internal.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_draw_blend.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/../lv_core/lv_style.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_draw/lv_draw_mask.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/../lv_misc/lv_txt.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_label.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_img_decoder.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_line.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_draw_rect.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_page.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_draw_label.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_misc/lv_anim.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_draw_img.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_cont.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_draw_line.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_list.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_draw_triangle.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_page.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_draw_arc.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_img.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_draw_blend.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_chart.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_draw/lv_draw_mask.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_line.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_label.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_table.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_line.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_checkbox.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_page.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_cpicker.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_misc/lv_anim.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_bar.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_cont.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_slider.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_list.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_bar.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_page.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_led.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_img.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_btnmatrix.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_chart.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_keyboard.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_line.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_btnmatrix.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_table.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_dropdown.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_checkbox.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_widgets/lv_page.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_cpicker.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_widgets/lv_label.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_bar.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_roller.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_slider.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_textarea.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_bar.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_canvas.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_led.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_widgets/lv_img.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_btnmatrix.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_win.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_keyboard.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_tabview.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_btnmatrix.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_widgets/lv_win.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_dropdown.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_tileview.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_widgets/lv_page.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_msgbox.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_widgets/lv_label.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_objmask.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_roller.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_widgets/lv_cont.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_textarea.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_gauge.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_canvas.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_linemeter.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_widgets/lv_img.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_linemeter.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_win.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_switch.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_tabview.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_arc.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_widgets/lv_win.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_spinner.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_tileview.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_arc.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_msgbox.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_calendar.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_objmask.h:
 
-../thirdparty/lvgl/src/lv_widgets/lv_spinbox.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_widgets/lv_cont.h:
 
-../thirdparty/lvgl/src/lv_widgets/../lv_widgets/lv_textarea.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_gauge.h:
 
-../thirdparty/lvgl/src/lv_draw/lv_img_cache.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_linemeter.h:
 
-../thirdparty/lvgl/src/lv_draw/lv_img_decoder.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_linemeter.h:
 
-../thirdparty/lvgl/src/lv_api_map.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_switch.h:
 
-../thirdparty/lvgl/src/../lvgl.h:
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_arc.h:
+
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_spinner.h:
+
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_arc.h:
+
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_calendar.h:
+
+../thirdparty/bighelp/lvgl/src/lv_widgets/lv_spinbox.h:
+
+../thirdparty/bighelp/lvgl/src/lv_widgets/../lv_widgets/lv_textarea.h:
+
+../thirdparty/bighelp/lvgl/src/lv_draw/lv_img_cache.h:
+
+../thirdparty/bighelp/lvgl/src/lv_draw/lv_img_decoder.h:
+
+../thirdparty/bighelp/lvgl/src/lv_api_map.h:
+
+../thirdparty/bighelp/lvgl/src/../lvgl.h:
 
 ../devices/display/p_ssd1963.h:

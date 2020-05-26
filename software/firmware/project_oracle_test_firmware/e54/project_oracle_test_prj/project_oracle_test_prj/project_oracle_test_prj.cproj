@@ -345,13 +345,14 @@
       <Value>../drivers</Value>
       <Value>../devices</Value>
       <Value>../devices/display</Value>
-      <Value>../thirdparty</Value>
+      <Value>../thirdparty/bighelp</Value>
     </ListValues>
   </armgcc.compiler.directories.IncludePaths>
   <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
   <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
   <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
   <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+  <armgcc.compiler.warnings.Undefined>True</armgcc.compiler.warnings.Undefined>
   <armgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -mfloat-abi=softfp -mfpu=fpv4-sp-d16</armgcc.compiler.miscellaneous.OtherFlags>
   <armgcc.linker.general.UseNewlibNano>True</armgcc.linker.general.UseNewlibNano>
   <armgcc.linker.libraries.Libraries>
@@ -885,634 +886,637 @@
     <Compile Include="oracle.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\lvgl.h">
+    <Compile Include="thirdparty\bighelp\lvgl\lvgl.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\porting\lv_port_disp_template.c">
+    <Compile Include="thirdparty\bighelp\lvgl\lv_conf_template.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\porting\lv_port_disp_template.h">
+    <Compile Include="thirdparty\bighelp\lvgl\porting\lv_port_disp_template.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\porting\lv_port_fs_template.c">
+    <Compile Include="thirdparty\bighelp\lvgl\porting\lv_port_disp_template.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\porting\lv_port_fs_template.h">
+    <Compile Include="thirdparty\bighelp\lvgl\porting\lv_port_fs_template.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\porting\lv_port_indev_template.c">
+    <Compile Include="thirdparty\bighelp\lvgl\porting\lv_port_fs_template.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\porting\lv_port_indev_template.h">
+    <Compile Include="thirdparty\bighelp\lvgl\porting\lv_port_indev_template.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_api_map.h">
+    <Compile Include="thirdparty\bighelp\lvgl\porting\lv_port_indev_template.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_conf_internal.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_api_map.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_core\lv_debug.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_conf_internal.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_core\lv_debug.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_core\lv_debug.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_core\lv_disp.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_core\lv_debug.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_core\lv_disp.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_core\lv_disp.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_core\lv_group.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_core\lv_disp.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_core\lv_group.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_core\lv_group.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_core\lv_indev.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_core\lv_group.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_core\lv_indev.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_core\lv_indev.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_core\lv_obj.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_core\lv_indev.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_core\lv_obj.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_core\lv_obj.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_core\lv_obj_style_dec.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_core\lv_obj.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_core\lv_refr.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_core\lv_obj_style_dec.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_core\lv_refr.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_core\lv_refr.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_core\lv_style.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_core\lv_refr.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_core\lv_style.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_core\lv_style.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_draw.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_core\lv_style.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_draw_arc.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_draw.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_draw_arc.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_draw_arc.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_draw_blend.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_draw_arc.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_draw_blend.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_draw_blend.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_draw_img.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_draw_blend.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_draw_img.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_draw_img.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_draw_label.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_draw_img.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_draw_label.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_draw_label.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_draw_line.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_draw_label.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_draw_line.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_draw_line.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_draw_mask.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_draw_line.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_draw_mask.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_draw_mask.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_draw_rect.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_draw_mask.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_draw_rect.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_draw_rect.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_draw_triangle.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_draw_rect.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_draw_triangle.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_draw_triangle.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_img_buf.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_draw_triangle.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_img_buf.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_img_buf.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_img_cache.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_img_buf.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_img_cache.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_img_cache.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_img_decoder.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_img_cache.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_draw\lv_img_decoder.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_img_decoder.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_img_decoder.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_dejavu_16_persian_hebrew.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_fmt_txt.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_dejavu_16_persian_hebrew.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_fmt_txt.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_fmt_txt.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_12.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_fmt_txt.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_12_subpx.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_12.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_14.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_12_subpx.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_16.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_14.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_18.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_16.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_20.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_18.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_22.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_20.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_24.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_22.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_26.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_24.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_28.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_26.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_28_compressed.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_28.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_30.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_28_compressed.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_32.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_30.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_34.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_32.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_36.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_34.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_38.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_36.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_40.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_38.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_42.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_40.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_44.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_42.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_46.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_44.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_montserrat_48.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_46.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_simsun_16_cjk.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_montserrat_48.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_font_unscii_8.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_simsun_16_cjk.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_font\lv_symbol_def.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font_unscii_8.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_gpu\lv_gpu_stm32_dma2d.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_font\lv_symbol_def.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_gpu\lv_gpu_stm32_dma2d.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_gpu\lv_gpu_stm32_dma2d.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_hal\lv_hal.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_gpu\lv_gpu_stm32_dma2d.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_hal\lv_hal_disp.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_hal\lv_hal.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_hal\lv_hal_disp.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_hal\lv_hal_disp.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_hal\lv_hal_indev.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_hal\lv_hal_disp.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_hal\lv_hal_indev.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_hal\lv_hal_indev.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_hal\lv_hal_tick.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_hal\lv_hal_indev.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_hal\lv_hal_tick.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_hal\lv_hal_tick.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_anim.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_hal\lv_hal_tick.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_anim.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_anim.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_area.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_anim.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_area.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_area.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_async.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_area.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_async.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_async.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_bidi.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_async.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_bidi.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_bidi.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_color.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_bidi.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_color.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_color.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_fs.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_color.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_fs.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_fs.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_gc.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_fs.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_gc.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_gc.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_ll.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_gc.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_ll.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_ll.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_log.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_ll.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_log.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_log.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_math.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_log.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_math.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_math.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_mem.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_math.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_mem.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_mem.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_printf.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_mem.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_printf.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_printf.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_task.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_printf.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_task.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_task.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_templ.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_task.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_templ.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_templ.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_txt.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_templ.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_txt.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_txt.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_txt_ap.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_txt.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_txt_ap.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_txt_ap.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_types.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_txt_ap.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_utils.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_types.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_misc\lv_utils.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_utils.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_themes\lv_theme.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_utils.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_themes\lv_theme.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_themes\lv_theme.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_themes\lv_theme_empty.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_themes\lv_theme.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_themes\lv_theme_empty.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_themes\lv_theme_empty.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_themes\lv_theme_material.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_themes\lv_theme_empty.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_themes\lv_theme_material.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_themes\lv_theme_material.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_themes\lv_theme_mono.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_themes\lv_theme_material.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_themes\lv_theme_mono.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_themes\lv_theme_mono.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_themes\lv_theme_template.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_themes\lv_theme_mono.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_themes\lv_theme_template.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_themes\lv_theme_template.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_arc.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_themes\lv_theme_template.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_arc.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_arc.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_bar.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_arc.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_bar.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_bar.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_btn.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_bar.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_btn.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_btn.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_btnmatrix.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_btn.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_btnmatrix.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_btnmatrix.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_calendar.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_btnmatrix.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_calendar.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_calendar.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_canvas.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_calendar.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_canvas.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_canvas.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_chart.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_canvas.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_chart.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_chart.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_checkbox.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_chart.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_checkbox.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_checkbox.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_cont.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_checkbox.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_cont.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_cont.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_cpicker.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_cont.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_cpicker.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_cpicker.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_dropdown.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_cpicker.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_dropdown.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_dropdown.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_gauge.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_dropdown.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_gauge.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_gauge.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_img.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_gauge.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_img.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_img.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_imgbtn.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_img.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_imgbtn.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_imgbtn.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_keyboard.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_imgbtn.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_keyboard.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_keyboard.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_label.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_keyboard.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_label.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_label.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_led.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_label.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_led.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_led.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_line.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_led.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_line.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_line.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_linemeter.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_line.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_linemeter.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_linemeter.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_list.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_linemeter.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_list.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_list.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_msgbox.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_list.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_msgbox.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_msgbox.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_objmask.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_msgbox.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_objmask.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_objmask.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_objx_templ.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_objmask.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_objx_templ.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_objx_templ.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_page.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_objx_templ.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_page.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_page.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_roller.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_page.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_roller.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_roller.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_slider.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_roller.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_slider.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_slider.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_spinbox.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_slider.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_spinbox.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_spinbox.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_spinner.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_spinbox.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_spinner.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_spinner.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_switch.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_spinner.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_switch.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_switch.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_table.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_switch.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_table.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_table.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_tabview.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_table.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_tabview.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_tabview.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_textarea.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_tabview.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_textarea.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_textarea.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_tileview.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_textarea.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_tileview.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_tileview.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_win.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_tileview.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\src\lv_widgets\lv_win.h">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_win.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\tests\lv_test_assert.c">
+    <Compile Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_win.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\tests\lv_test_assert.h">
+    <Compile Include="thirdparty\bighelp\lvgl\tests\lv_test_assert.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\tests\lv_test_conf.h">
+    <Compile Include="thirdparty\bighelp\lvgl\tests\lv_test_assert.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\tests\lv_test_core\lv_test_core.c">
+    <Compile Include="thirdparty\bighelp\lvgl\tests\lv_test_conf.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\tests\lv_test_core\lv_test_core.h">
+    <Compile Include="thirdparty\bighelp\lvgl\tests\lv_test_core\lv_test_core.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\tests\lv_test_core\lv_test_obj.c">
+    <Compile Include="thirdparty\bighelp\lvgl\tests\lv_test_core\lv_test_core.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\tests\lv_test_core\lv_test_obj.h">
+    <Compile Include="thirdparty\bighelp\lvgl\tests\lv_test_core\lv_test_obj.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\tests\lv_test_core\lv_test_style.c">
+    <Compile Include="thirdparty\bighelp\lvgl\tests\lv_test_core\lv_test_obj.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\tests\lv_test_core\lv_test_style.h">
+    <Compile Include="thirdparty\bighelp\lvgl\tests\lv_test_core\lv_test_style.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\tests\lv_test_main.c">
+    <Compile Include="thirdparty\bighelp\lvgl\tests\lv_test_core\lv_test_style.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\tests\lv_test_objx\lv_test_cont.c">
+    <Compile Include="thirdparty\bighelp\lvgl\tests\lv_test_main.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="thirdparty\lvgl\tests\lv_test_objx\lv_test_cont.h">
+    <Compile Include="thirdparty\bighelp\lvgl\tests\lv_test_objx\lv_test_cont.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="thirdparty\bighelp\lvgl\tests\lv_test_objx\lv_test_cont.h">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>
@@ -1545,27 +1549,28 @@
     <Folder Include="drivers" />
     <Folder Include="devices" />
     <Folder Include="thirdparty\" />
-    <Folder Include="thirdparty\lvgl\" />
-    <Folder Include="thirdparty\lvgl\.github\" />
-    <Folder Include="thirdparty\lvgl\.github\ISSUE_TEMPLATE\" />
-    <Folder Include="thirdparty\lvgl\.github\workflows\" />
-    <Folder Include="thirdparty\lvgl\docs\" />
-    <Folder Include="thirdparty\lvgl\porting\" />
-    <Folder Include="thirdparty\lvgl\scripts\" />
-    <Folder Include="thirdparty\lvgl\scripts\built_in_font\" />
-    <Folder Include="thirdparty\lvgl\src\" />
-    <Folder Include="thirdparty\lvgl\src\lv_core\" />
-    <Folder Include="thirdparty\lvgl\src\lv_draw\" />
-    <Folder Include="thirdparty\lvgl\src\lv_font\" />
-    <Folder Include="thirdparty\lvgl\src\lv_gpu\" />
-    <Folder Include="thirdparty\lvgl\src\lv_hal\" />
-    <Folder Include="thirdparty\lvgl\src\lv_misc\" />
-    <Folder Include="thirdparty\lvgl\src\lv_themes\" />
-    <Folder Include="thirdparty\lvgl\src\lv_widgets\" />
-    <Folder Include="thirdparty\lvgl\tests\" />
-    <Folder Include="thirdparty\lvgl\tests\lv_test_core\" />
-    <Folder Include="thirdparty\lvgl\tests\lv_test_objx\" />
-    <Folder Include="thirdparty\lvgl\tests\lv_test_ref_imgs\" />
+    <Folder Include="thirdparty\bighelp\" />
+    <Folder Include="thirdparty\bighelp\lvgl\" />
+    <Folder Include="thirdparty\bighelp\lvgl\.github\" />
+    <Folder Include="thirdparty\bighelp\lvgl\.github\ISSUE_TEMPLATE\" />
+    <Folder Include="thirdparty\bighelp\lvgl\.github\workflows\" />
+    <Folder Include="thirdparty\bighelp\lvgl\docs\" />
+    <Folder Include="thirdparty\bighelp\lvgl\porting\" />
+    <Folder Include="thirdparty\bighelp\lvgl\scripts\" />
+    <Folder Include="thirdparty\bighelp\lvgl\scripts\built_in_font\" />
+    <Folder Include="thirdparty\bighelp\lvgl\src\" />
+    <Folder Include="thirdparty\bighelp\lvgl\src\lv_core\" />
+    <Folder Include="thirdparty\bighelp\lvgl\src\lv_draw\" />
+    <Folder Include="thirdparty\bighelp\lvgl\src\lv_font\" />
+    <Folder Include="thirdparty\bighelp\lvgl\src\lv_gpu\" />
+    <Folder Include="thirdparty\bighelp\lvgl\src\lv_hal\" />
+    <Folder Include="thirdparty\bighelp\lvgl\src\lv_misc\" />
+    <Folder Include="thirdparty\bighelp\lvgl\src\lv_themes\" />
+    <Folder Include="thirdparty\bighelp\lvgl\src\lv_widgets\" />
+    <Folder Include="thirdparty\bighelp\lvgl\tests\" />
+    <Folder Include="thirdparty\bighelp\lvgl\tests\lv_test_core\" />
+    <Folder Include="thirdparty\bighelp\lvgl\tests\lv_test_objx\" />
+    <Folder Include="thirdparty\bighelp\lvgl\tests\lv_test_ref_imgs\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Device_Startup\same54p20a_flash.ld">
@@ -1586,133 +1591,136 @@
     <None Include="hal\documentation\usart_async.rst">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\.editorconfig">
+    <None Include="thirdparty\bighelp\lvgl\.editorconfig">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\.git">
+    <None Include="thirdparty\bighelp\lvgl\.git">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\.github\FUNDING.yml">
+    <None Include="thirdparty\bighelp\lvgl\.github\FUNDING.yml">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\.github\ISSUE_TEMPLATE\all-other-issues.md">
+    <None Include="thirdparty\bighelp\lvgl\.github\ISSUE_TEMPLATE\all-other-issues.md">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\.github\ISSUE_TEMPLATE\bug-report.md">
+    <None Include="thirdparty\bighelp\lvgl\.github\ISSUE_TEMPLATE\bug-report.md">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\.github\stale.yml">
+    <None Include="thirdparty\bighelp\lvgl\.github\ISSUE_TEMPLATE\config.yml">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\.github\workflows\ccpp.yml">
+    <None Include="thirdparty\bighelp\lvgl\.github\stale.yml">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\.gitignore">
+    <None Include="thirdparty\bighelp\lvgl\.github\workflows\ccpp.yml">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\.gitmodules">
+    <None Include="thirdparty\bighelp\lvgl\.gitignore">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\CHANGELOG.md">
+    <None Include="thirdparty\bighelp\lvgl\.gitmodules">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\docs\CODE_OF_CONDUCT.md">
+    <None Include="thirdparty\bighelp\lvgl\CHANGELOG.md">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\docs\CODING_STYLE.md">
+    <None Include="thirdparty\bighelp\lvgl\docs\CODE_OF_CONDUCT.md">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\docs\CONTRIBUTING.md">
+    <None Include="thirdparty\bighelp\lvgl\docs\CODING_STYLE.md">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\library.json">
+    <None Include="thirdparty\bighelp\lvgl\docs\CONTRIBUTING.md">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\LICENCE.txt">
+    <None Include="thirdparty\bighelp\lvgl\library.json">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\lvgl.mk">
+    <None Include="thirdparty\bighelp\lvgl\LICENCE.txt">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\README.md">
+    <None Include="thirdparty\bighelp\lvgl\lvgl.mk">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\scripts\built_in_font\built_in_font_gen.py">
+    <None Include="thirdparty\bighelp\lvgl\README.md">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\scripts\built_in_font\DejaVuSans.ttf">
+    <None Include="thirdparty\bighelp\lvgl\scripts\built_in_font\built_in_font_gen.py">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\scripts\built_in_font\FontAwesome5-Solid+Brands+Regular.woff">
+    <None Include="thirdparty\bighelp\lvgl\scripts\built_in_font\DejaVuSans.ttf">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\scripts\built_in_font\generate_all.py">
+    <None Include="thirdparty\bighelp\lvgl\scripts\built_in_font\FontAwesome5-Solid+Brands+Regular.woff">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\scripts\built_in_font\Montserrat-Medium.ttf">
+    <None Include="thirdparty\bighelp\lvgl\scripts\built_in_font\generate_all.py">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\scripts\built_in_font\SimSun.woff">
+    <None Include="thirdparty\bighelp\lvgl\scripts\built_in_font\Montserrat-Medium.ttf">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\scripts\code-format.cfg">
+    <None Include="thirdparty\bighelp\lvgl\scripts\built_in_font\SimSun.woff">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\scripts\code-format.sh">
+    <None Include="thirdparty\bighelp\lvgl\scripts\code-format.cfg">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\scripts\cppcheck_run.sh">
+    <None Include="thirdparty\bighelp\lvgl\scripts\code-format.sh">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\scripts\Doxyfile">
+    <None Include="thirdparty\bighelp\lvgl\scripts\cppcheck_run.sh">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\scripts\infer_run.sh">
+    <None Include="thirdparty\bighelp\lvgl\scripts\Doxyfile">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\scripts\lv_conf_checker.py">
+    <None Include="thirdparty\bighelp\lvgl\scripts\infer_run.sh">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\scripts\release_patch.py">
+    <None Include="thirdparty\bighelp\lvgl\scripts\lv_conf_checker.py">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\src\lv_core\lv_core.mk">
+    <None Include="thirdparty\bighelp\lvgl\scripts\release_patch.py">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\src\lv_draw\lv_draw.mk">
+    <None Include="thirdparty\bighelp\lvgl\src\lv_core\lv_core.mk">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\src\lv_font\lv_font.mk">
+    <None Include="thirdparty\bighelp\lvgl\src\lv_draw\lv_draw.mk">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\src\lv_gpu\lv_gpu.mk">
+    <None Include="thirdparty\bighelp\lvgl\src\lv_font\lv_font.mk">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\src\lv_hal\lv_hal.mk">
+    <None Include="thirdparty\bighelp\lvgl\src\lv_gpu\lv_gpu.mk">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\src\lv_misc\lv_misc.mk">
+    <None Include="thirdparty\bighelp\lvgl\src\lv_hal\lv_hal.mk">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\src\lv_themes\lv_themes.mk">
+    <None Include="thirdparty\bighelp\lvgl\src\lv_misc\lv_misc.mk">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\src\lv_widgets\lv_widgets.mk">
+    <None Include="thirdparty\bighelp\lvgl\src\lv_themes\lv_themes.mk">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\tests\build.py">
+    <None Include="thirdparty\bighelp\lvgl\src\lv_widgets\lv_widgets.mk">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\tests\icon.png">
+    <None Include="thirdparty\bighelp\lvgl\tests\build.py">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\tests\icon2.png">
+    <None Include="thirdparty\bighelp\lvgl\tests\icon.png">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\tests\lv_test_ref_imgs\lv_test_obj_1_1.png">
+    <None Include="thirdparty\bighelp\lvgl\tests\icon2.png">
       <SubType>compile</SubType>
     </None>
-    <None Include="thirdparty\lvgl\tests\Makefile">
+    <None Include="thirdparty\bighelp\lvgl\tests\lv_test_ref_imgs\lv_test_obj_1_1.png">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="thirdparty\bighelp\lvgl\tests\Makefile">
       <SubType>compile</SubType>
     </None>
   </ItemGroup>

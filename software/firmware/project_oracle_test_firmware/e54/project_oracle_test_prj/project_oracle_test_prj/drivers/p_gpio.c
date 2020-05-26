@@ -72,8 +72,8 @@ void p_gpio_parallel_write_arr(PortGroup* group, uint32_t mask, uint32_t* data, 
 void p_gpio_set_port_data(PortGroup* const port, const uint32_t mask, const uint32_t data)
 {
 	uint32_t dword = (uint32_t)(SSD1963_TFT_DATA_FIX(data));
-	port->OUTSET.reg = (mask & data);
-	port->OUTCLR.reg = (mask & ~data);
+	port->OUTSET.reg = (mask & dword);
+	port->OUTCLR.reg = (mask & ~dword);
 }
 
 void p_gpio_set_port_group_config(enum gpio_port port, const uint32_t mask, p_port_config* config)
