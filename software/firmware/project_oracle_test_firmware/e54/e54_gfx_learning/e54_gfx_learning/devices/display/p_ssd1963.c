@@ -57,6 +57,7 @@ static bool cmd_mode = true;
 void ssd1963_init(void)
 {
 	ssd1963_reset();
+	LV_DRV_DISP_PAR_CS(0);
 	ssd1963_cmd(0xE2);    //PLL multiplier, set PLL clock to 120M
 	ssd1963_data(0x23);   //N=0x36 for 6.5M, 0x23 for 10M crystal
 	ssd1963_data(0x02);
@@ -75,7 +76,9 @@ void ssd1963_init(void)
 	ssd1963_data(0x04);
 	ssd1963_data(0x3A);
 	ssd1963_data(0xB6);
-
+	//ssd1963_data(0x01);
+	//ssd1963_data(0x55);
+	//ssd1963_data(0x54);
 	ssd1963_cmd(0xB0);
 	ssd1963_data(0x28);                // set 18-bit for 7" panel TY700TFT800480
 	ssd1963_data(0x80);                // set TTL mode
@@ -203,9 +206,11 @@ static void ssd1963_io_init(void)
 static void ssd1963_reset(void)
 {
     /*Hardware reset*/
+	asm volatile("nop");
     LV_DRV_DISP_RST(1);
     LV_DRV_DELAY_MS(50);
     LV_DRV_DISP_RST(0);
+	asm volatile("nop");
     LV_DRV_DELAY_MS(50);
     LV_DRV_DISP_RST(1);
     LV_DRV_DELAY_MS(50);

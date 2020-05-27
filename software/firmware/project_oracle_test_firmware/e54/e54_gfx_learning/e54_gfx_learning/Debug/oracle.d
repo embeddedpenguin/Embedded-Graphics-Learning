@@ -332,7 +332,7 @@ oracle.d oracle.o: .././oracle.c .././oracle.h ../Config/pc_board.h \
  ../thirdparty/lvgl/src/lv_draw/lv_img_cache.h \
  ../thirdparty/lvgl/src/lv_draw/lv_img_decoder.h \
  ../thirdparty/lvgl/src/lv_api_map.h ../thirdparty/lvgl/src/../lvgl.h \
- ../devices/display/p_ssd1963.h
+ ../devices/display/p_ssd1963.h .././hornet.h
 
 .././oracle.h:
 
@@ -1101,3 +1101,5 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 ../thirdparty/lvgl/src/../lvgl.h:
 
 ../devices/display/p_ssd1963.h:
+
+.././hornet.h:
