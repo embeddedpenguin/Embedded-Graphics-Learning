@@ -87,6 +87,7 @@ SUBDIRS :=  \
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
 ../devices/display/p_ssd1963.c \
+../devices/p_screen.c \
 ../Device_Startup/startup_same54.c \
 ../Device_Startup/system_same54.c \
 ../drivers/p_gpio.c \
@@ -247,6 +248,7 @@ ASM_SRCS +=
 
 OBJS +=  \
 devices/display/p_ssd1963.o \
+devices/p_screen.o \
 Device_Startup/startup_same54.o \
 Device_Startup/system_same54.o \
 drivers/p_gpio.o \
@@ -400,6 +402,7 @@ thirdparty/lvgl/tests/lv_test_objx/lv_test_cont.o
 
 OBJS_AS_ARGS +=  \
 devices/display/p_ssd1963.o \
+devices/p_screen.o \
 Device_Startup/startup_same54.o \
 Device_Startup/system_same54.o \
 drivers/p_gpio.o \
@@ -553,6 +556,7 @@ thirdparty/lvgl/tests/lv_test_objx/lv_test_cont.o
 
 C_DEPS +=  \
 devices/display/p_ssd1963.d \
+devices/p_screen.d \
 Device_Startup/startup_same54.d \
 Device_Startup/system_same54.d \
 drivers/p_gpio.d \
@@ -706,6 +710,7 @@ thirdparty/lvgl/tests/lv_test_objx/lv_test_cont.d
 
 C_DEPS_AS_ARGS +=  \
 devices/display/p_ssd1963.d \
+devices/p_screen.d \
 Device_Startup/startup_same54.d \
 Device_Startup/system_same54.d \
 drivers/p_gpio.d \
@@ -874,6 +879,13 @@ LINKER_SCRIPT_DEP+=  \
 
 # AVR32/GNU C Compiler
 devices/display/p_ssd1963.o: ../devices/display/p_ssd1963.c
+	@echo Building file: $<
+	@echo Invoking: ARM/GNU C Compiler : 6.3.1
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-gcc.exe$(QUOTE)  -x c -mthumb -D__SAME54P20A__ -DDEBUG -DLV_CONF_INCLUDE_SIMPLE  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include" -I"../Config" -I".." -I"../examples" -I"../hal/include" -I"../hal/utils/include" -I"../hpl/cmcc" -I"../hpl/core" -I"../hpl/dmac" -I"../hpl/eic" -I"../hpl/gclk" -I"../hpl/mclk" -I"../hpl/osc32kctrl" -I"../hpl/oscctrl" -I"../hpl/pm" -I"../hpl/port" -I"../hpl/ramecc" -I"../hpl/sercom" -I"../hpl/tc" -I"../hri" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAME54_DFP\1.1.134\include" -I"../thirdparty" -I"../drivers" -I"../devices" -I"../devices/display"  -O1 -ffunction-sections -mlong-calls -g3 -Wall -mcpu=cortex-m4 -c -std=gnu99 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+devices/p_screen.o: ../devices/p_screen.c
 	@echo Building file: $<
 	@echo Invoking: ARM/GNU C Compiler : 6.3.1
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-gcc.exe$(QUOTE)  -x c -mthumb -D__SAME54P20A__ -DDEBUG -DLV_CONF_INCLUDE_SIMPLE  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include" -I"../Config" -I".." -I"../examples" -I"../hal/include" -I"../hal/utils/include" -I"../hpl/cmcc" -I"../hpl/core" -I"../hpl/dmac" -I"../hpl/eic" -I"../hpl/gclk" -I"../hpl/mclk" -I"../hpl/osc32kctrl" -I"../hpl/oscctrl" -I"../hpl/pm" -I"../hpl/port" -I"../hpl/ramecc" -I"../hpl/sercom" -I"../hpl/tc" -I"../hri" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAME54_DFP\1.1.134\include" -I"../thirdparty" -I"../drivers" -I"../devices" -I"../devices/display"  -O1 -ffunction-sections -mlong-calls -g3 -Wall -mcpu=cortex-m4 -c -std=gnu99 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

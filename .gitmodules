@@ -4,3 +4,6 @@
 [submodule "software/thirdparty/lvgl"]
 	path = software/thirdparty/lvgl
 	url = https://github.com/lvgl/lvgl.git
+[submodule "software/thirdparty/lv_examples"]
+	path = software/thirdparty/lv_examples
+	url = https://github.com/littlevgl/lv_examples.git

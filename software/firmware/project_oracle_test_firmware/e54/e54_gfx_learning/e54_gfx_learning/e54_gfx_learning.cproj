@@ -475,6 +475,12 @@
     <Compile Include="devices\display\p_ssd1963.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="devices\p_screen.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="devices\p_screen.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Device_Startup\startup_same54.c">
       <SubType>compile</SubType>
     </Compile>
@@ -1522,6 +1528,27 @@
     <Compile Include="thirdparty\lvgl\tests\lv_test_objx\lv_test_cont.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="thirdparty\lv_examples\assets\img_cogwheel_alpha16.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="thirdparty\lv_examples\lv_examples.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="thirdparty\lv_examples\lv_ex_conf_templ.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="thirdparty\lv_examples\src\lv_demo_benchmark\lv_demo_benchmark.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="thirdparty\lv_examples\src\lv_demo_benchmark\lv_demo_benchmark.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="thirdparty\lv_examples\src\lv_demo_keypad_encoder\lv_demo_keypad_encoder.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="thirdparty\lv_examples\src\lv_demo_keypad_encoder\lv_demo_keypad_encoder.h">
+      <SubType>compile</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Config\" />
@@ -1573,6 +1600,15 @@
     <Folder Include="thirdparty\lvgl\tests\lv_test_core\" />
     <Folder Include="thirdparty\lvgl\tests\lv_test_objx\" />
     <Folder Include="thirdparty\lvgl\tests\lv_test_ref_imgs\" />
+    <Folder Include="thirdparty\lv_examples\" />
+    <Folder Include="thirdparty\lv_examples\" />
+    <Folder Include="thirdparty\lv_examples\.github\" />
+    <Folder Include="thirdparty\lv_examples\.github\" />
+    <Folder Include="thirdparty\lv_examples\assets\" />
+    <Folder Include="thirdparty\lv_examples\src\" />
+    <Folder Include="thirdparty\lv_examples\src\lv_demo_benchmark\" />
+    <Folder Include="thirdparty\lv_examples\src\lv_demo_keypad_encoder\" />
+    <Folder Include="thirdparty\lv_examples\src\lv_demo_keypad_encoder\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Device_Startup\same54p20a_flash.ld">
@@ -1723,6 +1759,21 @@
       <SubType>compile</SubType>
     </None>
     <None Include="thirdparty\lvgl\tests\Makefile">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="thirdparty\lv_examples\.git">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="thirdparty\lv_examples\.github\stale.yml">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="thirdparty\lv_examples\.gitignore">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="thirdparty\lv_examples\lv_examples.mk">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="thirdparty\lv_examples\README.md">
       <SubType>compile</SubType>
     </None>
   </ItemGroup>

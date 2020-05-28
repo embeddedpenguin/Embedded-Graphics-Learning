@@ -4,6 +4,8 @@
 
 devices\display\p_ssd1963.c
 
+devices\p_screen.c
+
 Device_Startup\startup_same54.c
 
 Device_Startup\system_same54.c

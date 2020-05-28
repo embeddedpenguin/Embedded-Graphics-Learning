@@ -33,6 +33,8 @@
  **********************/
 static inline void ssd1963_cmd_mode(void);
 static inline void ssd1963_data_mode(void);
+static inline void ssd1963_rd(uint8_t reg, uint16_t* data, uint16_t len);
+static inline void ssd1963_wr_bytes(uint8_t reg, const uint16_t* data, uint16_t len);
 static inline void ssd1963_cmd(uint8_t cmd);
 static inline void ssd1963_data(uint8_t data);
 static void ssd1963_io_init(void);
