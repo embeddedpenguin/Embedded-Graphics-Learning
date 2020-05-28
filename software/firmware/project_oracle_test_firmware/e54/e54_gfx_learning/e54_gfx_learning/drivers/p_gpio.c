@@ -63,9 +63,7 @@ void p_gpio_parallel_write(PortGroup* group, uint32_t mask, uint16_t data)
 {
 	gpio_set_pin_level(SSD1963_TFT_CS, 0);
 	p_gpio_set_port_data(group, mask, (uint32_t)data);
-	p_weird_delay();
 	gpio_set_pin_level(SSD1963_TFT_WR, 0);
-	p_weird_delay();
 	gpio_set_pin_level(SSD1963_TFT_WR, 1);
 	
 	gpio_set_pin_level(SSD1963_TFT_CS, 1);
